@@ -438,7 +438,7 @@ if (!defined('ABSPATH')) {
         </h2>
 
         <p class="text-base sm:text-lg text-slate-600 font-normal">
-          In this 2.5-hour intensive masterclass, Prophet Michael will unpack tested, biblical keys that bring immediate results.
+          In this 150-minute intensive masterclass, Prophet Michael will unpack tested, biblical keys that bring immediate results.
         </p>
       </div>
 
@@ -686,7 +686,7 @@ if (!defined('ABSPATH')) {
               <span class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 font-mono font-extrabold text-lg flex items-center justify-center group-hover:bg-amber-500 group-hover:text-white transition-all shadow-inner">
                 02
               </span>
-              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">2.5 Hours Live</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">150 Minutes Live</span>
             </div>
             <p class="font-mono text-xs font-bold uppercase tracking-widest text-amber-600 mb-1">Step 02</p>
             <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Join The Live Tanglish Masterclass</h3>
@@ -1004,7 +1004,7 @@ if (!defined('ABSPATH')) {
             <div class="flex items-start gap-3">
               <span class="w-7 h-7 rounded-lg bg-amber-500/10 text-amber-600 font-bold flex items-center justify-center text-xs flex-shrink-0 mt-0.5">01</span>
               <div>
-                <h4 class="text-sm sm:text-base font-bold text-slate-900">Live 2.5-Hour Interactive Masterclass with Prophet Michael</h4>
+                <h4 class="text-sm sm:text-base font-bold text-slate-900">Live 150-Minute Interactive Masterclass with Prophet Michael</h4>
                 <p class="text-xs text-slate-500">Live Tanglish teaching, Courts of Heaven revelations, healing principles & personal prophetic prayer.</p>
               </div>
             </div>
@@ -1139,7 +1139,7 @@ if (!defined('ABSPATH')) {
               <ul class="space-y-2.5 text-xs text-stone-300">
                 <li class="flex items-start gap-2.5">
                   <span class="text-amber-400 font-bold">✓</span>
-                  <span><strong>Live 2.5-Hour Interactive Masterclass</strong> with Prophet Michael</span>
+                  <span><strong>Live 150-Minute Interactive Masterclass</strong> with Prophet Michael</span>
                 </li>
                 <li class="flex items-start gap-2.5">
                   <span class="text-amber-400 font-bold">✓</span>
