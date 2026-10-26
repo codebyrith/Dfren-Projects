@@ -184,7 +184,7 @@ if (!defined('ABSPATH')) {
                 src="<?php echo esc_url(get_template_directory_uri() . '/assets/prophet-michael-hero.jpg'); ?>" 
                 alt="Prophet Michael Rehoboth - Christian Minister &amp; Spiritual Deliverance Coach" 
                 class="w-full h-[460px] sm:h-[520px] object-cover"
-                style="object-position: center 100%;"
+                style="object-position: center 95%;"
                 loading="eager"
               />
               
