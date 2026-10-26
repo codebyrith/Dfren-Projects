@@ -13,7 +13,6 @@ An elite, high-converting, single-page landing page web application for **Rehobo
   - ₹299 Price hook card with 70% off strikethrough (₹999 anchor)
   - Prophet Michael's dignified portrait with authority badge (8+ Years Ministry & Deliverance Coaching)
 - **Problem Agitation Section:** 4 targeted cards covering *Lack of Understanding*, *Spiritual Dryness*, *Doubt & Timing*, and *Identity Crisis*.
-- **Scripture & Vision Anchor:** John 14:12 with gold gradient borders and reflection.
 - **What You Will Gain:** 6 transformative outcome cards with custom icons.
 - **3-Pillar Teaching Framework:** Spiritual Discipline, Warfare Prayer, and Prophetic Sensitivity, plus bonus prayer blueprint takeaway.
 - **Mentor Authority:** Full profile of Prophet Michael Rehoboth and his training lineage under global ministers.
