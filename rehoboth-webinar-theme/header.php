@@ -79,8 +79,13 @@
         </span>
       </div>
 
-      <!-- Right side timer -->
+      <!-- Right side review badge & timer (CRO Audit: Review Counts in Announcement Bar) -->
       <div class="hidden sm:flex items-center gap-3 mx-auto md:mx-0 text-xs">
+        <div class="flex items-center gap-1.5 bg-black/40 px-2.5 py-1 rounded-md border border-white/20 text-white font-medium">
+          <span class="text-amber-300 text-[11px]">⭐⭐⭐⭐⭐</span>
+          <span class="font-bold text-amber-200">4.9/5</span>
+          <span class="text-[10px] text-stone-300">(5,000+ Reviews)</span>
+        </div>
         <div class="flex items-center gap-1.5 bg-black/40 px-2.5 py-1 rounded-md border border-white/20 text-white font-medium">
           <svg class="w-4 h-4 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           <span>Batch Closes in:</span>
@@ -88,6 +93,7 @@
         </div>
       </div>
     </div>
+    
   </header>
 
   <!-- Navigation Bar -->

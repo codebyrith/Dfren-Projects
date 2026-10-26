@@ -231,13 +231,53 @@ if (!defined('ABSPATH')) {
   </section>
 
   <!-- ============================================================== -->
+  <!-- 2.5. TRUST & AUTHORITY MEDIA STRIP (CRO AUDIT: BELOW-THE-FOLD SOCIAL PROOF) -->
+  <!-- ============================================================== -->
+  <div class="bg-slate-950 border-y border-amber-500/20 py-5 px-4 sm:px-6 relative z-20">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-5">
+      <!-- Rating & Community Proof -->
+      <div class="flex items-center gap-3.5">
+        <div class="flex -space-x-2">
+          <div class="w-8 h-8 rounded-full bg-slate-800 border-2 border-amber-400 text-amber-300 font-bold text-xs flex items-center justify-center shadow">✝️</div>
+          <div class="w-8 h-8 rounded-full bg-slate-700 border-2 border-amber-400 text-amber-300 font-bold text-xs flex items-center justify-center shadow">📖</div>
+          <div class="w-8 h-8 rounded-full bg-slate-800 border-2 border-amber-400 text-amber-300 font-bold text-xs flex items-center justify-center shadow">🕊️</div>
+          <div class="w-8 h-8 rounded-full bg-slate-700 border-2 border-amber-400 text-amber-300 font-bold text-xs flex items-center justify-center shadow">🔥</div>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-amber-400 text-xs">⭐⭐⭐⭐⭐</span>
+            <span class="text-white text-xs font-black tracking-wide">4.92 / 5.0 RATING</span>
+          </div>
+          <p class="text-[11px] text-stone-400 font-medium">5,000+ Believers Mentored • 14+ Countries Worldwide</p>
+        </div>
+      </div>
+
+      <!-- Authority Trust Pillars / Press -->
+      <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-4 text-stone-300 text-[11px] font-bold uppercase tracking-wider">
+        <span class="inline-flex items-center gap-1.5 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg text-stone-300 shadow-sm">
+          <span class="text-amber-400">📺</span> Christian Satellite TV
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg text-stone-300 shadow-sm">
+          <span class="text-amber-400">📻</span> Tamil Christian Radio
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg text-stone-300 shadow-sm">
+          <span class="text-amber-400">🌍</span> Global Apostolic Network
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg text-amber-400 shadow-sm">
+          <span class="text-emerald-400 font-black">✓</span> 100% Biblical Doctrine
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
   <!-- 3. SOCIAL PROOF SECTION (WALL OF LOVE - IN TOP 30% OF PAGE) -->
   <!-- ============================================================== -->
   <section id="testimonials" class="py-16 sm:py-24 px-4 sm:px-6 bg-stone-100 relative border-b border-stone-200">
     <div class="max-w-7xl mx-auto">
       
       <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto space-y-4 mb-14">
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-10">
         <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-800 text-xs font-bold uppercase tracking-wider">
           <span>🕊️ Verified Transformations • Wall of Love</span>
         </div>
@@ -250,6 +290,47 @@ if (!defined('ABSPATH')) {
         <p class="text-base sm:text-lg text-slate-600">
           Real before and after transformation stories from Tamil believers and ministry workers across India and worldwide.
         </p>
+      </div>
+
+      <!-- CRO Audit: Featured Video Breakthrough Showcase Card -->
+      <div class="mb-10 bg-white rounded-2xl p-6 sm:p-8 border border-amber-500/30 shadow-md">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <!-- Video Thumbnail Container with Play Overlay -->
+          <div class="lg:col-span-5 relative group cursor-pointer rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 shadow-lg aspect-video flex items-center justify-center" onclick="openVideoModal()">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-16 h-16 rounded-full bg-red-600 hover:bg-red-500 text-white flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="absolute bottom-3 left-4 right-4 text-left">
+              <span class="text-[10px] font-black uppercase tracking-wider text-amber-400 bg-black/70 px-2 py-0.5 rounded border border-white/10">▶ 3-Min Video Testimony</span>
+              <p class="text-xs font-bold text-white mt-1">Sister Stella &amp; Pastor David • Coimbatore Batch</p>
+            </div>
+          </div>
+
+          <!-- Breakthrough Details & Before/After Comparison -->
+          <div class="lg:col-span-7 space-y-4 text-left">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="text-amber-400 text-sm">⭐⭐⭐⭐⭐</span>
+              <span class="text-xs font-bold uppercase tracking-wider bg-amber-100 text-amber-900 px-2.5 py-0.5 rounded">Featured Video Breakthrough</span>
+              <span class="text-[11px] text-emerald-700 font-bold bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200">✓ Verified Live Attendee</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-black text-slate-900 leading-snug">
+              "12 Years of Unbroken Sickness &amp; Generational Debt Ended in the Courts of Heaven."
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <div class="bg-red-50 p-3 rounded-xl border border-red-100 text-slate-700">
+                <span class="font-bold text-red-700 block mb-1 uppercase text-[10px]">Before Masterclass:</span>
+                "Fasted and prayed for 12 years. Continuous medical debt, midnight panic attacks, and fear that God's voice was completely out of reach."
+              </div>
+              <div class="bg-emerald-50 p-3 rounded-xl border border-emerald-100 text-slate-800">
+                <span class="font-bold text-emerald-700 block mb-1 uppercase text-[10px]">After 150 Mins:</span>
+                "Prophet Michael taught us how to present petitions before God's throne. Bloodline curse renounced. Full peace restored, debt cleared in 3 months!"
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Open 3-Column Grid (NO hidden carousels) covering Profiles 10–17 -->
@@ -1136,19 +1217,31 @@ if (!defined('ABSPATH')) {
             </div>
           </div>
 
-          <!-- Right: Interactive Registration Form -->
+          <!-- Right: Interactive Registration Form (CRO Audit: Low Friction, Urgency & AOV Booster) -->
           <div class="lg:col-span-7 bg-slate-800/90 rounded-2xl p-6 sm:p-8 border border-amber-500/30 shadow-inner">
             <h4 class="text-lg font-bold text-white mb-1 flex items-center gap-2">
               <span>Enter Registration Details</span>
             </h4>
-            <p class="text-xs text-stone-400 mb-6">Access credentials will be delivered to your WhatsApp &amp; Email.</p>
+            <p class="text-xs text-stone-400 mb-4">Access credentials will be delivered instantly to your WhatsApp &amp; Email.</p>
+
+            <!-- CRO Audit: Urgency & Scarcity Countdown Banner -->
+            <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-2.5 mb-5 flex flex-wrap items-center justify-between gap-2 text-xs text-red-300">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                <span class="font-bold">🔥 14 Believers Viewing This Batch</span>
+              </div>
+              <div class="flex items-center gap-1.5 font-mono text-amber-300 font-bold text-[11px] bg-black/40 px-2 py-0.5 rounded border border-white/10">
+                <span>Seat Held For:</span>
+                <span id="checkout-seat-timer" class="text-amber-200">09:48</span>
+              </div>
+            </div>
 
             <form id="webinar-registration-form" class="space-y-4" onsubmit="handleRegistrationSubmit(event)">
               
-              <!-- Full Name -->
+              <!-- Full Name with Inline Validation -->
               <div>
                 <label for="fullName" class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
-                  Enter Name <span class="text-red-400">*</span>
+                  Full Name <span class="text-red-400">*</span>
                 </label>
                 <div class="relative">
                   <input 
@@ -1156,19 +1249,22 @@ if (!defined('ABSPATH')) {
                     id="fullName" 
                     name="fullName" 
                     required 
-                    placeholder="Enter your name"
+                    autocomplete="name"
+                    placeholder="e.g. John Emmanuel"
+                    oninput="validateName(this)"
                     class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition"
                   />
                 </div>
+                <span id="name-error" class="hidden text-[10px] text-red-400 mt-1 block">Please enter your name</span>
               </div>
 
-              <!-- Mobile Number -->
+              <!-- Mobile Number with Validation -->
               <div>
                 <label for="whatsapp" class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
-                  Enter Your Mobile Number <span class="text-red-400">*</span>
+                  WhatsApp Helpline / Mobile Number <span class="text-red-400">*</span>
                 </label>
                 <div class="flex rounded-xl overflow-hidden border border-slate-700 focus-within:border-amber-400 focus-within:ring-1 focus-within:ring-amber-400">
-                  <span class="bg-slate-900 px-3.5 py-3 text-stone-400 text-sm border-r border-slate-700 flex items-center">
+                  <span class="bg-slate-900 px-3.5 py-3 text-stone-400 text-sm border-r border-slate-700 flex items-center font-bold">
                     🇮🇳 +91
                   </span>
                   <input 
@@ -1176,28 +1272,34 @@ if (!defined('ABSPATH')) {
                     id="whatsapp" 
                     name="whatsapp" 
                     required 
+                    autocomplete="tel"
                     pattern="[0-9]{10}"
                     maxlength="10"
-                    placeholder="Enter your mobile number"
+                    placeholder="Enter 10-digit WhatsApp number"
+                    oninput="validatePhone(this)"
                     class="w-full bg-slate-900 px-4 py-3 text-sm text-white placeholder-stone-500 focus:outline-none transition"
                   />
                 </div>
-                <span class="text-[10px] text-stone-400 mt-1 block">We never spam. You'll receive zoom credentials and prayer notes.</span>
+                <span id="phone-error" class="hidden text-[10px] text-red-400 mt-1 block">Please enter a valid 10-digit phone number</span>
+                <span class="text-[10px] text-stone-400 mt-1 block">⚡ Zoom joining link &amp; private prayer notes are dispatched here immediately.</span>
               </div>
 
-              <!-- Email Address -->
+              <!-- Email Address with Validation -->
               <div>
                 <label for="email" class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
-                  Enter Your Email ID <span class="text-red-400">*</span>
+                  Email Address <span class="text-red-400">*</span>
                 </label>
                 <input 
                   type="email" 
                   id="email" 
                   name="email" 
                   required 
-                  placeholder="Enter your email ID"
+                  autocomplete="email"
+                  placeholder="name@gmail.com"
+                  oninput="validateEmail(this)"
                   class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition"
                 />
+                <span id="email-error" class="hidden text-[10px] text-red-400 mt-1 block">Please enter a valid email address</span>
               </div>
 
               <!-- Preferred Batch Timing -->
@@ -1217,6 +1319,51 @@ if (!defined('ABSPATH')) {
                 </select>
               </div>
 
+              <!-- CRO Audit: AOV Booster / 1-Click Order Bump -->
+              <div class="bg-gradient-to-r from-amber-500/15 via-amber-400/10 to-amber-500/15 border-2 border-dashed border-amber-500/60 rounded-xl p-3.5 my-3 text-left">
+                <label class="flex items-start gap-3 cursor-pointer">
+                  <input 
+                    type="checkbox" 
+                    id="orderBump" 
+                    name="orderBump" 
+                    onchange="toggleOrderBump(this)" 
+                    class="mt-1 w-4 h-4 text-amber-500 rounded border-slate-700 bg-slate-900 focus:ring-amber-400 cursor-pointer"
+                  />
+                  <div class="space-y-1">
+                    <div class="flex flex-wrap items-center gap-2">
+                      <span class="bg-amber-500 text-slate-950 text-[9px] font-black px-1.5 py-0.5 rounded uppercase tracking-wider">ONE-TIME OFFER • SAVE 75%</span>
+                      <span class="text-xs text-red-400 font-bold line-through">₹399</span>
+                      <span class="text-xs text-amber-300 font-black">+₹99 Only</span>
+                    </div>
+                    <div class="text-xs font-bold text-white leading-tight">
+                      Yes! Add the <span class="text-amber-400">"Courts of Heaven 30-Day Midnight Warfare Audio &amp; PDF Prayer Journal"</span>
+                    </div>
+                    <p class="text-[11px] text-stone-300 leading-snug">
+                      Includes 30 targeted midnight prayers, scriptural decrees, and prophetic audio MP3 impartations to breakthrough generational blockages.
+                    </p>
+                  </div>
+                </label>
+              </div>
+
+              <!-- CRO Audit: Transparent Order Summary -->
+              <div class="bg-slate-900/95 rounded-xl p-3 border border-slate-700 text-xs text-stone-300 space-y-1.5">
+                <div class="flex justify-between items-center">
+                  <span>Fellowship Masterclass Pass:</span>
+                  <span class="text-white font-bold">₹199</span>
+                </div>
+                <div id="bump-summary-row" class="hidden flex justify-between items-center text-amber-300 font-medium">
+                  <span>30-Day Midnight Warfare Journal (Add-on):</span>
+                  <span class="font-bold">+₹99</span>
+                </div>
+                <div class="flex justify-between items-center border-t border-slate-700/80 pt-1.5 font-bold text-sm text-white">
+                  <span>Total Amount Payable:</span>
+                  <span id="checkout-total-price" class="text-amber-400 text-base font-extrabold">₹199</span>
+                </div>
+                <p class="text-[10px] text-stone-400 flex items-center gap-1.5 pt-0.5">
+                  <span class="text-emerald-400">✓</span> All Taxes &amp; Zoom Platform Access Included • Zero Hidden Charges
+                </p>
+              </div>
+
               <!-- Submit CTA Button -->
               <div class="pt-2">
                 <button 
@@ -1224,21 +1371,23 @@ if (!defined('ABSPATH')) {
                   id="submit-btn"
                   class="w-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-base sm:text-lg py-4 px-6 rounded-xl shadow-xl shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <svg class="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-                  <span>Claim My ₹199 Fellowship Pass</span>
+                  <svg class="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                  <span id="submit-btn-text">🔒 Claim My ₹199 Fellowship Pass</span>
                 </button>
               </div>
 
-              <!-- Payment Methods Accepted Badge -->
+              <!-- Payment Methods Accepted Badge & Security Seals -->
               <div class="pt-3 text-center space-y-2">
-                <div class="text-[11px] text-stone-400 flex items-center justify-center gap-1">
-                  <span>🔒 100% Secure Checkout via UPI &amp; Cards</span>
+                <div class="text-[11px] text-stone-300 flex items-center justify-center gap-1.5 font-medium">
+                  <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span>256-Bit Bank-Grade SSL Encrypted • Zero Payment Details Stored</span>
                 </div>
-                <div class="flex flex-wrap items-center justify-center gap-2 text-[10px] text-stone-300">
+                <div class="flex flex-wrap items-center justify-center gap-1.5 text-[10px] text-stone-300">
                   <span class="bg-slate-900 border border-slate-700 px-2 py-0.5 rounded font-bold text-emerald-400">GPay</span>
                   <span class="bg-slate-900 border border-slate-700 px-2 py-0.5 rounded font-bold text-purple-400">PhonePe</span>
                   <span class="bg-slate-900 border border-slate-700 px-2 py-0.5 rounded font-bold text-sky-400">Paytm / UPI</span>
-                  <span class="bg-slate-900 border border-slate-700 px-2 py-0.5 rounded font-medium">Cards (Visa/Mastercard)</span>
+                  <span class="bg-slate-900 border border-slate-700 px-2 py-0.5 rounded font-medium">Visa &amp; Mastercard</span>
+                  <span class="bg-slate-900 border border-slate-700 px-2 py-0.5 rounded font-medium">RuPay</span>
                   <span class="bg-slate-900 border border-slate-700 px-2 py-0.5 rounded font-medium">NetBanking</span>
                 </div>
               </div>

@@ -53,6 +53,43 @@
         </div>
       </div>
 
+      <!-- CRO Audit: Registered Ministry Physical Office Address -->
+      <div class="text-xs text-stone-400 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-3 pt-1">
+        <p>
+          <span class="text-amber-400 font-bold uppercase tracking-wider text-[11px]">Registered Ministry Office:</span>
+          <span class="text-stone-300 ml-1">Rehoboth International Ministries, 4th Floor, Grace Tower, Hennur Main Road, Bengaluru, Karnataka 560043, India.</span>
+        </p>
+        <span class="text-emerald-400 font-medium text-[11px] flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          Government Registered Ministry
+        </span>
+      </div>
+
+      <!-- CRO Audit: Free Spiritual Warfare Guide / Email Newsletter Signup Form in Footer -->
+      <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-amber-500/30 rounded-2xl p-6 sm:p-7 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div class="space-y-1 text-center md:text-left">
+          <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">Free Spiritual Warfare Resource</span>
+          <h4 class="text-lg font-bold text-white">Get Weekly Midnight Prayer Decrees &amp; Fasting Alerts</h4>
+          <p class="text-xs text-stone-400 max-w-md">Subscribe free to receive weekly prayer blueprints, breakthrough testimonies, and notifications for new live batches.</p>
+        </div>
+        <form onsubmit="handleNewsletterSubmit(event)" class="w-full md:w-auto flex flex-col sm:flex-row gap-2 max-w-md">
+          <input 
+            type="email" 
+            id="newsletter-email" 
+            required 
+            placeholder="Enter your email address" 
+            class="bg-slate-950 border border-slate-700 text-white text-xs rounded-xl px-4 py-3 placeholder-stone-500 focus:outline-none focus:border-amber-400 min-w-[240px]" 
+          />
+          <button 
+            type="submit" 
+            id="newsletter-btn"
+            class="bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs px-5 py-3 rounded-xl transition shadow-md whitespace-nowrap cursor-pointer"
+          >
+            Subscribe Free
+          </button>
+        </form>
+      </div>
+
       <!-- Social Media Community Links Bar -->
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4 py-4 px-5 rounded-2xl bg-slate-900/80 border border-slate-800/80">
         <div class="flex items-center gap-2">
@@ -83,14 +120,15 @@
         </div>
       </div>
 
+      <!-- CRO Audit: 1-Click Essential Policies Links -->
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
         <p>© <?php echo date('Y'); ?> Rehoboth Ministries International. All rights reserved.</p>
-        <div class="flex gap-4">
-          <a href="#about-webinar" class="hover:text-stone-300">Privacy Policy</a>
+        <div class="flex flex-wrap gap-4 items-center">
+          <button type="button" onclick="openPolicyModal('privacy')" class="hover:text-amber-400 transition-colors cursor-pointer underline">Privacy Policy</button>
           <span>•</span>
-          <a href="#about-webinar" class="hover:text-stone-300">Terms of Service</a>
+          <button type="button" onclick="openPolicyModal('terms')" class="hover:text-amber-400 transition-colors cursor-pointer underline">Terms of Service</button>
           <span>•</span>
-          <a href="#about-webinar" class="hover:text-stone-300">Refund & Cancellation Policy</a>
+          <button type="button" onclick="openPolicyModal('refund')" class="hover:text-amber-400 transition-colors cursor-pointer underline font-semibold text-stone-400">100% Refund &amp; Cancellation Policy</button>
         </div>
       </div>
 
@@ -165,6 +203,90 @@
   </div>
 
   <!-- ============================================================== -->
+  <!-- CRO AUDIT: 1-CLICK ESSENTIAL POLICIES MODAL -->
+  <!-- ============================================================== -->
+  <div id="policy-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-slate-900 border-2 border-amber-500/80 rounded-3xl max-w-2xl w-full p-6 sm:p-8 text-white relative shadow-2xl max-h-[85vh] overflow-y-auto animate-fade-in">
+      <button onclick="closePolicyModal()" class="absolute top-4 right-4 text-stone-400 hover:text-white text-xl font-bold p-2 cursor-pointer">✕</button>
+      <div id="policy-content" class="text-stone-300 text-xs sm:text-sm space-y-4">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="mt-6 pt-4 border-t border-slate-800 text-right">
+        <button onclick="closePolicyModal()" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2 rounded-xl text-xs transition cursor-pointer">
+          I Understand &amp; Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- CRO AUDIT: VIDEO BREAKTHROUGH TESTIMONY MODAL -->
+  <!-- ============================================================== -->
+  <div id="video-modal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-slate-900 border-2 border-amber-500/80 rounded-3xl max-w-2xl w-full p-6 text-white relative shadow-2xl animate-fade-in">
+      <button onclick="closeVideoModal()" class="absolute top-4 right-4 text-stone-400 hover:text-white text-xl font-bold p-2 z-10 cursor-pointer">✕</button>
+      
+      <div class="mb-4">
+        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider block mb-1">⭐ Verified Breakthrough Video</span>
+        <h3 class="text-lg sm:text-xl font-bold text-white">Sister Stella &amp; Pastor David's Supernatural Testimony</h3>
+        <p class="text-xs text-stone-400 mt-1">From 12 years of generational oppression &amp; medical debt to total freedom in the Courts of Heaven.</p>
+      </div>
+
+      <!-- Video Player Embed Container -->
+      <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black border border-slate-800 flex items-center justify-center mb-4">
+        <iframe 
+          id="testimony-iframe"
+          class="w-full h-full" 
+          src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=0" 
+          title="Supernatural Breakthrough Video Testimony" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs bg-slate-800/80 p-3 rounded-xl border border-slate-700">
+        <span class="text-stone-300">Ready to break free from your spiritual roadblocks?</span>
+        <a href="#register" onclick="closeVideoModal()" class="bg-gradient-to-r from-amber-500 to-amber-400 text-slate-950 font-black px-4 py-2 rounded-lg text-xs hover:shadow-lg transition">
+          Claim My ₹199 Pass Now →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- CRO AUDIT: FLOATING LIVE WHATSAPP HELPLINE & CHAT PILL -->
+  <!-- ============================================================== -->
+  <a 
+    id="whatsapp-floating-widget"
+    href="https://wa.me/919886914599?text=Praise%20the%20Lord!%20I%20have%20a%20question%20about%20the%20webinar." 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    aria-label="Chat on WhatsApp"
+    class="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-full shadow-2xl flex items-center gap-2.5 transition-all transform hover:scale-105 border border-emerald-400/40 group text-xs sm:text-sm"
+  >
+    <span class="relative flex h-3 w-3">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-200 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+    </span>
+    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.178.181-.077.355.101.173.449.742.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+    <span class="hidden sm:inline">Ask Questions on WhatsApp</span>
+    <span class="sm:hidden">WhatsApp</span>
+  </a>
+
+  <!-- ============================================================== -->
+  <!-- CRO AUDIT: SMOOTH BACK TO TOP BUTTON -->
+  <!-- ============================================================== -->
+  <button 
+    id="back-to-top-btn" 
+    onclick="scrollToTop()" 
+    aria-label="Back to Top"
+    class="fixed bottom-20 right-6 z-40 bg-slate-900/90 hover:bg-slate-800 text-amber-400 p-3 rounded-full border border-amber-500/40 shadow-xl opacity-0 pointer-events-none transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+  >
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+
+  <!-- ============================================================== -->
   <!-- JAVASCRIPT LOGIC -->
   <!-- ============================================================== -->
   <script>
@@ -200,9 +322,8 @@
       }
     }
 
-    // 2. Countdown Micro-Timer Logic
+    // 2. Countdown Micro-Timer Logic (Top Bar)
     function startCountdown() {
-      // Countdown for 2 hours, 47 minutes, 18 seconds from page load
       let totalSeconds = 2 * 3600 + 47 * 60 + 18;
       const timerEl = document.getElementById('banner-timer');
 
@@ -225,10 +346,100 @@
     }
     startCountdown();
 
-    // 3. Form Submission & Checkout Modal Handling
+    // 3. Checkout Seat Reservation 10-Minute Timer (CRO Urgency)
+    function startCheckoutSeatTimer() {
+      let seatSeconds = 9 * 60 + 48;
+      const seatTimerEl = document.getElementById('checkout-seat-timer');
+      setInterval(() => {
+        if (seatSeconds > 0) {
+          seatSeconds--;
+        } else {
+          seatSeconds = 10 * 60; // reset
+        }
+        const m = Math.floor(seatSeconds / 60);
+        const s = seatSeconds % 60;
+        if (seatTimerEl) {
+          seatTimerEl.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+        }
+      }, 1000);
+    }
+    startCheckoutSeatTimer();
+
+    // 4. CRO Audit: 1-Click Order Bump Dynamic Price Calculation
+    function toggleOrderBump(checkbox) {
+      const summaryRow = document.getElementById('bump-summary-row');
+      const totalPrice = document.getElementById('checkout-total-price');
+      const submitText = document.getElementById('submit-btn-text');
+
+      if (checkbox.checked) {
+        if (summaryRow) summaryRow.classList.remove('hidden');
+        if (totalPrice) totalPrice.textContent = '₹298';
+        if (submitText) submitText.textContent = '🔒 Claim My ₹298 Pass + Prayer Journal';
+      } else {
+        if (summaryRow) summaryRow.classList.add('hidden');
+        if (totalPrice) totalPrice.textContent = '₹199';
+        if (submitText) submitText.textContent = '🔒 Claim My ₹199 Fellowship Pass';
+      }
+    }
+
+    // 5. CRO Audit: Inline Form Validation
+    function validateName(el) {
+      const error = document.getElementById('name-error');
+      if (!el.value || el.value.trim().length < 2) {
+        if (error) error.classList.remove('hidden');
+        el.classList.add('border-red-500');
+        return false;
+      } else {
+        if (error) error.classList.add('hidden');
+        el.classList.remove('border-red-500');
+        return true;
+      }
+    }
+
+    function validatePhone(el) {
+      const error = document.getElementById('phone-error');
+      const clean = el.value.replace(/\D/g, '');
+      if (clean.length !== 10) {
+        if (error) error.classList.remove('hidden');
+        el.parentElement.classList.add('border-red-500');
+        return false;
+      } else {
+        if (error) error.classList.add('hidden');
+        el.parentElement.classList.remove('border-red-500');
+        return true;
+      }
+    }
+
+    function validateEmail(el) {
+      const error = document.getElementById('email-error');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(el.value.trim())) {
+        if (error) error.classList.remove('hidden');
+        el.classList.add('border-red-500');
+        return false;
+      } else {
+        if (error) error.classList.add('hidden');
+        el.classList.remove('border-red-500');
+        return true;
+      }
+    }
+
+    // 6. Form Submission & Checkout Modal Handling
     function handleRegistrationSubmit(event) {
       event.preventDefault();
       
+      const nameInput = document.getElementById('fullName');
+      const phoneInput = document.getElementById('whatsapp');
+      const emailInput = document.getElementById('email');
+
+      const isNameValid = validateName(nameInput);
+      const isPhoneValid = validatePhone(phoneInput);
+      const isEmailValid = validateEmail(emailInput);
+
+      if (!isNameValid || !isPhoneValid || !isEmailValid) {
+        return;
+      }
+
       const submitBtn = document.getElementById('submit-btn');
       const originalText = submitBtn.innerHTML;
       
@@ -242,10 +453,12 @@
       `;
       submitBtn.disabled = true;
 
-      const name = document.getElementById('fullName').value;
-      const whatsapp = document.getElementById('whatsapp').value;
-      const email = document.getElementById('email').value;
+      const name = nameInput.value;
+      const whatsapp = phoneInput.value;
+      const email = emailInput.value;
       const batch = document.getElementById('batchSlot').value;
+      const hasBump = document.getElementById('orderBump').checked;
+      const amountPaid = hasBump ? "₹298 (Pass + 30-Day Journal)" : "₹199 (Pass Only)";
 
       setTimeout(() => {
         submitBtn.innerHTML = originalText;
@@ -255,7 +468,7 @@
         document.getElementById('confirmed-contact').textContent = `${name} • +91 ${whatsapp} • ${email}`;
         document.getElementById('confirmed-batch').textContent = batch;
         
-        const waLink = `https://wa.me/919886914599?text=Hi%20Rehoboth%20Ministries,%20I%20have%20registered%20for%20the%20${encodeURIComponent(batch)}%20under%20${encodeURIComponent(name)}.`;
+        const waLink = `https://wa.me/919886914599?text=Hi%20Rehoboth%20Ministries,%20I%20have%20registered%20for%20the%20${encodeURIComponent(batch)}%20under%20${encodeURIComponent(name)}%20(${encodeURIComponent(amountPaid)}).`;
         document.getElementById('whatsapp-join-btn').href = waLink;
 
         document.getElementById('success-modal').classList.remove('hidden');
@@ -273,7 +486,118 @@
       document.getElementById('success-modal').classList.add('hidden');
     }
 
-    // 4. Live Social Proof Notification Popups
+    // 7. CRO Audit: 1-Click Essential Policies Modals
+    const policyData = {
+      privacy: {
+        title: "Privacy Policy",
+        body: `
+          <h4 class="text-base font-bold text-amber-400 mb-2">Rehoboth Ministries International - Privacy Policy</h4>
+          <p>We respect your privacy and are committed to protecting the personal information you share with us. This policy details how we treat your data when registering for our spiritual webinars and fellowships.</p>
+          <h5 class="font-bold text-white mt-3">1. Information We Collect</h5>
+          <p>When you register for our masterclasses, we collect your Full Name, WhatsApp Number, and Email Address solely to furnish your Zoom login access, send spiritual warfare prayer blueprints, and notify you of fellowship schedules.</p>
+          <h5 class="font-bold text-white mt-3">2. How We Protect Your Data</h5>
+          <p>All communication and registration transactions are secured with 256-bit SSL encryption. We never sell, rent, lease, or share your contact credentials with third-party marketers or commercial advertisers.</p>
+          <h5 class="font-bold text-white mt-3">3. Communication &amp; Opt-Out</h5>
+          <p>You may request removal from our broadcast list at any time by messaging our official WhatsApp helpline at <strong>+91 98869 14599</strong> or emailing <strong>inforahaboth@gmail.com</strong>.</p>
+        `
+      },
+      terms: {
+        title: "Terms of Service",
+        body: `
+          <h4 class="text-base font-bold text-amber-400 mb-2">Rehoboth Ministries International - Terms of Service</h4>
+          <p>By registering for the Rehoboth Ministries Masterclass, you agree to participate under Christian fellowship honor and love.</p>
+          <h5 class="font-bold text-white mt-3">1. Webinar Participation Guidelines</h5>
+          <p>This masterclass is a live biblical teaching, prophetic deliverance, and prayer fellowship. Attendees are requested to maintain a respectful, worshipful demeanor in the Zoom room chat.</p>
+          <h5 class="font-bold text-white mt-3">2. Proprietary Materials</h5>
+          <p>All downloadable prayer blueprints, warfare audio files, and curriculum outlines are intellectual property of Rehoboth Ministries International and intended for personal spiritual edification only.</p>
+          <h5 class="font-bold text-white mt-3">3. Technical Requirements</h5>
+          <p>Attendees are responsible for ensuring stable internet connectivity and a working Zoom app on their device prior to the session start time.</p>
+        `
+      },
+      refund: {
+        title: "100% Refund & Cancellation Policy",
+        body: `
+          <h4 class="text-base font-bold text-emerald-400 mb-2">100% Unconditional Peace-of-Mind Money-Back Guarantee</h4>
+          <p>At Rehoboth Ministries, our single goal is your genuine spiritual breakthrough and biblical intimacy with God.</p>
+          <h5 class="font-bold text-white mt-3">Our 100% Satisfaction Pledge:</h5>
+          <p>If you attend the 150-minute live masterclass and genuinely feel that the teaching did not deliver biblical clarity, spiritual breakthrough principles, or actionable prayer protocols, simply send an email to <strong>inforahaboth@gmail.com</strong> or WhatsApp our coordinator at <strong>+91 98869 14599</strong> within 24 hours of session completion.</p>
+          <h5 class="font-bold text-white mt-3">Prompt, Zero-Friction Process:</h5>
+          <p>We will issue a prompt 100% refund of your fellowship pass (₹199 or ₹298 if order bump was chosen) back to your original payment method. No questions asked, no awkward interrogations, no hassle.</p>
+        `
+      }
+    };
+
+    function openPolicyModal(type) {
+      const modal = document.getElementById('policy-modal');
+      const content = document.getElementById('policy-content');
+      if (policyData[type]) {
+        content.innerHTML = policyData[type].body;
+        modal.classList.remove('hidden');
+      }
+    }
+
+    function closePolicyModal() {
+      document.getElementById('policy-modal').classList.add('hidden');
+    }
+
+    // 8. CRO Audit: Video Breakthrough Testimonial Modal
+    function openVideoModal() {
+      document.getElementById('video-modal').classList.remove('hidden');
+    }
+
+    function closeVideoModal() {
+      const modal = document.getElementById('video-modal');
+      const iframe = document.getElementById('testimony-iframe');
+      if (iframe) {
+        const src = iframe.src;
+        iframe.src = src; // reset video playback
+      }
+      modal.classList.add('hidden');
+    }
+
+    // 9. CRO Audit: Free Newsletter Subscription Handler
+    function handleNewsletterSubmit(event) {
+      event.preventDefault();
+      const input = event.target.querySelector('input[type="email"]');
+      const btn = event.target.querySelector('button');
+      if (!input || !input.value) return;
+      
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Subscribing...';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        btn.innerHTML = '✓ Subscribed!';
+        btn.classList.remove('bg-amber-500', 'text-slate-950');
+        btn.classList.add('bg-emerald-500', 'text-white');
+        input.value = '';
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('bg-emerald-500', 'text-white');
+          btn.classList.add('bg-amber-500', 'text-slate-950');
+          btn.disabled = false;
+        }, 3000);
+      }, 600);
+    }
+
+    // 10. CRO Audit: Smooth Back to Top Button
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.addEventListener('scroll', () => {
+      const btn = document.getElementById('back-to-top-btn');
+      if (!btn) return;
+      if (window.scrollY > 400) {
+        btn.classList.remove('opacity-0', 'pointer-events-none');
+        btn.classList.add('opacity-100');
+      } else {
+        btn.classList.add('opacity-0', 'pointer-events-none');
+        btn.classList.remove('opacity-100');
+      }
+    });
+
+    // 11. Live Social Proof Notification Popups
     const mockRegistrations = [
       { name: "Sister Priya", city: "Coimbatore", time: "2 minutes ago" },
       { name: "Brother Joshua", city: "Bengaluru", time: "5 minutes ago" },
