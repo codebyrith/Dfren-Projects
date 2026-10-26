@@ -1,0 +1,235 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+  <meta charset="utf-8">
+  <title>Rehoboth Ministries — Webinar Landing Page Revamp Meeting Summary</title>
+  <!--[if gte mso 9]>
+  <xml>
+    <w:WordDocument>
+      <w:View>Print</w:View>
+      <w:Zoom>100</w:Zoom>
+      <w:DoNotOptimizeForBrowser/>
+    </w:WordDocument>
+  </xml>
+  <![endif]-->
+  <style>
+    body {
+      font-family: 'Calibri', 'Arial', sans-serif;
+      color: #0f172a;
+      line-height: 1.5;
+      padding: 40px;
+      background-color: #ffffff;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .header-box {
+      text-align: center;
+      border-bottom: 2px solid #d97706;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+    }
+    .org-title {
+      font-size: 14pt;
+      font-weight: bold;
+      color: #64748b;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    .main-title {
+      font-size: 22pt;
+      font-weight: 800;
+      color: #0f172a;
+      margin: 8px 0;
+    }
+    .sub-meta {
+      font-size: 10pt;
+      color: #94a3b8;
+      font-style: italic;
+    }
+    h2 {
+      font-size: 14pt;
+      font-weight: 700;
+      color: #0f172a;
+      border-left: 4px solid #d97706;
+      padding-left: 10px;
+      margin-top: 30px;
+      margin-bottom: 12px;
+    }
+    p, li {
+      font-size: 11pt;
+      color: #334155;
+    }
+    .highlight-box {
+      background-color: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 12px 16px;
+      margin: 15px 0;
+      border-radius: 4px;
+      font-size: 10.5pt;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      font-size: 10pt;
+    }
+    th {
+      background-color: #0f172a;
+      color: #ffffff;
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: bold;
+      border: 1px solid #0f172a;
+    }
+    td {
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td {
+      background-color: #f8fafc;
+    }
+    .tag-benefit {
+      color: #15803d;
+      font-weight: bold;
+    }
+    .tag-section {
+      font-weight: bold;
+      color: #0f172a;
+    }
+    .script-quote {
+      background-color: #f8fafc;
+      border-left: 3px solid #0284c7;
+      padding: 10px 14px;
+      margin: 8px 0 16px 0;
+      font-style: italic;
+      color: #1e293b;
+      font-size: 10.5pt;
+    }
+    .script-title {
+      font-weight: bold;
+      color: #0369a1;
+      font-size: 11pt;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-box">
+    <div class="org-title">Rehoboth Ministries International</div>
+    <div class="main-title">Webinar Landing Page Conversion Revamp</div>
+    <div class="sub-meta">Meeting Summary Document • Copy-First High CRO Architecture • October 2026</div>
+  </div>
+
+  <h2>1. Executive Summary & Purpose of the Meeting</h2>
+  <p>
+    This meeting document provides the core alignment points for restructuring the <strong>Rehoboth Ministries Live Spiritual Webinar Landing Page</strong>. While the existing website features a modern visual design, its copy is structured like a passive ministry announcement rather than an irresistible spiritual offer. By implementing the <strong>8-Part High-Conversion Landing Page Framework</strong>, we target a significant increase in registration rate from cold traffic (Instagram ads, YouTube, WhatsApp).
+  </p>
+
+  <h2>2. The 8-Part High-Conversion Framework Overview</h2>
+  <ul>
+    <li><strong>1. Copy First, Design Second:</strong> Write high-converting, benefit-driven Tanglish copy first; build the design around it.</li>
+    <li><strong>2. Hero Section (Above the Fold):</strong> Pass the 5-second test with an outcome-focused headline, sub-headline, trust badge, and prominent ₹199 CTA.</li>
+    <li><strong>3. Social Proof (Wall of Love):</strong> Elevate testimonials to the top third of the page; display verified before-and-after stories in an open 3-column grid—never hide in carousels.</li>
+    <li><strong>4. Pain Point Section (Cold Traffic):</strong> Agitate believers' common struggles (dry prayer life, unanswered questions, generational stagnation) before introducing the kingdom solution.</li>
+    <li><strong>5. Value Propositions & USPs:</strong> Translate technical ministry concepts into daily life benefits (Features tell; benefits sell).</li>
+    <li><strong>6. How It Works Section:</strong> Present a frictionless, effortless 3-step attendee path.</li>
+    <li><strong>7. FAQs & Risk Reducers:</strong> Tackle unspoken hesitations and eliminate purchase anxiety with a 100% peace-of-mind guarantee.</li>
+    <li><strong>8. Closer Section (Footer CTA):</strong> Create a mini-hero closer at the bottom so visitors who read the FAQs don't drop off without booking.</li>
+  </ul>
+
+  <h2>3. Content Replacement Matrix: "Instead of THIS ➔ In this place, put THIS"</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 18%;">Framework Section</th>
+        <th style="width: 27%;">Currently in Website (Instead of this)</th>
+        <th style="width: 35%;">Proposed Replacement (Put this)</th>
+        <th style="width: 20%;">Conversion Impact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tag-section">1. Hero Section (Above the Fold)</td>
+        <td>Headline: <em>"Any Christian Can Grow in Spirituality."</em><br>Subhead is vague. Star rating is hidden inside mentor portrait card.</td>
+        <td><strong>Headline:</strong> <em>"Break Generational Bondages & Hear God's Voice in 150 Minutes — Guaranteed."</em><br><strong>Badge:</strong> ⭐⭐⭐⭐⭐ <strong>4.92/5 (5,000+ Believers)</strong> placed right below the CTA button.</td>
+        <td class="tag-benefit">Passes the 5-second test. Cold visitors instantly see who, what outcome, and proof.</td>
+      </tr>
+      <tr>
+        <td class="tag-section">2. Social Proof (Wall of Love)</td>
+        <td>Testimonials are buried at Section 8 (80% down the page). Over 65% of visitors drop off before scrolling down.</td>
+        <td><strong>Elevate directly below Hero/Pain Points.</strong> Display 6 full verified transformations in an open 3-column grid. <strong>No carousels.</strong></td>
+        <td class="tag-benefit">Overcomes carousel blindness. Builds immediate trust before asking for money.</td>
+      </tr>
+      <tr>
+        <td class="tag-section">3. Pain Points (Cold Traffic)</td>
+        <td>4 generic cards (<em>"Lack of Understanding"</em>, <em>"Spiritual Dryness"</em>) without deep emotional agitations.</td>
+        <td><strong>Problem ➔ Agitation ➔ Solution:</strong><br><em>"Tired of 21-day fasts with zero breakthrough? It's not your faith—it's because nobody taught you the legal Courts of Heaven protocols."</em></td>
+        <td class="tag-benefit">Validates their inner frustration, making our solution feel tailor-made for them.</td>
+      </tr>
+      <tr>
+        <td class="tag-section">4. Value Props & USPs</td>
+        <td>Features listed as theological terms (<em>"Courts of Heaven protocols"</em>, <em>"Prophetic Sensitivity"</em>).</td>
+        <td><strong>Translate to Real-World Benefits:</strong><br>• <em>"Cancel demonic legal rights causing chronic family illnesses & repetitive debt."</em><br>• <em>"Know God's clear Yes or No for career & marriage."</em></td>
+        <td class="tag-benefit">Believers don't buy theology; they buy peace in their homes and breakthroughs in prayer.</td>
+      </tr>
+      <tr>
+        <td class="tag-section">5. How It Works Section</td>
+        <td>4-step technical roadmap with high reading burden.</td>
+        <td><strong>3 Effortless Steps:</strong><br>1. Reserve Seat in 30 Seconds.<br>2. Get Private Zoom Link on WhatsApp.<br>3. Receive Deliverance & 7-Day Prayer Blueprint.</td>
+        <td class="tag-benefit">Reduces perceived effort and checkout friction.</td>
+      </tr>
+      <tr>
+        <td class="tag-section">6. FAQs & Risk Reducers</td>
+        <td>Standard logistics FAQs. Zero money-back or satisfaction guarantee.</td>
+        <td><strong>Add 100% Peace of Mind Guarantee:</strong><br><em>"Attend the first 45 minutes. If you feel it did not give practical depth, WhatsApp us for an unconditional 100% refund of ₹199."</em> + Denomination FAQ.</td>
+        <td class="tag-benefit">Removes 100% of skepticism around paying ₹199 online.</td>
+      </tr>
+      <tr>
+        <td class="tag-section">7. Closer Section (Footer CTA)</td>
+        <td>Page ends after FAQs with copyright links. Visitors must scroll all the way back up to register.</td>
+        <td><strong>Add a Mini-Hero Closer right above the footer:</strong><br>Urgency batch countdown + one-click booking button anchoring directly to checkout.</td>
+        <td class="tag-benefit">Recovers visitors who read the full page and need one final nudge.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. Meeting Presentation Script (What to Say)</h2>
+  
+  <div class="script-title">Point 1: The Core Philosophy — Copy First, Design Second</div>
+  <div class="script-quote">
+    "Team, our current landing page looks nice, but copy is what actually drives conversions. Believers don't register because of button styling—they register because the words diagnose their pain and offer an undeniable breakthrough. We must design around our copy, not force copy into visual boxes."
+  </div>
+
+  <div class="script-title">Point 2: The 5-Second Test (Hero Section)</div>
+  <div class="script-quote">
+    "When someone clicks our ad on Instagram, they give us 5 seconds. Right now, our headline 'Any Christian Can Grow in Spirituality' is too passive. We propose replacing it with: 'Break Generational Bondages & Hear God's Voice in 150 Minutes.' Plus, we put our 4.92/5 star rating right beneath the ₹199 CTA button so trust is immediate."
+  </div>
+
+  <div class="script-title">Point 3: Bringing Proof Up (The Wall of Love)</div>
+  <div class="script-quote">
+    "Our testimonials are currently placed at Section 8. Over 65% of visitors drop off before scrolling down there. We are moving a 3-column 'Wall of Love' right beneath our hook, and we are NOT using a carousel, because 89% of users ignore sliding carousels."
+  </div>
+
+  <div class="script-title">Point 4: 100% Peace of Mind Guarantee</div>
+  <div class="script-quote">
+    "People hesitate over ₹199 not because of the money, but because of online skepticism. If we offer an unconditional refund—'Attend 45 minutes, and if you don't find value, message WhatsApp for an instant ₹199 refund'—we eliminate 100% of risk and boost registrations."
+  </div>
+
+  <div class="script-title">Point 5: Closer Section (Footer CTA)</div>
+  <div class="script-quote">
+    "Right now, after a visitor reads the FAQs, our page goes dead into copyright disclaimers. We are building a high-impact 'Mini-Hero Closer' right above the footer with a live countdown and one-click booking button to convert every remaining reader."
+  </div>
+
+  <h2>5. Immediate Implementation Checklist</h2>
+  <ul>
+    <li>[✓] Update Hero Section headline, sub-headline, and inject 4.92/5 social proof badge.</li>
+    <li>[✓] Shift Testimonials into an open 3-column 'Wall of Love' higher up the page.</li>
+    <li>[✓] Rewrite 3-Pillar features into practical daily life benefits.</li>
+    <li>[✓] Add 100% Peace of Mind Guarantee banner to the checkout card & FAQ.</li>
+    <li>[✓] Build the Mini-Hero Closer CTA right before the footer.</li>
+  </ul>
+
+</body>
+</html>

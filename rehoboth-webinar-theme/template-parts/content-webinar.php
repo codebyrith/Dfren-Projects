@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
 }
 ?>
   <!-- ============================================================== -->
-  <!-- 2. HERO SECTION -->
+  <!-- 2. HERO SECTION (ABOVE THE FOLD) -->
   <!-- ============================================================== -->
   <section id="about-webinar" class="relative bg-gradient-to-b from-brand-navy via-brand-slate to-brand-navy text-white pt-10 sm:pt-16 pb-16 sm:pb-24 px-4 sm:px-6 overflow-hidden hero-glow">
     <!-- Ambient gold background elements -->
@@ -25,7 +25,7 @@ if (!defined('ABSPATH')) {
             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/rehoboth-logo.png'); ?>" alt="Rehoboth Logo" class="w-full h-full object-contain" />
           </div>
           <span class="text-xs sm:text-sm font-semibold tracking-wider uppercase text-amber-300">
-            Rehoboth International Ministries Presents • Spiritual Transformation Series
+            Rehoboth International Ministries Presents • Deliverance &amp; Prophetic Masterclass
           </span>
         </div>
       </div>
@@ -35,17 +35,55 @@ if (!defined('ABSPATH')) {
         
         <!-- Left Column: Copy & Value Proposition -->
         <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+          
+          <!-- Social Proof Rating Badge (Replaced 3rd image content with ratings) -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-amber-500/40 text-xs sm:text-sm font-bold shadow-md">
+            <span class="text-amber-400">⭐⭐⭐⭐⭐</span>
+            <span class="text-white">4.9/5 Rated by 5,000+ Believers</span>
+          </div>
+
+          <!-- Headline Change -->
           <h1 class="text-3xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight leading-[1.15] text-white">
-            Any Christian Can Grow in <br class="hidden sm:inline" />
-            <span class="gold-gradient-text font-serif italic font-bold">Spirituality.</span>
+            Break Generational Bondages &amp; <br class="hidden sm:inline" />
+            <span class="gold-gradient-text font-serif italic font-bold">Hear God's Voice in 150 Minutes</span> — Guaranteed
           </h1>
 
-          <p class="text-base sm:text-lg lg:text-xl text-stone-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-            Master the powerful secret technique hidden in the Bible—healing, deliverance, and divine connection. Master your dream life and unlock true spiritual growth.
+          <p class="text-base sm:text-lg text-stone-200 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Join Prophet Michael Rehoboth in a live 150-minute Tanglish masterclass. Learn the step-by-step Courts of Heaven prayer blueprint that has already helped 5,000+ Tamil believers experience instant healing, peace, and spiritual authority.
           </p>
 
+          <!-- Subheadline / Target Audience Hook (Incorporate Profiles 1–5) -->
+          <div class="bg-slate-900/90 border border-amber-500/30 rounded-2xl p-4 sm:p-5 text-left shadow-xl backdrop-blur-md space-y-3">
+            <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-400">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>This Masterclass Is Specially For You If:</span>
+            </div>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-stone-200">
+              <li class="flex items-start gap-2 bg-slate-800/60 p-2 rounded-lg border border-slate-700/60">
+                <span class="text-amber-400 font-bold">1.</span>
+                <span>The one who <strong>wants to grow spiritually</strong> and deepen intimacy with God.</span>
+              </li>
+              <li class="flex items-start gap-2 bg-slate-800/60 p-2 rounded-lg border border-slate-700/60">
+                <span class="text-amber-400 font-bold">2.</span>
+                <span>The one who is <strong>stuck spiritually</strong> and doesn't know the next step or next life episode.</span>
+              </li>
+              <li class="flex items-start gap-2 bg-slate-800/60 p-2 rounded-lg border border-slate-700/60">
+                <span class="text-amber-400 font-bold">3.</span>
+                <span>The one in <strong>ministry</strong> but not able to perform or activate at the next level.</span>
+              </li>
+              <li class="flex items-start gap-2 bg-slate-800/60 p-2 rounded-lg border border-slate-700/60">
+                <span class="text-amber-400 font-bold">4.</span>
+                <span>Those wanting to <strong>see God, know God, and hear from God</strong> to improve their inner spirit man.</span>
+              </li>
+              <li class="flex items-start gap-2 bg-slate-800/60 p-2 rounded-lg border border-slate-700/60 sm:col-span-2">
+                <span class="text-amber-400 font-bold">5.</span>
+                <span>Those <strong>stuck or operating under negative portals</strong>, generational patterns, or recurring situations.</span>
+              </li>
+            </ul>
+          </div>
+
           <!-- Key Details Badges (Grid of 4) -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
             <!-- Badge 1: Language -->
             <div class="bg-slate-800/70 border border-slate-700/80 rounded-xl p-3 text-left hover:border-amber-500/50 transition-all">
               <div class="flex items-center gap-2 text-amber-400 mb-1">
@@ -83,11 +121,11 @@ if (!defined('ABSPATH')) {
                 <span class="text-[11px] font-bold uppercase tracking-wider text-stone-400">Eligibility</span>
               </div>
               <div class="font-bold text-white text-xs sm:text-sm">Adults (18+)</div>
-              <div class="text-[10px] text-stone-400">Believers & Seekers</div>
+              <div class="text-[10px] text-stone-400">Believers &amp; Seekers</div>
             </div>
           </div>
 
-          <!-- Price Hook Card -->
+          <!-- Price Hook Card & CTA Block -->
           <div class="bg-gradient-to-r from-slate-900/90 via-slate-800/80 to-slate-900/90 border-2 border-amber-500/40 rounded-2xl p-5 sm:p-6 shadow-2xl relative overflow-hidden">
             <div class="absolute -right-12 -top-12 w-36 h-36 bg-amber-500/10 rounded-full blur-2xl"></div>
             
@@ -105,12 +143,18 @@ if (!defined('ABSPATH')) {
                 </div>
               </div>
 
-              <!-- CTA Button -->
-              <div class="flex-shrink-0">
-                <a href="#register" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-base sm:text-lg px-8 py-4 rounded-xl shadow-lg shadow-amber-500/30 transition-all transform hover:-translate-y-1 animate-pulse-subtle">
-                  <span>Reserve My Seat Now @ ₹199</span>
+              <!-- CTA Button & Social Proof Underneath -->
+              <div class="flex flex-col items-center sm:items-end gap-1.5 flex-shrink-0">
+                <a href="#register" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-extrabold text-base sm:text-lg px-7 py-3.5 rounded-xl shadow-lg shadow-amber-500/30 transition-all transform hover:-translate-y-1 animate-pulse-subtle">
+                  <span>Claim My ₹199 Fellowship Pass</span>
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </a>
+                
+                <!-- Social Proof Rating directly under CTA button -->
+                <div class="flex items-center gap-1.5 text-xs font-bold text-amber-300 pt-0.5">
+                  <span>⭐⭐⭐⭐⭐</span>
+                  <span class="text-white">4.9/5 Rated by 5,000+ Believers</span>
+                </div>
               </div>
             </div>
 
@@ -118,11 +162,11 @@ if (!defined('ABSPATH')) {
             <div class="mt-4 pt-3 border-t border-slate-700/60 flex flex-wrap items-center justify-between text-[11px] sm:text-xs text-stone-300 gap-2">
               <div class="flex items-center gap-1.5">
                 <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Instant access link sent via WhatsApp & Email</span>
+                <span>⚡ Instant Zoom link on WhatsApp &amp; Email</span>
               </div>
               <div class="flex items-center gap-1.5 text-amber-400 font-medium">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-                <span>100% Safe 256-Bit SSL Encrypted Checkout</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                <span>100% Peace of Mind Money-Back Guarantee</span>
               </div>
             </div>
           </div>
@@ -137,10 +181,10 @@ if (!defined('ABSPATH')) {
             <div class="relative rounded-2xl overflow-hidden bg-brand-slate border-2 border-amber-500/50 shadow-2xl">
               <!-- Prophet Michael Image -->
               <img 
-                src="<?php echo esc_url(get_template_directory_uri() . '/assets/prophet-michael.jpg'); ?>" 
-                alt="Prophet Michael Rehoboth - Christian Minister & Spiritual Deliverance Coach" 
+                src="<?php echo esc_url(get_template_directory_uri() . '/assets/prophet-michael-hero.jpg'); ?>" 
+                alt="Prophet Michael Rehoboth - Christian Minister &amp; Spiritual Deliverance Coach" 
                 class="w-full h-[460px] sm:h-[520px] object-cover"
-                style="object-position: center 8%;"
+                style="object-position: center 100%;"
                 loading="eager"
               />
               
@@ -150,7 +194,7 @@ if (!defined('ABSPATH')) {
               <!-- Top Left Floating Pill -->
               <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md border border-amber-500/40 text-amber-300 px-3 py-1.5 rounded-full text-xs font-semibold flex items-center gap-1.5 shadow-lg">
                 <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                <span>Host & Lead Mentor</span>
+                <span>Host &amp; Lead Mentor</span>
               </div>
 
               <!-- Bottom Content Overlay -->
@@ -170,7 +214,7 @@ if (!defined('ABSPATH')) {
                   <div class="mt-2.5 pt-2.5 border-t border-slate-800 flex items-center justify-between text-[11px] text-stone-300">
                     <span class="flex items-center gap-1">
                       <svg class="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                      Ministry & Deliverance Coach
+                      Ministry &amp; Deliverance Coach
                     </span>
                     <span class="text-amber-400 font-semibold">5,000+ Believers Mentored</span>
                   </div>
@@ -187,76 +231,336 @@ if (!defined('ABSPATH')) {
   </section>
 
   <!-- ============================================================== -->
-  <!-- 3. PROBLEM AGITATION SECTION -->
+  <!-- 3. SOCIAL PROOF SECTION (WALL OF LOVE - IN TOP 30% OF PAGE) -->
   <!-- ============================================================== -->
-  <section class="py-16 sm:py-24 px-4 sm:px-6 bg-white relative">
+  <section id="testimonials" class="py-16 sm:py-24 px-4 sm:px-6 bg-stone-100 relative border-b border-stone-200">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-14">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+          <span>🕊️ Verified Transformations • Wall of Love</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          Real Breakthroughs from Believers Who <br class="hidden sm:inline" />
+          <span class="gold-gradient-text font-serif italic">Broke Bondages &amp; Heard God</span>
+        </h2>
+
+        <p class="text-base sm:text-lg text-slate-600">
+          Real before and after transformation stories from Tamil believers and ministry workers across India and worldwide.
+        </p>
+      </div>
+
+      <!-- Open 3-Column Grid (NO hidden carousels) covering Profiles 10–17 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Story 1: Profile 10 & 13 - Samuel Jebaraj -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex text-amber-400 text-sm">★★★★★</div>
+              <span class="text-[10px] uppercase font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Generational Deliverance</span>
+            </div>
+            
+            <div class="space-y-3 mb-4 text-xs">
+              <div class="bg-red-50/70 p-2.5 rounded-lg border border-red-100 text-slate-700">
+                <strong class="text-red-700 block mb-0.5 font-bold uppercase text-[10px]">Before:</strong>
+                "7 years of severe night terrors, recurring oppression, and heavy medical debt. Every midnight felt like a spiritual battlefield."
+              </div>
+              <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-100 text-slate-800 font-medium">
+                <strong class="text-emerald-700 block mb-0.5 font-bold uppercase text-[10px]">After Breakthrough:</strong>
+                "Delivered in the live prayer session! Prophet Michael dismantled the demonic legal right. Slept peacefully that very night—debt cleared within months."
+              </div>
+            </div>
+          </div>
+          
+          <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-amber-600 text-slate-950 font-bold flex items-center justify-center text-sm shadow">
+              SJ
+            </div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm">Samuel Jebaraj</div>
+              <div class="text-[11px] text-slate-500">Chennai • IT Professional (Verified Attendee)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2: Profile 11 & 14 - David & Kezia -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex text-amber-400 text-sm">★★★★★</div>
+              <span class="text-[10px] uppercase font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">Personal Prophecy &amp; Marriage</span>
+            </div>
+            
+            <div class="space-y-3 mb-4 text-xs">
+              <div class="bg-red-50/70 p-2.5 rounded-lg border border-red-100 text-slate-700">
+                <strong class="text-red-700 block mb-0.5 font-bold uppercase text-[10px]">Before:</strong>
+                "Marriage of 4 years was on the verge of divorce. We were serving in worship but spiritually bitter, numb, and living in separate rooms."
+              </div>
+              <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-100 text-slate-800 font-medium">
+                <strong class="text-emerald-700 block mb-0.5 font-bold uppercase text-[10px]">After Breakthrough:</strong>
+                "Prophet Michael called out our exact situation and prayed. Applied the Courts of Heaven blueprint; reconciled in tears within 3 weeks!"
+              </div>
+            </div>
+          </div>
+          
+          <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-600 text-white font-bold flex items-center justify-center text-sm shadow">
+              DK
+            </div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm">David &amp; Kezia</div>
+              <div class="text-[11px] text-slate-500">Bengaluru • Worship Leaders (Verified Attendees)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 3: Profile 12 & 15 - Rachel Priya -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex text-amber-400 text-sm">★★★★★</div>
+              <span class="text-[10px] uppercase font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded border border-indigo-200">Spiritually Refreshed</span>
+            </div>
+            
+            <div class="space-y-3 mb-4 text-xs">
+              <div class="bg-red-50/70 p-2.5 rounded-lg border border-red-100 text-slate-700">
+                <strong class="text-red-700 block mb-0.5 font-bold uppercase text-[10px]">Before:</strong>
+                "Stuck in a dry routine for 6 years. Attended church faithfully every Sunday, but could never hear God's voice or get direction for my business."
+              </div>
+              <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-100 text-slate-800 font-medium">
+                <strong class="text-emerald-700 block mb-0.5 font-bold uppercase text-[10px]">After Breakthrough:</strong>
+                "Stepped out of my dry routine and got spiritually refreshed! The Tanglish teaching unlocked how to discern God's voice in my daily decisions."
+              </div>
+            </div>
+          </div>
+          
+          <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 text-white font-bold flex items-center justify-center text-sm shadow">
+              RP
+            </div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm">Rachel Priya</div>
+              <div class="text-[11px] text-slate-500">Coimbatore • Business Owner (Verified Attendee)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 4: Profile 16 - Pastor Joshua Andrews -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex text-amber-400 text-sm">★★★★★</div>
+              <span class="text-[10px] uppercase font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded border border-purple-200">Ministry Activation</span>
+            </div>
+            
+            <div class="space-y-3 mb-4 text-xs">
+              <div class="bg-red-50/70 p-2.5 rounded-lg border border-red-100 text-slate-700">
+                <strong class="text-red-700 block mb-0.5 font-bold uppercase text-[10px]">Before:</strong>
+                "Operating in ministry for 5 years, but felt dry and unable to activate spiritual gifts. Preaching without seeing tangible healing or deliverance."
+              </div>
+              <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-100 text-slate-800 font-medium">
+                <strong class="text-emerald-700 block mb-0.5 font-bold uppercase text-[10px]">After Breakthrough:</strong>
+                "Received words I desperately needed and specialist instruction in prophetic ministry. My spiritual fire re-ignited; members now testifying miracles!"
+              </div>
+            </div>
+          </div>
+          
+          <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-600 text-white font-bold flex items-center justify-center text-sm shadow">
+              JA
+            </div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm">Pastor Joshua Andrews</div>
+              <div class="text-[11px] text-slate-500">Tirunelveli • Ministry Leader (Verified Attendee)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 5: Profile 17 - Anitha Mohan -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex text-amber-400 text-sm">★★★★★</div>
+              <span class="text-[10px] uppercase font-bold text-sky-700 bg-sky-50 px-2 py-0.5 rounded border border-sky-200">Bloodline Bonds Broken</span>
+            </div>
+            
+            <div class="space-y-3 mb-4 text-xs">
+              <div class="bg-red-50/70 p-2.5 rounded-lg border border-red-100 text-slate-700">
+                <strong class="text-red-700 block mb-0.5 font-bold uppercase text-[10px]">Before:</strong>
+                "Trapped under negative family patterns—depression, fear, and chronic sickness that affected three generations of women in our family."
+              </div>
+              <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-100 text-slate-800 font-medium">
+                <strong class="text-emerald-700 block mb-0.5 font-bold uppercase text-[10px]">After Breakthrough:</strong>
+                "The midnight prayer warfare and Courts of Heaven protocol broke the bloodline bonds permanently. Peace reigns in our home today!"
+              </div>
+            </div>
+          </div>
+          
+          <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-rose-500 to-red-600 text-white font-bold flex items-center justify-center text-sm shadow">
+              AM
+            </div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm">Anitha Mohan</div>
+              <div class="text-[11px] text-slate-500">Madurai • Youth Worker (Verified Attendee)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 6: Profile 10 & 18 - John Peter -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex text-amber-400 text-sm">★★★★★</div>
+              <span class="text-[10px] uppercase font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">Inner Power Activated</span>
+            </div>
+            
+            <div class="space-y-3 mb-4 text-xs">
+              <div class="bg-red-50/70 p-2.5 rounded-lg border border-red-100 text-slate-700">
+                <strong class="text-red-700 block mb-0.5 font-bold uppercase text-[10px]">Before:</strong>
+                "Felt completely powerless against worldly secret habits and guilt. Kept fasting for 21 days without knowing how to cancel the enemy's legal claims."
+              </div>
+              <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-100 text-slate-800 font-medium">
+                <strong class="text-emerald-700 block mb-0.5 font-bold uppercase text-[10px]">After Breakthrough:</strong>
+                "Learned that I have more authority than I thought! The 5:00 AM blueprint transformed my inner spirit man. Totally delivered and walking in joy."
+              </div>
+            </div>
+          </div>
+          
+          <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 text-white font-bold flex items-center justify-center text-sm shadow">
+              JP
+            </div>
+            <div>
+              <div class="font-bold text-slate-900 text-sm">John Peter</div>
+              <div class="text-[11px] text-slate-500">Singapore • NRI Believer (Verified Attendee)</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Stat Banner -->
+      <div class="mt-12 bg-white border border-stone-200 rounded-2xl p-5 text-center max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+        <div class="text-left text-xs sm:text-sm text-slate-700">
+          <span class="font-bold text-slate-900 block">⭐ 4.9/5 Average Rating from 5,000+ Believers</span>
+          <span>Attendees from Chennai, Coimbatore, Bengaluru, Madurai, Dubai, Singapore &amp; Global Tamil Diaspora</span>
+        </div>
+        <a href="#register" class="flex-shrink-0 bg-slate-900 hover:bg-slate-800 text-amber-400 font-extrabold px-6 py-2.5 rounded-xl text-xs sm:text-sm transition-all shadow-md">
+          Claim My ₹199 Fellowship Pass →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================== -->
+  <!-- 4. PAIN POINT SECTION (FOR COLD TRAFFIC) -->
+  <!-- ============================================================== -->
+  <section id="pain-points" class="py-16 sm:py-24 px-4 sm:px-6 bg-white relative">
     <div class="max-w-7xl mx-auto">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto space-y-4 mb-14">
         <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 border border-red-200 text-red-600 text-xs font-bold uppercase tracking-wider">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-          Spiritual Reality Check
+          Spiritual Reality Check For Seekers
         </div>
 
-        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-          Being a Christian, why are you still <span class="text-red-600 underline decoration-red-300 underline-offset-4">stuck</span>?
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          Tired of Fasting and Praying for Years <br class="hidden sm:inline" />
+          <span class="text-red-600 underline decoration-red-300 underline-offset-4">Without Seeing Breakthroughs?</span>
         </h2>
 
-        <p class="text-base sm:text-lg text-slate-600 font-serif italic max-w-2xl mx-auto">
-          "How many years have you been a Christian? Why haven't you experienced an encounter with God or a breakthrough in your life?"
+        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          It's not your lack of faith or effort. Most believers struggle because nobody taught them the biblical legal protocols to plead in the Courts of Heaven and revoke demonic legal claims.
         </p>
       </div>
 
-      <!-- 4 Agitation Cards -->
+      <!-- 4 Agitation Cards Incorporating Profiles 6–9 -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <!-- Agitation Card 1 -->
-        <div class="bg-stone-50 border border-stone-200 hover:border-amber-400 p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative group">
-          <div class="w-12 h-12 rounded-xl bg-red-100 text-red-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+        <!-- Card 1: Profile 6 - How to develop spiritual discipline -->
+        <div class="bg-stone-50 border border-stone-200 hover:border-amber-400 p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-red-100 text-red-600 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-red-600 block mb-1">Breakthrough Focus 01</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">How to Develop Spiritual Discipline</h3>
+            <p class="text-xs text-slate-500 mb-3 italic">
+              "Starting strong on Monday, dry and exhausted by Thursday..."
+            </p>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Unpack proven biblical secrets to establish consistent intimacy in the secret place, so prayer transforms from an exhausting duty into an energizing daily divine encounter.
+            </p>
           </div>
-          <span class="text-xs font-bold uppercase tracking-wider text-red-600 block mb-1">Pain Point 01</span>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">Lack of Understanding</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            God speaks to humans every single day, but most don't recognize His voice, mistaking His promptings for random thoughts or confusion.
-          </p>
+          <div class="mt-4 pt-3 border-t border-stone-200 text-xs font-bold text-amber-700 flex items-center gap-1">
+            <span>✓ Resolved in 150 Mins</span>
+          </div>
         </div>
 
-        <!-- Agitation Card 2 -->
-        <div class="bg-stone-50 border border-stone-200 hover:border-amber-400 p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative group">
-          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        <!-- Card 2: Profile 7 - How to pray in the midnight hours -->
+        <div class="bg-stone-50 border border-stone-200 hover:border-amber-400 p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-1">Breakthrough Focus 02</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">How to Pray in the Midnight Hours</h3>
+            <p class="text-xs text-slate-500 mb-3 italic">
+              "Sleeping through spiritual watches while demonic altars attack..."
+            </p>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Master the exact biblical protocols for midnight prayer watches. Learn how to take authority over spiritual gates, shut demonic attacks, and command your morning before dawn.
+            </p>
           </div>
-          <span class="text-xs font-bold uppercase tracking-wider text-amber-700 block mb-1">Pain Point 02</span>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">Spiritual Dryness</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            You pray faithfully day after day, but your prayers feel unanswered, dry, and mechanical without the palpable presence of the Holy Spirit.
-          </p>
+          <div class="mt-4 pt-3 border-t border-stone-200 text-xs font-bold text-amber-700 flex items-center gap-1">
+            <span>✓ Resolved in 150 Mins</span>
+          </div>
         </div>
 
-        <!-- Agitation Card 3 -->
-        <div class="bg-stone-50 border border-stone-200 hover:border-amber-400 p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative group">
-          <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        <!-- Card 3: Profile 8 - How to break curses & bloodline bonds -->
+        <div class="bg-stone-50 border border-stone-200 hover:border-amber-400 p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-indigo-700 block mb-1">Breakthrough Focus 03</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">How to Break Curses &amp; Bloodline Bonds</h3>
+            <p class="text-xs text-slate-500 mb-3 italic">
+              "Fighting the exact illnesses and delays that troubled your parents..."
+            </p>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Learn how to enter the Courts of Heaven, plead the Blood of Jesus, revoke ancient ancestral legal rights, and permanently sever generational cycles of poverty, divorce, and disease.
+            </p>
           </div>
-          <span class="text-xs font-bold uppercase tracking-wider text-indigo-700 block mb-1">Pain Point 03</span>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">Doubt & Timing</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Unsure of God’s perfect timing and struggling to align His will with your everyday career, financial choices, and family relationships.
-          </p>
+          <div class="mt-4 pt-3 border-t border-stone-200 text-xs font-bold text-amber-700 flex items-center gap-1">
+            <span>✓ Resolved in 150 Mins</span>
+          </div>
         </div>
 
-        <!-- Agitation Card 4 -->
-        <div class="bg-stone-50 border border-stone-200 hover:border-amber-400 p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative group">
-          <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7 7z"/></svg>
+        <!-- Card 4: Profile 9 - How to come out from addiction & worldly secret sins -->
+        <div class="bg-stone-50 border border-stone-200 hover:border-amber-400 p-6 rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1 relative group flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-purple-700 block mb-1">Breakthrough Focus 04</span>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">How to Come Out from Addiction &amp; Secret Sins</h3>
+            <p class="text-xs text-slate-500 mb-3 italic">
+              "Weeping on Sunday, but returning to secret condemnation by Tuesday..."
+            </p>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Targeted deliverance that destroys root spiritual strongholds. Experience Holy Spirit inner healing so you can overcome lust, worldly compromises, and walk in unashamed spiritual freedom.
+            </p>
           </div>
-          <span class="text-xs font-bold uppercase tracking-wider text-purple-700 block mb-1">Pain Point 04</span>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">Identity Crisis</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Unclear about your spiritual capabilities, feeling helpless in warfare, and stuck imitating others instead of walking in your unique heavenly calling.
-          </p>
+          <div class="mt-4 pt-3 border-t border-stone-200 text-xs font-bold text-amber-700 flex items-center gap-1">
+            <span>✓ Resolved in 150 Mins</span>
+          </div>
         </div>
 
       </div>
@@ -265,10 +569,10 @@ if (!defined('ABSPATH')) {
       <div class="mt-12 bg-amber-50 border border-amber-200 rounded-2xl p-6 text-center max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div class="text-left">
           <h4 class="font-bold text-slate-900 text-base">You do not have to live in spiritual frustration anymore.</h4>
-          <p class="text-xs sm:text-sm text-slate-600">The Bible contains precise spiritual blueprints that Prophet Michael will break down step-by-step.</p>
+          <p class="text-xs sm:text-sm text-slate-600">The Bible contains precise legal spiritual protocols that Prophet Michael will break down step-by-step.</p>
         </div>
         <a href="#register" class="flex-shrink-0 bg-slate-900 hover:bg-slate-800 text-amber-400 font-bold px-6 py-3 rounded-xl text-sm transition-all shadow-md">
-          Break The Cycle Now →
+          Break The Cycle Now @ ₹199 →
         </a>
       </div>
 
@@ -276,111 +580,116 @@ if (!defined('ABSPATH')) {
   </section>
 
   <!-- ============================================================== -->
-  <!-- 3.5. THE COMPARISON MATRIX (OLD WAY VS. THE KINGDOM WAY) -->
+  <!-- 5. VALUE PROPOSITIONS & USPS (BENEFIT > FEATURE) -->
   <!-- ============================================================== -->
-  <section id="system" class="py-16 sm:py-24 px-4 sm:px-6 bg-slate-900 text-white relative overflow-hidden">
-    <!-- Ambient gold background glow -->
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
-    <div class="max-w-7xl mx-auto relative z-10">
+  <section id="benefits" class="py-16 sm:py-24 px-4 sm:px-6 bg-brand-cream relative">
+    <div class="max-w-7xl mx-auto">
       
       <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-wider">
-          <span>⚖️ The Fundamental Difference</span>
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-800 text-xs font-bold uppercase tracking-wider">
+          <span>✨ Benefit > Feature Transformation</span>
         </div>
 
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
-          Not Random Tips. <br class="hidden sm:inline" />
-          <span class="gold-gradient-text font-serif italic">One Complete Spiritual System.</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
+          Tangible Life Breakthroughs — <br class="hidden sm:inline" />
+          <span class="gold-gradient-text font-serif italic">Not Heavy Theological Jargon</span>
         </h2>
 
-        <p class="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-          Most believers struggle for years because they rely on fragmented ideas and exhausting routines. See the difference between traditional spiritual exhaustion and operating in biblical kingdom authority.
+        <p class="text-base sm:text-lg text-slate-600 font-normal">
+          Features describe what a webinar is; benefits describe what it does for your family, peace, and spiritual authority. Here is what changes in your life:
         </p>
       </div>
 
-      <!-- Side-by-Side Comparison Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
+      <!-- 7 Key Benefit Cards (Profiles 10–18) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <!-- Column 1: The Traditional Rut -->
-        <div class="bg-slate-950/80 border border-red-500/30 rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative shadow-lg">
-          <div>
-            <div class="flex items-center justify-between pb-5 border-b border-slate-800">
-              <div>
-                <span class="text-xs font-bold text-red-400 uppercase tracking-widest block">The Painful Reality</span>
-                <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">The Traditional Rut</h3>
-                <p class="text-xs text-stone-400 mt-0.5">Living in spiritual frustration and repeat cycles</p>
-              </div>
-              <span class="w-10 h-10 rounded-xl bg-red-950/70 border border-red-500/40 text-red-400 flex items-center justify-center font-black text-lg flex-shrink-0">✕</span>
-            </div>
-
-            <ul class="mt-6 space-y-4 text-xs sm:text-sm text-stone-300">
-              <li class="flex items-start gap-3">
-                <span class="text-red-400 font-bold mt-0.5 text-base">✕</span>
-                <span><strong>Mechanical, Dry Prayers:</strong> Pleading and begging for hours without knowing biblical legal protocols or the Courts of Heaven.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-red-400 font-bold mt-0.5 text-base">✕</span>
-                <span><strong>Spiritual Fog & Confusion:</strong> Guessing whether impressions are God’s voice, random soul thoughts, or demonic suggestions.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-red-400 font-bold mt-0.5 text-base">✕</span>
-                <span><strong>Cyclical Generational Bondage:</strong> Facing the same emotional blockages, marital storms, and financial ceilings year after year.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-red-400 font-bold mt-0.5 text-base">✕</span>
-                <span><strong>Identity Crisis:</strong> Living as an imitation of others, feeling insecure and powerless in spiritual warfare.</span>
-              </li>
-            </ul>
+        <!-- Benefit 1: Profile 10 -->
+        <div class="bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-amber-500/70 shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
-
-          <div class="mt-8 pt-4 border-t border-slate-800 text-[11px] text-red-300/80 italic">
-            Outcome: Spiritual burnout, unanswered questions, and remaining stuck in defeat.
-          </div>
+          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Tangible Life Benefit 01</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Cancel Demonic Legal Rights</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Permanently stop recurring family sicknesses, marital strife, and generational poverty patterns by presenting the Blood of Jesus in the Courts of Heaven.
+          </p>
         </div>
 
-        <!-- Column 2: The Rehoboth Kingdom Blueprint -->
-        <div class="bg-gradient-to-b from-slate-900 to-slate-950 border-2 border-amber-500 rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative shadow-2xl shadow-amber-500/10">
-          <!-- Featured Badge -->
-          <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 text-[10px] font-black uppercase tracking-widest px-3.5 py-1 rounded-full shadow-lg">
-            Rehoboth Spiritual Architecture
+        <!-- Benefit 2: Profile 12 -->
+        <div class="bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-amber-500/70 shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
           </div>
+          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Tangible Life Benefit 02</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Step Out of Your Routine &amp; Be Spiritually Refreshed</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Break away from dry, lifeless religious routines. Experience fresh personal revival and palpable Holy Spirit joy in your everyday walk with Jesus.
+          </p>
+        </div>
 
-          <div>
-            <div class="flex items-center justify-between pb-5 border-b border-slate-800">
-              <div>
-                <span class="text-xs font-bold text-amber-400 uppercase tracking-widest block">The Biblical Breakthrough</span>
-                <h3 class="text-xl sm:text-2xl font-bold text-white mt-1">The Kingdom Blueprint</h3>
-                <p class="text-xs text-amber-300/80 mt-0.5">Walking in divine clarity, healing & spiritual authority</p>
-              </div>
-              <span class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500 text-amber-400 flex items-center justify-center font-black text-lg flex-shrink-0">✓</span>
+        <!-- Benefit 3: Profile 11 -->
+        <div class="bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-amber-500/70 shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+          </div>
+          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Tangible Life Benefit 03</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Receive Impartation, Personal Prophecy &amp; Prayer</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Prophet Michael ministers live over registered participants with on-time prophetic direction, deliverance prayers, and Holy Spirit impartation.
+          </p>
+        </div>
+
+        <!-- Benefit 4: Profile 13 -->
+        <div class="bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-amber-500/70 shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Tangible Life Benefit 04</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Meet &amp; Connect with New Spirit-Filled Believers</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Join an uplifting community of hungry believers across Tamil Nadu and global NRI communities. Form prayer partnerships and grow together.
+          </p>
+        </div>
+
+        <!-- Benefit 5: Profile 14 -->
+        <div class="bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-amber-500/70 shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+          </div>
+          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Tangible Life Benefit 05</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Get Direction &amp; Hear Clearly from God</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Never second-guess God's voice again. Wake up with crystal clarity—know God's exact 'Yes' or 'No' for your career, marriage, and family decisions.
+          </p>
+        </div>
+
+        <!-- Benefit 6: Profile 15 -->
+        <div class="bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-amber-500/70 shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Tangible Life Benefit 06</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Stay Accountable &amp; Grounded in God's Presence</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Receive ongoing weekly Q&amp;A sessions and structured 7-day action blueprints to keep your spiritual altar blazing hot with consistency.
+          </p>
+        </div>
+
+        <!-- Benefit 7: Profile 18 (Full Width on desktop grid) -->
+        <div class="bg-gradient-to-r from-slate-900 to-slate-950 text-white rounded-2xl p-7 border-2 border-amber-500/70 shadow-xl md:col-span-2 lg:col-span-3 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="space-y-2 text-left">
+            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-500/20 px-3 py-1 rounded-full border border-amber-500/30">
+              <span>⚡ Tangible Life Benefit 07</span>
             </div>
-
-            <ul class="mt-6 space-y-4 text-xs sm:text-sm text-stone-200">
-              <li class="flex items-start gap-3">
-                <span class="text-amber-400 font-bold mt-0.5 text-base">✓</span>
-                <span><strong>Courts of Heaven Authority:</strong> Praying legally from the position of Christ's finished work, enforcing breakthroughs that manifest.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-amber-400 font-bold mt-0.5 text-base">✓</span>
-                <span><strong>Sharp Spiritual Discernment:</strong> Proven keys to tune into God’s voice and prophetic guidance daily in conversational Tanglish.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-amber-400 font-bold mt-0.5 text-base">✓</span>
-                <span><strong>Targeted Deliverance:</strong> Dismantling hidden spiritual strongholds, breaking persistent sins, and restoring family peace.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="text-amber-400 font-bold mt-0.5 text-base">✓</span>
-                <span><strong>Prophetic Mantle & Calling:</strong> Unlocking your unique divine gifts, operating with confidence, and hosting the Holy Spirit.</span>
-              </li>
-            </ul>
+            <h3 class="text-xl sm:text-2xl font-bold text-white">Discover You Have More Than You Think &amp; Activate Inner Power</h3>
+            <p class="text-sm text-stone-300 max-w-3xl leading-relaxed">
+              Stop living like a spiritual victim. Realize the immense kingdom authority deposited in your spirit man through Jesus Christ, and start enforcing victory over sickness, debt, and fear.
+            </p>
           </div>
-
-          <div class="mt-8 pt-4 border-t border-slate-800 text-[11px] text-amber-300 font-medium flex items-center justify-between">
-            <span>Outcome: Peace, supernatural breakthroughs & personal divine connection.</span>
-            <span class="text-amber-400 font-bold">Only ₹199</span>
-          </div>
+          <a href="#register" class="flex-shrink-0 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-black px-6 py-3 rounded-xl text-xs sm:text-sm shadow-lg shadow-amber-500/20 whitespace-nowrap">
+            Claim Pass @ ₹199 →
+          </a>
         </div>
 
       </div>
@@ -389,12 +698,9 @@ if (!defined('ABSPATH')) {
   </section>
 
   <!-- ============================================================== -->
-  <!-- 4. SCRIPTURE & VISION ANCHOR -->
+  <!-- 5.5. SCRIPTURE & VISION ANCHOR (JOHN 14:12) -->
   <!-- ============================================================== -->
   <section class="py-16 sm:py-20 px-4 sm:px-6 bg-gradient-to-r from-brand-slate via-brand-navy to-brand-slate text-white relative overflow-hidden">
-    <!-- Golden cross decorative icon watermark -->
-    <div class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none select-none text-white text-[280px] font-serif">✝</div>
-    
     <div class="max-w-5xl mx-auto">
       <div class="relative p-8 sm:p-12 md:p-16 rounded-3xl bg-slate-900/80 border-2 border-amber-500/50 shadow-2xl backdrop-blur-md text-center">
         <!-- Golden Top Quote Icon -->
@@ -415,198 +721,125 @@ if (!defined('ABSPATH')) {
         </div>
 
         <p class="mt-4 text-xs sm:text-sm text-stone-300 max-w-xl mx-auto">
-          You were not called to merely survive as a Christian. You were called to operate in heavenly power, authority, and intimacy with Jesus.
+          You were not called to merely survive as a Christian. You were called to operate in heavenly power, authority, and deep intimacy with Jesus.
         </p>
       </div>
     </div>
   </section>
 
   <!-- ============================================================== -->
-  <!-- 5. WHAT YOU WILL GAIN (THE TRANSFORMATION & BENEFITS) -->
+  <!-- 6. TRAINING & MENTORSHIP BREAKDOWN SECTION (PROFILES 19–24) -->
   <!-- ============================================================== -->
-  <section id="transformation" class="py-16 sm:py-24 px-4 sm:px-6 bg-brand-cream relative">
-    <div class="max-w-7xl mx-auto">
-      
-      <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-800 text-xs font-bold uppercase tracking-wider">
-          <span>✨ Life-Changing Outcomes</span>
-        </div>
-
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
-          Step Into Healing, Deliverance & <span class="gold-gradient-text font-serif italic">True Power</span>
-        </h2>
-
-        <p class="text-base sm:text-lg text-slate-600 font-normal">
-          In this 150-minute intensive masterclass, Prophet Michael will unpack tested, biblical keys that bring immediate results.
-        </p>
-      </div>
-
-      <!-- 6 Key Outcome Bullet Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Outcome 1 -->
-        <div class="bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-amber-500/70 shadow-sm hover:shadow-xl transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-          </div>
-          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Key Outcome 01</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Complete Deliverance & Freedom</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Deliverance from persistent sins, generational patterns, demonic blockages, and spiritual bondage through Christ's authority.
-          </p>
-        </div>
-
-        <!-- Outcome 2 -->
-        <div class="bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-amber-500/70 shadow-sm hover:shadow-xl transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
-          </div>
-          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Key Outcome 02</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Marital & Relationship Peace</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Biblical solutions for personal, marital, and family challenges that have resisted counseling and conventional methods.
-          </p>
-        </div>
-
-        <!-- Outcome 3 -->
-        <div class="bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-amber-500/70 shadow-sm hover:shadow-xl transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
-          </div>
-          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Key Outcome 03</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Divine Direction For The Lost</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Supernatural clarity and divine guidance for those feeling lost, off-track, or uncertain about career and next steps.
-          </p>
-        </div>
-
-        <!-- Outcome 4 -->
-        <div class="bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-amber-500/70 shadow-sm hover:shadow-xl transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
-          </div>
-          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Key Outcome 04</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Prophetic Calling & Ministry Clarity</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Prophetic clarity for ministry workers and believers seeking their true calling, ministry assignment, and mantle.
-          </p>
-        </div>
-
-        <!-- Outcome 5 -->
-        <div class="bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-amber-500/70 shadow-sm hover:shadow-xl transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-          </div>
-          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Key Outcome 05</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Holy Spirit Anointing & Impartation</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Direct spiritual impartation and practical keys to receive, host, and steward the anointing of the Holy Spirit.
-          </p>
-        </div>
-
-        <!-- Outcome 6 -->
-        <div class="bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-amber-500/70 shadow-sm hover:shadow-xl transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-all">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-          </div>
-          <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Key Outcome 06</div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Hear God Daily & Spiritual Gifts</h3>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Practical, repeatable keys to operate in gifts of the Spirit (prophecy, healing, discernment) and hear God's whisper every day.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================================================== -->
-  <!-- 6. CORE TEACHING PILLARS -->
-  <!-- ============================================================== -->
-  <section class="py-16 sm:py-24 px-4 sm:px-6 bg-slate-900 text-white relative">
+  <section id="training" class="py-16 sm:py-24 px-4 sm:px-6 bg-slate-900 text-white relative">
     <div class="max-w-7xl mx-auto">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
         <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-wider">
-          <span>🏛️ The 3-Pillar Framework</span>
+          <span>🏛️ Training Curriculum &amp; Mentorship</span>
         </div>
 
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
-          The Proven Spiritual Architecture
+          Comprehensive Training Modules to <br class="hidden sm:inline" />
+          <span class="gold-gradient-text font-serif italic">Develop Your Prophetic Gift</span>
         </h2>
 
         <p class="text-base sm:text-lg text-stone-300">
-          This is not vague inspirational theory. You will receive a structured blueprint developed through over 8 years of active ministry.
+          This is not vague theory. Receive specialized developmental instruction structured across 6 developmental modules.
         </p>
       </div>
 
-      <!-- 3 Pillars Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- 6 Developmental Modules (Profiles 19–24) Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
-        <!-- Pillar 1 -->
-        <div class="bg-gradient-to-b from-slate-800/80 to-slate-900/90 border border-slate-700/80 hover:border-amber-500 rounded-3xl p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-2 group">
-          <div class="text-amber-500 font-serif text-5xl font-extrabold opacity-30 absolute top-4 right-6 group-hover:opacity-60 transition-opacity">
+        <!-- Module 1: Profile 19 -->
+        <div class="bg-gradient-to-b from-slate-800/80 to-slate-900/90 border border-slate-700/80 hover:border-amber-500 rounded-3xl p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-1 group">
+          <div class="text-amber-500 font-serif text-5xl font-extrabold opacity-25 absolute top-4 right-6 group-hover:opacity-50 transition-opacity">
             01
+          </div>
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Developmental Module 01</span>
+          <h3 class="text-xl font-bold text-white mb-3">Develop Your Prophetic Gift</h3>
+          <p class="text-sm text-stone-300 leading-relaxed">
+            Training helps you develop your prophetic gift. Discover how your spiritual senses operate, how impressions form, and how to steward the prophetic mantle with biblical humility and precision.
+          </p>
+        </div>
+
+        <!-- Module 2: Profile 20 -->
+        <div class="bg-gradient-to-b from-slate-800/80 to-slate-900/90 border border-slate-700/80 hover:border-amber-500 rounded-3xl p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-1 group">
+          <div class="text-amber-500 font-serif text-5xl font-extrabold opacity-25 absolute top-4 right-6 group-hover:opacity-50 transition-opacity">
+            02
           </div>
           <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-6">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
           </div>
-          <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Foundation</span>
-          <h3 class="text-2xl font-bold text-white mb-3">Spiritual Discipline</h3>
-          <p class="text-sm text-stone-300 leading-relaxed mb-6">
-            Habits of deep intimate communion, unlocking biblical secrets hidden from casual readers, and developing unshakeable daily consecration.
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Developmental Module 02</span>
+          <h3 class="text-xl font-bold text-white mb-3">Learn from Experience &amp; Knowledge</h3>
+          <p class="text-sm text-stone-300 leading-relaxed">
+            Learn from other people’s experience and knowledge. Shorten decades of trial-and-error by understanding tested spiritual wisdom and overcoming common spiritual pitfalls before they occur.
           </p>
-          <ul class="space-y-2 text-xs text-stone-300">
-            <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> The secret place communion protocols</li>
-            <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Scriptural meditation techniques</li>
-            <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Fasting & consecration for breakthrough</li>
-          </ul>
         </div>
 
-        <!-- Pillar 2 -->
-        <div class="bg-gradient-to-b from-slate-800/80 to-slate-900/90 border-2 border-amber-500 rounded-3xl p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-2 group shadow-xl shadow-amber-500/10">
-          <div class="absolute top-0 left-0 right-0 bg-gradient-to-r from-amber-500 to-amber-600 py-1 text-center text-[11px] font-extrabold uppercase tracking-widest text-slate-950">
-            Core Breakthrough Module
-          </div>
-          <div class="text-amber-500 font-serif text-5xl font-extrabold opacity-30 absolute top-7 right-6 group-hover:opacity-60 transition-opacity">
-            02
-          </div>
-          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-6 mt-3">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          </div>
-          <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Deliverance & Authority</span>
-          <h3 class="text-2xl font-bold text-white mb-3">Warfare Prayer</h3>
-          <p class="text-sm text-stone-300 leading-relaxed mb-6">
-            Praying with legal kingdom authority, dismantling long-standing generational strongholds, and enforcing victory against spiritual resistance.
-          </p>
-          <ul class="space-y-2 text-xs text-stone-300">
-            <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Courts of Heaven & legal rights breaking</li>
-            <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Healing prayers that actually manifest</li>
-            <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Deliverance from fear, lust & demonic pressure</li>
-          </ul>
-        </div>
-
-        <!-- Pillar 3 -->
-        <div class="bg-gradient-to-b from-slate-800/80 to-slate-900/90 border border-slate-700/80 hover:border-amber-500 rounded-3xl p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-2 group">
-          <div class="text-amber-500 font-serif text-5xl font-extrabold opacity-30 absolute top-4 right-6 group-hover:opacity-60 transition-opacity">
+        <!-- Module 3: Profile 21 -->
+        <div class="bg-gradient-to-b from-slate-800/80 to-slate-900/90 border-2 border-amber-500 rounded-3xl p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-1 group shadow-xl shadow-amber-500/10">
+          <div class="text-amber-500 font-serif text-5xl font-extrabold opacity-25 absolute top-4 right-6 group-hover:opacity-50 transition-opacity">
             03
           </div>
           <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-6">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
-          <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Alignment</span>
-          <h3 class="text-2xl font-bold text-white mb-3">Prophetic Sensitivity</h3>
-          <p class="text-sm text-stone-300 leading-relaxed mb-6">
-            Tuning your spiritual senses to discern God's voice, interpreting impressions accurately, and aligning every decision with divine timing.
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Developmental Module 03</span>
+          <h3 class="text-xl font-bold text-white mb-3">Specialist Instruction in Your Gift</h3>
+          <p class="text-sm text-stone-300 leading-relaxed">
+            Enable you to receive specialist instruction in your gift. Get tailored guidance on warfare prayers, dream interpretation, healing, and personal deliverance according to biblical order.
           </p>
-          <ul class="space-y-2 text-xs text-stone-300">
-            <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Distinguishing soul thoughts vs God's voice</li>
-            <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Dreams, visions, and biblical symbology</li>
-            <li class="flex items-center gap-2"><span class="text-amber-400">✓</span> Walking in prophetic sharpness & wisdom</li>
-          </ul>
+        </div>
+
+        <!-- Module 4: Profile 22 -->
+        <div class="bg-gradient-to-b from-slate-800/80 to-slate-900/90 border border-slate-700/80 hover:border-amber-500 rounded-3xl p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-1 group">
+          <div class="text-amber-500 font-serif text-5xl font-extrabold opacity-25 absolute top-4 right-6 group-hover:opacity-50 transition-opacity">
+            04
+          </div>
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Developmental Module 04</span>
+          <h3 class="text-xl font-bold text-white mb-3">Environment in Which You Can Practice</h3>
+          <p class="text-sm text-stone-300 leading-relaxed">
+            Provide an environment in which you can practice. Cultivate confidence in listening to the Holy Spirit, prophesying, and speaking scripture in a safe, biblically sound fellowship setting.
+          </p>
+        </div>
+
+        <!-- Module 5: Profile 23 -->
+        <div class="bg-gradient-to-b from-slate-800/80 to-slate-900/90 border border-slate-700/80 hover:border-amber-500 rounded-3xl p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-1 group">
+          <div class="text-amber-500 font-serif text-5xl font-extrabold opacity-25 absolute top-4 right-6 group-hover:opacity-50 transition-opacity">
+            05
+          </div>
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          </div>
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Developmental Module 05</span>
+          <h3 class="text-xl font-bold text-white mb-3">Feedback &amp; Mentorship</h3>
+          <p class="text-sm text-stone-300 leading-relaxed">
+            Provide opportunities to obtain feedback and mentorship. Receive ongoing weekly community Q&amp;A sessions where your questions are answered and your spiritual discernment is calibrated.
+          </p>
+        </div>
+
+        <!-- Module 6: Profile 24 -->
+        <div class="bg-gradient-to-b from-slate-800/80 to-slate-900/90 border border-slate-700/80 hover:border-amber-500 rounded-3xl p-8 relative overflow-hidden transition-all duration-300 hover:-translate-y-1 group">
+          <div class="text-amber-500 font-serif text-5xl font-extrabold opacity-25 absolute top-4 right-6 group-hover:opacity-50 transition-opacity">
+            06
+          </div>
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-400 block mb-2">Developmental Module 06</span>
+          <h3 class="text-xl font-bold text-white mb-3">Release Outdated Styles of Ministry</h3>
+          <p class="text-sm text-stone-300 leading-relaxed">
+            Help you identify and release outdated and hidden styles of ministry that breed religious burnout. Transition from striving in the flesh into resting in Christ's finished authority.
+          </p>
         </div>
 
       </div>
@@ -619,7 +852,7 @@ if (!defined('ABSPATH')) {
           </div>
           <div>
             <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Exclusive Bonus Material (Worth ₹1,499)</span>
-            <h4 class="text-lg sm:text-xl font-bold text-white">Complete Course Action Plan, Personal Guidance Notes & Structured Prayer Blueprint</h4>
+            <h4 class="text-lg sm:text-xl font-bold text-white">Deliverance Prayer Blueprint, Consecration Guide &amp; Mentorship Notes</h4>
             <p class="text-xs sm:text-sm text-stone-300 mt-1">Provided immediately as downloadable PDF worksheets to every registered participant.</p>
           </div>
         </div>
@@ -631,114 +864,90 @@ if (!defined('ABSPATH')) {
     </div>
   </section>
 
-
-
   <!-- ============================================================== -->
-  <!-- 6.8. A CLEAR 4-STEP PATH FROM SIGN-UP TO SPIRITUAL BREAKTHROUGH (PROSKILL SIGNATURE STEPPER) -->
+  <!-- 7. HOW IT WORKS SECTION (3 EFFORTLESS STEPS) -->
   <!-- ============================================================== -->
-  <section id="roadmap" class="py-16 sm:py-24 px-4 sm:px-6 bg-brand-cream relative">
+  <section id="how-it-works" class="py-16 sm:py-24 px-4 sm:px-6 bg-brand-cream relative">
     <div class="max-w-7xl mx-auto">
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
         <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-800 text-xs font-bold uppercase tracking-wider">
-          <span>🗺️ The Proven Journey</span>
+          <span>⚡ Frictionless Experience</span>
         </div>
 
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
-          A Clear 4-Step Path From Sign-Up to <br class="hidden sm:inline" />
-          <span class="gold-gradient-text font-serif italic">Spiritual Breakthrough.</span>
+          How It Works in <span class="gold-gradient-text font-serif italic">3 Effortless Steps</span>
         </h2>
 
         <p class="text-base sm:text-lg text-slate-600">
-          No guesswork. No complicated theological barriers. Four straightforward steps from registration to personal divine encounter.
+          Zero friction. No long complicated forms. From registration to breakthrough in 3 simple steps:
         </p>
       </div>
 
-      <!-- 4-Step Connected Grid Roadmap -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+      <!-- 3 Effortless Connected Steps Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative max-w-5xl mx-auto">
         
         <!-- Step 01 -->
-        <div class="bg-white rounded-3xl p-7 border border-stone-200/90 hover:border-amber-500/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
+        <div class="bg-white rounded-3xl p-8 border border-stone-200/90 hover:border-amber-500/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
           <div>
             <div class="flex items-center justify-between mb-5">
               <span class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 font-mono font-extrabold text-lg flex items-center justify-center group-hover:bg-amber-500 group-hover:text-white transition-all shadow-inner">
                 01
               </span>
-              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">60 Seconds</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2.5 py-0.5 rounded border border-amber-200">30 Seconds</span>
             </div>
             <p class="font-mono text-xs font-bold uppercase tracking-widest text-amber-600 mb-1">Step 01</p>
-            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Register & Confirm Instant Pass</h3>
+            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Reserve in 30 Seconds</h3>
             <p class="text-sm text-slate-600 leading-relaxed">
-              Fill the simple 4-field form with your name, preferred evening slot, and WhatsApp number. Your secure Zoom credentials and calendar invite are instantly generated.
+              Fill the fast 4-field checkout form with your name, WhatsApp number, email, and preferred evening batch slot. Simple and secure.
             </p>
           </div>
           <div class="mt-6 pt-4 border-t border-stone-100 text-xs text-stone-500 flex items-center gap-1.5">
             <span class="text-emerald-500 font-bold">✓</span>
-            <span>Instant delivery to WhatsApp & Email</span>
+            <span>No tedious paperwork or delays</span>
           </div>
         </div>
 
         <!-- Step 02 -->
-        <div class="bg-white rounded-3xl p-7 border border-stone-200/90 hover:border-amber-500/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
+        <div class="bg-white rounded-3xl p-8 border border-stone-200/90 hover:border-amber-500/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
           <div>
             <div class="flex items-center justify-between mb-5">
               <span class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 font-mono font-extrabold text-lg flex items-center justify-center group-hover:bg-amber-500 group-hover:text-white transition-all shadow-inner">
                 02
               </span>
-              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">150 Minutes Live</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2.5 py-0.5 rounded border border-amber-200">Instant Delivery</span>
             </div>
             <p class="font-mono text-xs font-bold uppercase tracking-widest text-amber-600 mb-1">Step 02</p>
-            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Join The Live Tanglish Masterclass</h3>
+            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Get Zoom Link Instantly on WhatsApp</h3>
             <p class="text-sm text-slate-600 leading-relaxed">
-              Connect to the private stream. Prophet Michael unpacks deep biblical secrets in everyday Tamil + English, demystifying deliverance, healing, and hearing God.
+              Receive your private Zoom link, calendar invite, and session reminders directly on WhatsApp and Email within 2 minutes of booking.
             </p>
           </div>
           <div class="mt-6 pt-4 border-t border-stone-100 text-xs text-stone-500 flex items-center gap-1.5">
             <span class="text-emerald-500 font-bold">✓</span>
-            <span>Live prophetic prayer & personal ministry</span>
+            <span>Reminders sent before start</span>
           </div>
         </div>
 
         <!-- Step 03 -->
-        <div class="bg-white rounded-3xl p-7 border border-stone-200/90 hover:border-amber-500/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
+        <div class="bg-white rounded-3xl p-8 border border-stone-200/90 hover:border-amber-500/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
           <div>
             <div class="flex items-center justify-between mb-5">
               <span class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 font-mono font-extrabold text-lg flex items-center justify-center group-hover:bg-amber-500 group-hover:text-white transition-all shadow-inner">
                 03
               </span>
-              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">Downloadable</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2.5 py-0.5 rounded border border-amber-200">150 Mins Live</span>
             </div>
             <p class="font-mono text-xs font-bold uppercase tracking-widest text-amber-600 mb-1">Step 03</p>
-            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Activate Your Prayer Blueprint</h3>
+            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Experience Breakthrough &amp; Download Blueprint</h3>
             <p class="text-sm text-slate-600 leading-relaxed">
-              Receive your structured Prayer Action Plan PDF. Apply the exact courts-of-heaven prayer protocols to dismantle long-standing bondages and family challenges.
+              Attend the live masterclass, receive personal prayer, and download your 7-Day Deliverance Action Plan PDF to sustain continuous victory.
             </p>
           </div>
           <div class="mt-6 pt-4 border-t border-stone-100 text-xs text-stone-500 flex items-center gap-1.5">
             <span class="text-emerald-500 font-bold">✓</span>
-            <span>Actionable 7-day personal consecration</span>
-          </div>
-        </div>
-
-        <!-- Step 04 -->
-        <div class="bg-white rounded-3xl p-7 border border-stone-200/90 hover:border-amber-500/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between relative group">
-          <div>
-            <div class="flex items-center justify-between mb-5">
-              <span class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 font-mono font-extrabold text-lg flex items-center justify-center group-hover:bg-amber-500 group-hover:text-white transition-all shadow-inner">
-                04
-              </span>
-              <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">Lifetime Access</span>
-            </div>
-            <p class="font-mono text-xs font-bold uppercase tracking-widest text-amber-600 mb-1">Step 04</p>
-            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Walk in Continuous Breakthrough</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">
-              Re-watch HD recordings anytime to refresh your spiritual fire. Join weekly live Q&A community gatherings with fellow believers across India and the globe.
-            </p>
-          </div>
-          <div class="mt-6 pt-4 border-t border-stone-100 text-xs text-stone-500 flex items-center gap-1.5">
-            <span class="text-emerald-500 font-bold">✓</span>
-            <span>Weekly mentorship & lifelong fellowship</span>
+            <span>Lifetime HD recording included</span>
           </div>
         </div>
 
@@ -748,7 +957,7 @@ if (!defined('ABSPATH')) {
   </section>
 
   <!-- ============================================================== -->
-  <!-- 7. MEET YOUR MENTOR / AUTHORITY SECTION -->
+  <!-- 7.5. MEET YOUR MENTOR / AUTHORITY SECTION -->
   <!-- ============================================================== -->
   <section id="mentor" class="py-16 sm:py-24 px-4 sm:px-6 bg-white relative">
     <div class="max-w-7xl mx-auto">
@@ -768,7 +977,7 @@ if (!defined('ABSPATH')) {
               />
               <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-6 text-center">
                 <h3 class="text-2xl font-bold text-white font-serif tracking-wide">Prophet Michael Rehoboth</h3>
-                <p class="text-amber-400 text-xs font-semibold tracking-wider uppercase mt-1">Founder & Presiding Minister • Rehoboth Ministries</p>
+                <p class="text-amber-400 text-xs font-semibold tracking-wider uppercase mt-1">Founder &amp; Presiding Minister • Rehoboth Ministries</p>
               </div>
             </div>
           </div>
@@ -785,7 +994,7 @@ if (!defined('ABSPATH')) {
           </h2>
 
           <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
-            Christian minister dedicated to proclaiming the Word of God, unlocking practical biblical principles, and helping believers walk in their divine purpose through prophetical ministry, healing, and deliverance.
+            Christian minister dedicated to proclaiming the Word of God, unlocking practical biblical principles, and helping believers walk in their divine purpose through prophetic ministry, healing, and deliverance.
           </p>
 
           <!-- The Difference Callout -->
@@ -798,7 +1007,7 @@ if (!defined('ABSPATH')) {
 
           <!-- Credibility Badges & Heritage -->
           <div class="space-y-4 pt-2">
-            <h4 class="text-xs font-bold uppercase tracking-widest text-slate-500">Ministry Credibility & Global Impartation</h4>
+            <h4 class="text-xs font-bold uppercase tracking-widest text-slate-500">Ministry Credibility &amp; Global Impartation</h4>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <!-- Experience Badge -->
@@ -808,7 +1017,7 @@ if (!defined('ABSPATH')) {
                 </div>
                 <div>
                   <div class="font-bold text-slate-900 text-xs sm:text-sm">8+ Years Ministry Experience</div>
-                  <div class="text-[11px] text-slate-500">Active apostolic & deliverance coaching (2018 – 2026)</div>
+                  <div class="text-[11px] text-slate-500">Active apostolic &amp; deliverance coaching (2018 – 2026)</div>
                 </div>
               </div>
 
@@ -826,7 +1035,7 @@ if (!defined('ABSPATH')) {
 
             <!-- Global Ministers Mention -->
             <div class="bg-slate-900 text-stone-300 p-4 rounded-xl border border-slate-800 text-xs leading-relaxed">
-              <span class="text-amber-400 font-bold block mb-1">Trained & Mentored Under Notable Ministers:</span>
+              <span class="text-amber-400 font-bold block mb-1">Trained &amp; Mentored Under Notable Ministers:</span>
               <span>Prophet Angel Uebert • Prophet Jerome Fernando • Riaan Swiegelaar • James Kawalya</span>
             </div>
           </div>
@@ -838,250 +1047,8 @@ if (!defined('ABSPATH')) {
     </div>
   </section>
 
-
-
   <!-- ============================================================== -->
-  <!-- 8. SOCIAL PROOF & TESTIMONIALS -->
-  <!-- ============================================================== -->
-  <section id="testimonials" class="py-16 sm:py-24 px-4 sm:px-6 bg-stone-100 relative">
-    <div class="max-w-7xl mx-auto">
-      
-      <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-800 text-xs font-bold uppercase tracking-wider">
-          <span>🕊️ Verified Transformations</span>
-        </div>
-
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
-          Lives Touched, Bonds Broken, <span class="gold-gradient-text font-serif italic">Miracles Shared</span>
-        </h2>
-
-        <p class="text-base sm:text-lg text-slate-600">
-          Read what fellow believers experienced after participating in Prophet Michael's deliverance and spiritual coaching.
-        </p>
-      </div>
-
-      <!-- 4 Testimonial Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <!-- Testimonial 1 -->
-        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-          <div>
-            <!-- Star Ratings -->
-            <div class="flex text-amber-400 mb-3">
-              ★★★★★
-            </div>
-            <p class="text-slate-700 text-sm leading-relaxed italic font-medium mb-4">
-              "For 7 years I struggled with deep night terrors and severe prayer blockages. In the warfare session, Prophet Michael spoke a word that broke the heavy oppression instantly. I sleep in peace now."
-            </p>
-          </div>
-          <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-amber-600 text-white font-bold flex items-center justify-center text-sm shadow">
-              SJ
-            </div>
-            <div>
-              <div class="font-bold text-slate-900 text-sm">Samuel Jebaraj</div>
-              <div class="text-[11px] text-slate-500">Chennai • IT Professional</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-          <div>
-            <div class="flex text-amber-400 mb-3">
-              ★★★★★
-            </div>
-            <p class="text-slate-700 text-sm leading-relaxed italic font-medium mb-4">
-              "The Tanglish delivery made complex biblical concepts so effortless to understand. For the first time in my Christian journey, I can clearly discern God's voice in my everyday career choices."
-            </p>
-          </div>
-          <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-600 text-white font-bold flex items-center justify-center text-sm shadow">
-              RP
-            </div>
-            <div>
-              <div class="font-bold text-slate-900 text-sm">Rachel Priya</div>
-              <div class="text-[11px] text-slate-500">Coimbatore • Entrepreneur</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-          <div>
-            <div class="flex text-amber-400 mb-3">
-              ★★★★★
-            </div>
-            <p class="text-slate-700 text-sm leading-relaxed italic font-medium mb-4">
-              "Our marriage was on the verge of separation due to bitter spiritual strife. The prophetic prayer blueprint transformed our home within 3 weeks. Glory to God for this ministry!"
-            </p>
-          </div>
-          <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-600 text-white font-bold flex items-center justify-center text-sm shadow">
-              DK
-            </div>
-            <div>
-              <div class="font-bold text-slate-900 text-sm">David & Kezia</div>
-              <div class="text-[11px] text-slate-500">Bengaluru • Worship Leaders</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Testimonial 4 -->
-        <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-          <div>
-            <div class="flex text-amber-400 mb-3">
-              ★★★★★
-            </div>
-            <p class="text-slate-700 text-sm leading-relaxed italic font-medium mb-4">
-              "₹199 is an absolute fraction of the value. The downloadable blueprint and prayer protocols alone are gold. Don't think twice—register immediately!"
-            </p>
-          </div>
-          <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-rose-500 to-red-600 text-white font-bold flex items-center justify-center text-sm shadow">
-              AM
-            </div>
-            <div>
-              <div class="font-bold text-slate-900 text-sm">Anitha Mohan</div>
-              <div class="text-[11px] text-slate-500">Madurai • Youth Worker</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Trust Stat Banner -->
-      <div class="mt-12 text-center text-xs text-slate-500 font-medium">
-        ⭐ Rated <strong class="text-slate-800">4.92 / 5.0</strong> by over 5,000+ webinar attendees across Tamil Nadu, Karnataka & Global NRI Communities
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================================================== -->
-  <!-- 8.5. THE COMPLETE VALUE STACK BREAKDOWN (PROSKILL VALUE STACK) -->
-  <!-- ============================================================== -->
-  <section class="py-16 sm:py-24 px-4 sm:px-6 bg-brand-cream relative">
-    <div class="max-w-7xl mx-auto">
-      
-      <!-- Section Header -->
-      <div class="text-center max-w-3xl mx-auto space-y-3 mb-14">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-800 text-xs font-bold uppercase tracking-wider">
-          <span>💎 Unrivaled Fellowship Value</span>
-        </div>
-
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
-          Everything Included In Your <br class="hidden sm:inline" />
-          <span class="gold-gradient-text font-serif italic">₹199 Fellowship Pass.</span>
-        </h2>
-
-        <p class="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-          We intentionally subsidize this masterclass so that every believer—regardless of financial background—can access life-transforming biblical spiritual tools.
-        </p>
-      </div>
-
-      <!-- Value Stack Card Container -->
-      <div class="max-w-4xl mx-auto bg-white rounded-3xl p-6 sm:p-10 border border-stone-200/90 shadow-xl relative overflow-hidden">
-        
-        <!-- Top Banner -->
-        <div class="flex flex-col sm:flex-row items-center justify-between pb-6 border-b border-stone-100 gap-4">
-          <div>
-            <span class="text-xs font-bold uppercase tracking-widest text-amber-600 block">Deliverables Package</span>
-            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mt-0.5">Spiritual Growth & Deliverance Suite</h3>
-          </div>
-          <div class="text-right">
-            <span class="text-xs text-stone-400 block line-through">Total Value: ₹3,296</span>
-            <span class="text-2xl sm:text-3xl font-black text-amber-600">Today: ₹199 Only</span>
-          </div>
-        </div>
-
-        <!-- 5 Itemized Deliverable Rows -->
-        <div class="divide-y divide-stone-100 mt-6 space-y-4">
-          
-          <!-- Item 1 -->
-          <div class="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-            <div class="flex items-start gap-3">
-              <span class="w-7 h-7 rounded-lg bg-amber-500/10 text-amber-600 font-bold flex items-center justify-center text-xs flex-shrink-0 mt-0.5">01</span>
-              <div>
-                <h4 class="text-sm sm:text-base font-bold text-slate-900">Live 150-Minute Interactive Masterclass with Prophet Michael</h4>
-                <p class="text-xs text-slate-500">Live Tanglish teaching, Courts of Heaven revelations, healing principles & personal prophetic prayer.</p>
-              </div>
-            </div>
-            <span class="text-xs font-mono font-bold text-stone-400 sm:text-right pl-10 sm:pl-0">Value: ₹999</span>
-          </div>
-
-          <!-- Item 2 -->
-          <div class="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-            <div class="flex items-start gap-3">
-              <span class="w-7 h-7 rounded-lg bg-amber-500/10 text-amber-600 font-bold flex items-center justify-center text-xs flex-shrink-0 mt-0.5">02</span>
-              <div>
-                <h4 class="text-sm sm:text-base font-bold text-slate-900">Lifetime HD Video Recording Access</h4>
-                <p class="text-xs text-slate-500">Full re-watch privilege anytime to review scripture breakdowns, warfare keys, and family deliverance prayers.</p>
-              </div>
-            </div>
-            <span class="text-xs font-mono font-bold text-stone-400 sm:text-right pl-10 sm:pl-0">Value: ₹799</span>
-          </div>
-
-          <!-- Item 3 -->
-          <div class="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-            <div class="flex items-start gap-3">
-              <span class="w-7 h-7 rounded-lg bg-amber-500/10 text-amber-600 font-bold flex items-center justify-center text-xs flex-shrink-0 mt-0.5">03</span>
-              <div>
-                <h4 class="text-sm sm:text-base font-bold text-slate-900">Downloadable Deliverance & Warfare Prayer Blueprint (PDF)</h4>
-                <p class="text-xs text-slate-500">Structured scriptural petitions, legal court prayers, and confessions for immediate personal breakthrough.</p>
-              </div>
-            </div>
-            <span class="text-xs font-mono font-bold text-stone-400 sm:text-right pl-10 sm:pl-0">Value: ₹499</span>
-          </div>
-
-          <!-- Item 4 -->
-          <div class="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-            <div class="flex items-start gap-3">
-              <span class="w-7 h-7 rounded-lg bg-amber-500/10 text-amber-600 font-bold flex items-center justify-center text-xs flex-shrink-0 mt-0.5">04</span>
-              <div>
-                <h4 class="text-sm sm:text-base font-bold text-slate-900">7-Day Consecration & Secret Place Daily Action Plan</h4>
-                <p class="text-xs text-slate-500">Day-by-day practical spiritual discipline routine to establish consistent intimacy with the Holy Spirit.</p>
-              </div>
-            </div>
-            <span class="text-xs font-mono font-bold text-stone-400 sm:text-right pl-10 sm:pl-0">Value: ₹499</span>
-          </div>
-
-          <!-- Item 5 -->
-          <div class="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-            <div class="flex items-start gap-3">
-              <span class="w-7 h-7 rounded-lg bg-amber-500/10 text-amber-600 font-bold flex items-center justify-center text-xs flex-shrink-0 mt-0.5">05</span>
-              <div>
-                <h4 class="text-sm sm:text-base font-bold text-slate-900">VIP WhatsApp Mentorship Community & Weekly Live Q&A</h4>
-                <p class="text-xs text-slate-500">Direct invite into our ongoing believer network with weekly Q&A support and encouragement.</p>
-              </div>
-            </div>
-            <span class="text-xs font-mono font-bold text-stone-400 sm:text-right pl-10 sm:pl-0">Value: ₹500</span>
-          </div>
-
-        </div>
-
-        <!-- Summary & CTA Callout -->
-        <div class="mt-8 pt-6 border-t border-stone-200 bg-amber-50/70 -mx-6 sm:-mx-10 -mb-6 sm:-mb-10 p-6 sm:p-8 rounded-b-3xl flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div>
-            <div class="flex items-center gap-2">
-              <span class="text-xs uppercase font-extrabold tracking-wider text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">80%+ Subsidized</span>
-              <span class="text-xs text-slate-600 font-medium">You Save: <strong>₹3,097 Today</strong></span>
-            </div>
-            <p class="text-xs text-slate-500 mt-1">Instant WhatsApp & Email delivery upon completing registration.</p>
-          </div>
-          <a href="#register" class="w-full sm:w-auto bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-black px-8 py-3.5 rounded-xl text-sm shadow-lg shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 whitespace-nowrap text-center">
-            Claim All 5 Deliverables @ ₹199 →
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================================================== -->
-  <!-- 9. REGISTRATION / BOOKING CARD (HIGH CONVERSION CHECKOUT) -->
+  <!-- 8. REGISTRATION / BOOKING CARD (HIGH CONVERSION CHECKOUT) -->
   <!-- ============================================================== -->
   <section id="register" class="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-brand-navy via-brand-slate to-brand-navy text-white relative">
     <!-- Glow elements -->
@@ -1097,11 +1064,11 @@ if (!defined('ABSPATH')) {
         </div>
 
         <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
-          Secure Your Webinar Seat <span class="gold-gradient-text font-serif italic">@ ₹199</span>
+          Secure Your Fellowship Pass <span class="gold-gradient-text font-serif italic">@ ₹199</span>
         </h2>
 
         <p class="text-sm sm:text-base text-stone-300">
-          Strictly limited batches to ensure live prayer and personal Q&A interaction.
+          Strictly limited batches to ensure live prayer, prophecy, and personal Q&amp;A interaction.
         </p>
       </div>
 
@@ -1143,19 +1110,19 @@ if (!defined('ABSPATH')) {
                 </li>
                 <li class="flex items-start gap-2.5">
                   <span class="text-amber-400 font-bold">✓</span>
-                  <span><strong>Pre-recorded video access</strong> for lifetime review anytime</span>
+                  <span><strong>Personal prophecy &amp; deliverance prayer</strong> session</span>
                 </li>
                 <li class="flex items-start gap-2.5">
                   <span class="text-amber-400 font-bold">✓</span>
-                  <span><strong>Weekly Q&A community access</strong> & ongoing spiritual mentorship</span>
+                  <span><strong>Downloadable Prayer Blueprint</strong> &amp; 7-Day Consecration Guide</span>
                 </li>
                 <li class="flex items-start gap-2.5">
                   <span class="text-amber-400 font-bold">✓</span>
-                  <span><strong>Downloadable Prayer Blueprint</strong> & Personal Guidance Notes</span>
+                  <span><strong>Weekly Q&amp;A fellowship community access</strong></span>
                 </li>
                 <li class="flex items-start gap-2.5">
                   <span class="text-amber-400 font-bold">✓</span>
-                  <span><strong>Instant WhatsApp link delivery</strong> directly upon completion</span>
+                  <span><strong>100% Peace-of-Mind Money-Back Guarantee</strong> (45 Mins)</span>
                 </li>
               </ul>
             </div>
@@ -1174,14 +1141,14 @@ if (!defined('ABSPATH')) {
             <h4 class="text-lg font-bold text-white mb-1 flex items-center gap-2">
               <span>Enter Registration Details</span>
             </h4>
-            <p class="text-xs text-stone-400 mb-6">Access credentials will be delivered to your WhatsApp & Email.</p>
+            <p class="text-xs text-stone-400 mb-6">Access credentials will be delivered to your WhatsApp &amp; Email.</p>
 
             <form id="webinar-registration-form" class="space-y-4" onsubmit="handleRegistrationSubmit(event)">
               
               <!-- Full Name -->
               <div>
                 <label for="fullName" class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
-                  Full Name <span class="text-red-400">*</span>
+                  Enter Name <span class="text-red-400">*</span>
                 </label>
                 <div class="relative">
                   <input 
@@ -1189,16 +1156,16 @@ if (!defined('ABSPATH')) {
                     id="fullName" 
                     name="fullName" 
                     required 
-                    placeholder="e.g. Samuel Jebaraj"
+                    placeholder="Enter your name"
                     class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition"
                   />
                 </div>
               </div>
 
-              <!-- WhatsApp Number -->
+              <!-- Mobile Number -->
               <div>
                 <label for="whatsapp" class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
-                  WhatsApp Number (For Instant Access Link) <span class="text-red-400">*</span>
+                  Enter Your Mobile Number <span class="text-red-400">*</span>
                 </label>
                 <div class="flex rounded-xl overflow-hidden border border-slate-700 focus-within:border-amber-400 focus-within:ring-1 focus-within:ring-amber-400">
                   <span class="bg-slate-900 px-3.5 py-3 text-stone-400 text-sm border-r border-slate-700 flex items-center">
@@ -1211,7 +1178,7 @@ if (!defined('ABSPATH')) {
                     required 
                     pattern="[0-9]{10}"
                     maxlength="10"
-                    placeholder="9876543210"
+                    placeholder="Enter your mobile number"
                     class="w-full bg-slate-900 px-4 py-3 text-sm text-white placeholder-stone-500 focus:outline-none transition"
                   />
                 </div>
@@ -1221,14 +1188,14 @@ if (!defined('ABSPATH')) {
               <!-- Email Address -->
               <div>
                 <label for="email" class="block text-xs font-semibold text-stone-300 uppercase tracking-wider mb-1">
-                  Email Address <span class="text-red-400">*</span>
+                  Enter Your Email ID <span class="text-red-400">*</span>
                 </label>
                 <input 
                   type="email" 
                   id="email" 
                   name="email" 
                   required 
-                  placeholder="samuel@gmail.com"
+                  placeholder="Enter your email ID"
                   class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder-stone-500 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition"
                 />
               </div>
@@ -1258,14 +1225,14 @@ if (!defined('ABSPATH')) {
                   class="w-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-base sm:text-lg py-4 px-6 rounded-xl shadow-xl shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <svg class="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-                  <span>Complete Registration for ₹199</span>
+                  <span>Claim My ₹199 Fellowship Pass</span>
                 </button>
               </div>
 
               <!-- Payment Methods Accepted Badge -->
               <div class="pt-3 text-center space-y-2">
                 <div class="text-[11px] text-stone-400 flex items-center justify-center gap-1">
-                  <span>🔒 100% Secure Checkout via UPI & Cards</span>
+                  <span>🔒 100% Secure Checkout via UPI &amp; Cards</span>
                 </div>
                 <div class="flex flex-wrap items-center justify-center gap-2 text-[10px] text-stone-300">
                   <span class="bg-slate-900 border border-slate-700 px-2 py-0.5 rounded font-bold text-emerald-400">GPay</span>
@@ -1287,11 +1254,29 @@ if (!defined('ABSPATH')) {
   </section>
 
   <!-- ============================================================== -->
-  <!-- 10. FAQ ACCORDION -->
+  <!-- 8.5. FAQS & RISK REDUCERS (100% PEACE-OF-MIND GUARANTEE) -->
   <!-- ============================================================== -->
   <section id="faq" class="py-16 sm:py-24 px-4 sm:px-6 bg-white relative">
     <div class="max-w-4xl mx-auto">
       
+      <!-- 100% PEACE-OF-MIND GUARANTEE BOX -->
+      <div class="mb-16 bg-gradient-to-r from-amber-500/15 via-amber-400/10 to-amber-500/15 border-2 border-amber-500 rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden">
+        <div class="flex flex-col sm:flex-row items-center gap-6">
+          <div class="w-20 h-20 rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-400 text-slate-950 flex items-center justify-center flex-shrink-0 shadow-lg">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div class="text-center sm:text-left space-y-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-amber-700 bg-amber-100 px-3 py-1 rounded-full border border-amber-300 inline-block">100% Spiritual Peace-of-Mind Guarantee</span>
+            <h3 class="text-xl sm:text-2xl font-black text-slate-900 leading-snug">
+              "Attend the first 45 minutes; if you don't experience absolute clarity and breakthrough, get an immediate unconditional refund of your ₹199."
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              We stand 100% behind the spiritual depth of this masterclass. Simply message our WhatsApp helpline (+91 98869 14599) during or immediately after the first 45 minutes. No hassle, no interrogation, 100% money back. You take zero risk!
+            </p>
+          </div>
+        </div>
+      </div>
+
       <!-- Section Header -->
       <div class="text-center max-w-2xl mx-auto space-y-4 mb-14">
         <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 border border-slate-300 text-slate-800 text-xs font-bold uppercase tracking-wider">
@@ -1303,7 +1288,7 @@ if (!defined('ABSPATH')) {
         </h2>
 
         <p class="text-base text-slate-600">
-          Everything you need to know about the Rehoboth Ministries webinar.
+          Everything you need to know about access, playback, and attendance.
         </p>
       </div>
 
@@ -1318,11 +1303,11 @@ if (!defined('ABSPATH')) {
             onclick="toggleFaq(this)"
             aria-expanded="false"
           >
-            <span>Will a recording be provided?</span>
+            <span>Will a recording and playback access be provided?</span>
             <span class="faq-icon text-amber-600 transition-transform duration-300 text-xl font-mono ml-4">+</span>
           </button>
           <div class="faq-content hidden px-5 sm:px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-stone-200 pt-4">
-            Yes! A high-definition pre-recorded session is provided along with weekly live Q&A sessions and ongoing spiritual community activities, so you can review the teachings as many times as you need.
+            Yes! Full high-definition recording access is provided along with weekly live Q&amp;A sessions and community updates, so you can re-watch and study the scriptures as often as you wish.
           </div>
         </div>
 
@@ -1334,11 +1319,11 @@ if (!defined('ABSPATH')) {
             onclick="toggleFaq(this)"
             aria-expanded="false"
           >
-            <span>Who is this webinar meant for?</span>
+            <span>I belong to CSI / Pentecostal / Catholic / Baptist church. Can I attend?</span>
             <span class="faq-icon text-amber-600 transition-transform duration-300 text-xl font-mono ml-4">+</span>
           </button>
           <div class="faq-content hidden px-5 sm:px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-stone-200 pt-4">
-            It is open to all adults (18+) seeking genuine spiritual depth, deliverance, and direction—whether you are a seasoned believer, youth leader, pastor, or someone feeling stuck and longing for an encounter with God.
+            Yes, absolutely! This masterclass is 100% Bible-centered and focuses entirely on the Lord Jesus Christ and biblical prayer protocols. Believers from all denominations and backgrounds attend and experience deep personal breakthroughs.
           </div>
         </div>
 
@@ -1350,11 +1335,11 @@ if (!defined('ABSPATH')) {
             onclick="toggleFaq(this)"
             aria-expanded="false"
           >
-            <span>How will I receive the joining link?</span>
+            <span>Can my family join with 1 pass?</span>
             <span class="faq-icon text-amber-600 transition-transform duration-300 text-xl font-mono ml-4">+</span>
           </button>
           <div class="faq-content hidden px-5 sm:px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-stone-200 pt-4">
-            Your private Zoom access link and calendar invitations will be sent directly to your registered WhatsApp number and Email within minutes of completing your registration. Reminders will also be sent 1 hour and 15 minutes before the session begins.
+            Yes! One ₹199 Fellowship Pass covers your entire household watching together on one device screen (laptop, phone, or TV via Zoom). We encourage families to pray and receive deliverance together.
           </div>
         </div>
 
@@ -1366,11 +1351,11 @@ if (!defined('ABSPATH')) {
             onclick="toggleFaq(this)"
             aria-expanded="false"
           >
-            <span>What if I make the payment and don't receive instant confirmation?</span>
+            <span>How will I receive the Zoom joining link?</span>
             <span class="faq-icon text-amber-600 transition-transform duration-300 text-xl font-mono ml-4">+</span>
           </button>
           <div class="faq-content hidden px-5 sm:px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-stone-200 pt-4">
-            Do not worry! Our dedicated support team is available around the clock to verify your transaction instantly via WhatsApp (+91 98400 00000 placeholder) and Email. Your seat will remain reserved.
+            Your private Zoom access link and calendar invitation will be delivered directly to your registered WhatsApp number and Email within minutes of completing registration. Reminder alerts are also sent 1 hour and 15 minutes before the session starts.
           </div>
         </div>
 
@@ -1386,10 +1371,75 @@ if (!defined('ABSPATH')) {
             <span class="faq-icon text-amber-600 transition-transform duration-300 text-xl font-mono ml-4">+</span>
           </button>
           <div class="faq-content hidden px-5 sm:px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-stone-200 pt-4">
-            Tanglish—a comfortable, conversational blend of Tamil and English so everyone understands easily without heavy jargon or difficult theological barriers.
+            Tanglish—a comfortable, conversational blend of Tamil and English so everyone can understand easily without heavy theological jargon or academic complexity.
           </div>
         </div>
 
+        <!-- FAQ 6 -->
+        <div class="border border-stone-200 rounded-2xl overflow-hidden transition-all bg-stone-50">
+          <button 
+            type="button" 
+            class="faq-trigger w-full flex items-center justify-between p-5 sm:p-6 text-left font-bold text-slate-900 text-base sm:text-lg hover:text-amber-600 transition-colors"
+            onclick="toggleFaq(this)"
+            aria-expanded="false"
+          >
+            <span>How does the 100% Money-Back Guarantee work?</span>
+            <span class="faq-icon text-amber-600 transition-transform duration-300 text-xl font-mono ml-4">+</span>
+          </button>
+          <div class="faq-content hidden px-5 sm:px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-stone-200 pt-4">
+            Attend the first 45 minutes of the masterclass. If you do not experience absolute biblical clarity and breakthrough, simply send a WhatsApp message to our helpline (+91 98869 14599) for an immediate, unconditional refund of your ₹199. No questions asked.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================== -->
+  <!-- 9. CLOSER SECTION (MINI-HERO FOOTER CTA) -->
+  <!-- ============================================================== -->
+  <section id="closer" class="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-white relative border-t-2 border-amber-500/40 overflow-hidden">
+    <!-- Ambient gold background glow -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto relative z-10 text-center space-y-6">
+      
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-bold uppercase tracking-wider">
+        <span>🔥 The Turning Point For Your Spiritual Life</span>
+      </div>
+
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight max-w-3xl mx-auto">
+        Don't Spend Another Year Struggling with the <br class="hidden sm:inline" />
+        <span class="gold-gradient-text font-serif italic">Same Spiritual Frustrations.</span>
+      </h2>
+
+      <p class="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        150 Minutes • Prophet Michael • Courts of Heaven Blueprint • 100% Peace-of-Mind Guarantee • ₹199 (Save ₹800 Today)
+      </p>
+
+      <!-- CTA Button -->
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#register" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-base sm:text-lg px-9 py-4 rounded-xl shadow-2xl shadow-amber-500/30 transition-all transform hover:-translate-y-1 animate-pulse-subtle">
+          <span>Claim My ₹199 Fellowship Pass</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <!-- Trust Subtext Reinforcement -->
+      <div class="pt-4 flex flex-wrap items-center justify-center gap-6 text-xs text-stone-400">
+        <span class="flex items-center gap-1.5">
+          <span class="text-emerald-400 font-bold">✓</span>
+          <span>100% Unconditional 45-Min Money-Back Guarantee</span>
+        </span>
+        <span class="flex items-center gap-1.5">
+          <span class="text-amber-400 font-bold">✓</span>
+          <span>Instant Zoom link delivered on WhatsApp</span>
+        </span>
+        <span class="flex items-center gap-1.5">
+          <span class="text-amber-400 font-bold">✓</span>
+          <span>Covers entire household on 1 screen</span>
+        </span>
       </div>
 
     </div>

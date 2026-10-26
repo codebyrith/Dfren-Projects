@@ -64,31 +64,27 @@
 <?php if (function_exists('wp_body_open')) { wp_body_open(); } ?>
 
   <!-- ============================================================== -->
-  <!-- 1. TOP URGENCY BANNER -->
+  <!-- 1. TOP ANNOUNCEMENT BANNER (FIXED GLOWING HEADER BAR) -->
   <!-- ============================================================== -->
-  <header class="bg-gradient-to-r from-brand-slate via-brand-navy to-brand-slate text-white text-xs md:text-sm font-medium py-2.5 px-3 sticky top-0 z-50 shadow-md border-b border-amber-500/30">
+  <header class="bg-gradient-to-r from-red-700 via-rose-600 to-amber-600 text-white text-xs md:text-sm font-bold py-2.5 px-3 sticky top-0 z-50 shadow-lg shadow-red-600/30 border-b border-amber-300/40 backdrop-blur-md">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
-      <!-- Left side message -->
-      <div class="flex items-center gap-2 mx-auto md:mx-0">
-        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-red-600/90 text-white animate-pulse">
-          <span class="w-1.5 h-1.5 rounded-full bg-white mr-1.5 animate-ping"></span>
-          LIVE WEBINAR
+      <!-- Left side message: High-visibility glowing background & bold white text -->
+      <div class="flex items-center gap-2.5 mx-auto md:mx-0">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-black bg-white text-red-700 uppercase tracking-wider animate-pulse shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-red-600 mr-1.5 animate-ping"></span>
+          LIVE
         </span>
-        <span class="text-stone-200">
-          In <strong class="text-brand-gold">Tanglish</strong> (Tamil + English) • Limited Evening Batches Available
+        <span class="text-white text-xs sm:text-sm font-black tracking-tight drop-shadow">
+          🔴 LIVE WEBINAR: Break Family Bondages &amp; Hear God's Voice in 150 Mins
         </span>
       </div>
 
-      <!-- Right side timer & spots -->
-      <div class="hidden sm:flex items-center gap-4 mx-auto md:mx-0">
-        <div class="flex items-center gap-1.5 bg-brand-deep/80 px-2.5 py-1 rounded-md border border-amber-500/20 text-stone-300">
-          <svg class="w-4 h-4 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <!-- Right side timer -->
+      <div class="hidden sm:flex items-center gap-3 mx-auto md:mx-0 text-xs">
+        <div class="flex items-center gap-1.5 bg-black/40 px-2.5 py-1 rounded-md border border-white/20 text-white font-medium">
+          <svg class="w-4 h-4 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           <span>Batch Closes in:</span>
-          <span id="banner-timer" class="font-mono font-bold text-amber-400">02h 47m 18s</span>
-        </div>
-        <div class="flex items-center gap-1 text-amber-300 text-xs font-semibold">
-          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-          <span id="seats-left-banner">Only 6 Seats Remaining</span>
+          <span id="banner-timer" class="font-mono font-bold text-amber-300">02h 47m 18s</span>
         </div>
       </div>
     </div>
@@ -109,17 +105,18 @@
 
       <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-stone-300">
         <a href="#about-webinar" class="hover:text-amber-400 transition-colors">Overview</a>
-        <a href="#system" class="hover:text-amber-400 transition-colors">The System</a>
-        <a href="#transformation" class="hover:text-amber-400 transition-colors">Outcomes</a>
-        <a href="#roadmap" class="hover:text-amber-400 transition-colors">4-Step Path</a>
+        <a href="#testimonials" class="hover:text-amber-400 transition-colors">Wall of Love</a>
+        <a href="#pain-points" class="hover:text-amber-400 transition-colors">Breakthroughs</a>
+        <a href="#benefits" class="hover:text-amber-400 transition-colors">Benefits</a>
+        <a href="#training" class="hover:text-amber-400 transition-colors">Curriculum</a>
+        <a href="#how-it-works" class="hover:text-amber-400 transition-colors">How It Works</a>
         <a href="#mentor" class="hover:text-amber-400 transition-colors">Mentor</a>
-        <a href="#testimonials" class="hover:text-amber-400 transition-colors">Testimonials</a>
         <a href="#faq" class="hover:text-amber-400 transition-colors">FAQ</a>
       </div>
 
       <div>
         <a href="#register" class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5">
-          <span>Book Pass @ ₹199</span>
+          <span>Claim Pass @ ₹199</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
       </div>
