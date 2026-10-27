@@ -365,6 +365,33 @@
     }
     startCheckoutSeatTimer();
 
+    // Mobile Sidebar Drawer Controller
+    function toggleMobileSidebar(open) {
+      const overlay = document.getElementById('mobile-sidebar-overlay');
+      const sidebar = document.getElementById('mobile-sidebar');
+      if (!overlay || !sidebar) return;
+
+      if (open) {
+        overlay.classList.remove('opacity-0', 'pointer-events-none');
+        overlay.classList.add('opacity-100', 'pointer-events-auto');
+        sidebar.classList.remove('translate-x-full');
+        sidebar.classList.add('translate-x-0');
+        document.body.classList.add('overflow-hidden');
+      } else {
+        overlay.classList.remove('opacity-100', 'pointer-events-auto');
+        overlay.classList.add('opacity-0', 'pointer-events-none');
+        sidebar.classList.remove('translate-x-0');
+        sidebar.classList.add('translate-x-full');
+        document.body.classList.remove('overflow-hidden');
+      }
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        toggleMobileSidebar(false);
+      }
+    });
+
     // 4. CRO Audit: 1-Click Order Bump Dynamic Price Calculation
     function toggleOrderBump(checkbox) {
       const summaryRow = document.getElementById('bump-summary-row');
