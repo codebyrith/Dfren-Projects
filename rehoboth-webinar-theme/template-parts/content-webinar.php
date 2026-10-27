@@ -44,12 +44,12 @@ if (!defined('ABSPATH')) {
 
           <!-- Headline Change -->
           <h1 class="text-3xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight leading-[1.15] text-white">
-            Break Generational Bondages &amp; <br class="hidden sm:inline" />
-            <span class="gold-gradient-text font-serif italic font-bold">Hear God's Voice in 150 Minutes</span> — Guaranteed
+            Tired of Fasting and Praying for Years <br class="hidden sm:inline" />
+            <span class="gold-gradient-text font-serif italic font-bold">Without Seeing Breakthroughs?</span>
           </h1>
 
           <p class="text-base sm:text-lg text-stone-200 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-            Join Prophet Michael Rehoboth in a live 150-minute Tanglish masterclass. Learn the step-by-step Courts of Heaven prayer blueprint that has already helped 5,000+ Tamil believers experience instant healing, peace, and spiritual authority.
+            It's not your lack of faith or effort. Most believers struggle because nobody taught them the biblical legal protocols to plead in the Courts of Heaven and revoke demonic legal claims.
           </p>
 
           <!-- Subheadline / Target Audience Hook (Incorporate Profiles 1–5) -->
@@ -184,7 +184,7 @@ if (!defined('ABSPATH')) {
                 src="<?php echo esc_url(get_template_directory_uri() . '/assets/prophet-michael-hero.jpg'); ?>" 
                 alt="Prophet Michael Rehoboth - Christian Minister &amp; Spiritual Deliverance Coach" 
                 class="w-full h-[460px] sm:h-[520px] object-cover"
-                style="object-position: center 95%;"
+                style="object-position: center top;"
                 loading="eager"
               />
               
@@ -507,18 +507,18 @@ if (!defined('ABSPATH')) {
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto space-y-4 mb-14">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 border border-red-200 text-red-600 text-xs font-bold uppercase tracking-wider">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-          Spiritual Reality Check For Seekers
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-700 text-xs font-bold uppercase tracking-wider">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          Deliverance &amp; Prophetic Masterclass
         </div>
 
         <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-          Tired of Fasting and Praying for Years <br class="hidden sm:inline" />
-          <span class="text-red-600 underline decoration-red-300 underline-offset-4">Without Seeing Breakthroughs?</span>
+          Break Generational Bondages &amp; <br class="hidden sm:inline" />
+          <span class="text-amber-600 font-serif italic font-bold">Hear God's Voice in 150 Minutes</span> — Guaranteed
         </h2>
 
         <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-          It's not your lack of faith or effort. Most believers struggle because nobody taught them the biblical legal protocols to plead in the Courts of Heaven and revoke demonic legal claims.
+          Join Prophet Michael Rehoboth in a live 150–minute Tanglish masterclass. Learn the step-by-step Courts of Heaven prayer blueprint that has already helped 5,000+ Tamil believers experience instant healing, peace, and spiritual authority.
         </p>
       </div>
 
@@ -1252,41 +1252,11 @@ if (!defined('ABSPATH')) {
                 </select>
               </div>
 
-              <!-- CRO Audit: AOV Booster / 1-Click Order Bump -->
-              <div class="bg-gradient-to-r from-amber-500/15 via-amber-400/10 to-amber-500/15 border-2 border-dashed border-amber-500/60 rounded-xl p-3.5 my-3 text-left">
-                <label class="flex items-start gap-3 cursor-pointer">
-                  <input 
-                    type="checkbox" 
-                    id="orderBump" 
-                    name="orderBump" 
-                    onchange="toggleOrderBump(this)" 
-                    class="mt-1 w-4 h-4 text-amber-500 rounded border-slate-700 bg-slate-900 focus:ring-amber-400 cursor-pointer"
-                  />
-                  <div class="space-y-1">
-                    <div class="flex flex-wrap items-center gap-2">
-                      <span class="bg-amber-500 text-slate-950 text-[9px] font-black px-1.5 py-0.5 rounded uppercase tracking-wider">ONE-TIME OFFER • SAVE 75%</span>
-                      <span class="text-xs text-red-400 font-bold line-through">₹399</span>
-                      <span class="text-xs text-amber-300 font-black">+₹99 Only</span>
-                    </div>
-                    <div class="text-xs font-bold text-white leading-tight">
-                      Yes! Add the <span class="text-amber-400">"Courts of Heaven 30-Day Midnight Warfare Audio &amp; PDF Prayer Journal"</span>
-                    </div>
-                    <p class="text-[11px] text-stone-300 leading-snug">
-                      Includes 30 targeted midnight prayers, scriptural decrees, and prophetic audio MP3 impartations to breakthrough generational blockages.
-                    </p>
-                  </div>
-                </label>
-              </div>
-
               <!-- CRO Audit: Transparent Order Summary -->
-              <div class="bg-slate-900/95 rounded-xl p-3 border border-slate-700 text-xs text-stone-300 space-y-1.5">
+              <div class="bg-slate-900/95 rounded-xl p-3 border border-slate-700 text-xs text-stone-300 space-y-1.5 mt-3">
                 <div class="flex justify-between items-center">
                   <span>Fellowship Masterclass Pass:</span>
                   <span class="text-white font-bold">₹199</span>
-                </div>
-                <div id="bump-summary-row" class="hidden flex justify-between items-center text-amber-300 font-medium">
-                  <span>30-Day Midnight Warfare Journal (Add-on):</span>
-                  <span class="font-bold">+₹99</span>
                 </div>
                 <div class="flex justify-between items-center border-t border-slate-700/80 pt-1.5 font-bold text-sm text-white">
                   <span>Total Amount Payable:</span>

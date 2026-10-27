@@ -457,8 +457,7 @@
       const whatsapp = phoneInput.value;
       const email = emailInput.value;
       const batch = document.getElementById('batchSlot').value;
-      const hasBump = document.getElementById('orderBump').checked;
-      const amountPaid = hasBump ? "₹298 (Pass + 30-Day Journal)" : "₹199 (Pass Only)";
+      const amountPaid = "₹199 (Pass Only)";
 
       setTimeout(() => {
         submitBtn.innerHTML = originalText;

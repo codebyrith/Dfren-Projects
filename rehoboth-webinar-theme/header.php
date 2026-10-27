@@ -110,18 +110,18 @@
       </a>
 
       <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-stone-300">
-        <a href="#about-webinar" class="hover:text-amber-400 transition-colors">Overview</a>
-        <a href="#testimonials" class="hover:text-amber-400 transition-colors">Wall of Love</a>
-        <a href="#pain-points" class="hover:text-amber-400 transition-colors">Breakthroughs</a>
-        <a href="#benefits" class="hover:text-amber-400 transition-colors">Benefits</a>
-        <a href="#training" class="hover:text-amber-400 transition-colors">Curriculum</a>
-        <a href="#how-it-works" class="hover:text-amber-400 transition-colors">How It Works</a>
-        <a href="#mentor" class="hover:text-amber-400 transition-colors">Mentor</a>
-        <a href="#faq" class="hover:text-amber-400 transition-colors">FAQ</a>
+        <a href="<?php echo esc_url(home_url('/overview')); ?>" class="hover:text-amber-400 transition-colors">Overview</a>
+        <a href="<?php echo esc_url(home_url('/testimonials')); ?>" class="hover:text-amber-400 transition-colors">Wall of Love</a>
+        <a href="<?php echo esc_url(home_url('/breakthroughs')); ?>" class="hover:text-amber-400 transition-colors">Breakthroughs</a>
+        <a href="<?php echo esc_url(home_url('/benefits')); ?>" class="hover:text-amber-400 transition-colors">Benefits</a>
+        <a href="<?php echo esc_url(home_url('/curriculum')); ?>" class="hover:text-amber-400 transition-colors">Curriculum</a>
+        <a href="<?php echo esc_url(home_url('/how-it-works')); ?>" class="hover:text-amber-400 transition-colors">How It Works</a>
+        <a href="<?php echo esc_url(home_url('/mentor')); ?>" class="hover:text-amber-400 transition-colors">Mentor</a>
+        <a href="<?php echo esc_url(home_url('/faq')); ?>" class="hover:text-amber-400 transition-colors">FAQ</a>
       </div>
 
       <div>
-        <a href="#register" class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5">
+        <a href="<?php echo esc_url(home_url('/register')); ?>" class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5">
           <span>Claim Pass @ ₹199</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
