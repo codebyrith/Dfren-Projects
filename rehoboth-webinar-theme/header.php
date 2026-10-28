@@ -219,7 +219,7 @@
       </a>
       <a href="<?php echo esc_url(home_url('/mentor')); ?>" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
         <span class="text-base">🕊️</span>
-        <span>Meet Prophet Michael</span>
+        <span>Meet Michael Rehoboth</span>
       </a>
       <a href="<?php echo esc_url(home_url('/faq')); ?>" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
         <span class="text-base">❓</span>

@@ -202,7 +202,7 @@ if (!defined('ABSPATH')) {
                 <div class="bg-slate-900/95 backdrop-blur-md p-4 rounded-xl border border-amber-500/30 shadow-xl">
                   <div class="flex items-center justify-between">
                     <div>
-                      <h2 class="text-lg font-bold text-white font-serif tracking-wide">Prophet Michael</h2>
+                      <h2 class="text-lg font-bold text-white font-serif tracking-wide">Michael Rehoboth</h2>
                       <p class="text-xs text-amber-400 font-medium">Rehoboth Ministries International</p>
                     </div>
                     <div class="bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2.5 py-1 rounded-lg text-xs font-bold text-center">
@@ -312,7 +312,7 @@ if (!defined('ABSPATH')) {
               </div>
               <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-100 text-slate-800 font-medium">
                 <strong class="text-emerald-700 block mb-0.5 font-bold uppercase text-[10px]">After Breakthrough:</strong>
-                "Delivered in the live prayer session! Prophet Michael dismantled the demonic legal right. Slept peacefully that very night—debt cleared within months."
+                "Delivered in the live prayer session! Michael Rehoboth dismantled the demonic legal right. Slept peacefully that very night—debt cleared within months."
               </div>
             </div>
           </div>
@@ -343,7 +343,7 @@ if (!defined('ABSPATH')) {
               </div>
               <div class="bg-emerald-50/70 p-2.5 rounded-lg border border-emerald-100 text-slate-800 font-medium">
                 <strong class="text-emerald-700 block mb-0.5 font-bold uppercase text-[10px]">After Breakthrough:</strong>
-                "Prophet Michael called out our exact situation and prayed. Applied the Courts of Heaven blueprint; reconciled in tears within 3 weeks!"
+                "Michael Rehoboth called out our exact situation and prayed. Applied the Courts of Heaven blueprint; reconciled in tears within 3 weeks!"
               </div>
             </div>
           </div>
@@ -611,7 +611,7 @@ if (!defined('ABSPATH')) {
       <div class="mt-8 bg-amber-50 border border-amber-200 rounded-2xl p-6 text-center max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div class="text-left">
           <h4 class="font-bold text-slate-900 text-base">You do not have to live in spiritual frustration anymore.</h4>
-          <p class="text-xs sm:text-sm text-slate-600">The Bible contains precise legal spiritual protocols that Prophet Michael will break down step-by-step.</p>
+          <p class="text-xs sm:text-sm text-slate-600">The Bible contains precise legal spiritual protocols that Michael Rehoboth will break down step-by-step.</p>
         </div>
         <a href="#register" class="flex-shrink-0 bg-slate-900 hover:bg-slate-800 text-amber-400 font-bold px-6 py-3 rounded-xl text-sm transition-all shadow-md">
           Break The Cycle Now @ ₹199 →
@@ -678,7 +678,7 @@ if (!defined('ABSPATH')) {
           <div class="text-xs font-bold text-amber-600 uppercase tracking-wider mb-1">Tangible Life Benefit 03</div>
           <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors">Receive Impartation, Personal Prophecy &amp; Prayer</h3>
           <p class="text-sm text-slate-600 leading-relaxed">
-            Prophet Michael ministers live over registered participants with on-time prophetic direction, deliverance prayers, and Holy Spirit impartation.
+            Michael Rehoboth ministers live over registered participants with on-time prophetic direction, deliverance prayers, and Holy Spirit impartation.
           </p>
         </div>
 
@@ -1120,7 +1120,7 @@ if (!defined('ABSPATH')) {
               <ul class="space-y-2.5 text-xs text-stone-300">
                 <li class="flex items-start gap-2.5">
                   <span class="text-amber-400 font-bold">✓</span>
-                  <span><strong>Live 150-Minute Interactive Masterclass</strong> with Prophet Michael</span>
+                  <span><strong>Live 150-Minute Interactive Masterclass</strong> with Michael Rehoboth</span>
                 </li>
                 <li class="flex items-start gap-2.5">
                   <span class="text-amber-400 font-bold">✓</span>
@@ -1467,7 +1467,7 @@ if (!defined('ABSPATH')) {
       </h2>
 
       <p class="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-        150 Minutes • Prophet Michael • Courts of Heaven Blueprint • 100% Peace-of-Mind Guarantee • ₹199 (Save ₹800 Today)
+        150 Minutes • Michael Rehoboth • Courts of Heaven Blueprint • 100% Peace-of-Mind Guarantee • ₹199 (Save ₹800 Today)
       </p>
 
       <!-- CTA Button -->
