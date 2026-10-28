@@ -274,7 +274,7 @@ if (!defined('ABSPATH')) {
   <!-- ============================================================== -->
   <!-- 3. SOCIAL PROOF SECTION (WALL OF LOVE - IN TOP 30% OF PAGE) -->
   <!-- ============================================================== -->
-  <section id="testimonials" class="py-16 sm:py-24 px-4 sm:px-6 bg-stone-100 relative border-b border-stone-200">
+  <section id="testimonials" class="py-16 sm:py-24 px-4 sm:px-6 bg-stone-100 relative border-b border-stone-200 overflow-hidden">
     <div class="max-w-7xl mx-auto">
       
       <!-- Section Header -->
@@ -503,7 +503,7 @@ if (!defined('ABSPATH')) {
   <!-- ============================================================== -->
   <!-- 4. PAIN POINT SECTION (FOR COLD TRAFFIC) -->
   <!-- ============================================================== -->
-  <section id="breakthroughs" class="pt-16 sm:pt-20 pb-6 sm:pb-8 px-4 sm:px-6 bg-white relative">
+  <section id="breakthroughs" class="pt-16 sm:pt-20 pb-6 sm:pb-8 px-4 sm:px-6 bg-white relative overflow-hidden">
     <div id="pain-points"></div>
     <div class="max-w-7xl mx-auto">
       
@@ -626,7 +626,7 @@ if (!defined('ABSPATH')) {
   <!-- ============================================================== -->
   <!-- 5. VALUE PROPOSITIONS & USPS (BENEFIT > FEATURE) -->
   <!-- ============================================================== -->
-  <section id="benefits" class="pt-8 sm:pt-10 pb-16 sm:pb-24 px-4 sm:px-6 bg-brand-cream relative">
+  <section id="benefits" class="pt-8 sm:pt-10 pb-16 sm:pb-24 px-4 sm:px-6 bg-brand-cream relative overflow-hidden">
     <div class="max-w-7xl mx-auto">
       
       <!-- Section Header -->
@@ -746,7 +746,7 @@ if (!defined('ABSPATH')) {
   <!-- ============================================================== -->
   <!-- 6. TRAINING & MENTORSHIP BREAKDOWN SECTION (PROFILES 19–24) -->
   <!-- ============================================================== -->
-  <section id="curriculum" class="py-16 sm:py-24 px-4 sm:px-6 bg-slate-900 text-white relative">
+  <section id="curriculum" class="py-16 sm:py-24 px-4 sm:px-6 bg-slate-900 text-white relative overflow-hidden">
     <div id="training"></div>
     <div class="max-w-7xl mx-auto">
       
@@ -884,7 +884,7 @@ if (!defined('ABSPATH')) {
   <!-- ============================================================== -->
   <!-- 7. HOW IT WORKS SECTION (3 EFFORTLESS STEPS) -->
   <!-- ============================================================== -->
-  <section id="how-it-works" class="py-16 sm:py-24 px-4 sm:px-6 bg-brand-cream relative">
+  <section id="how-it-works" class="py-16 sm:py-24 px-4 sm:px-6 bg-brand-cream relative overflow-hidden">
     <div class="max-w-7xl mx-auto">
       
       <!-- Section Header -->
@@ -976,7 +976,7 @@ if (!defined('ABSPATH')) {
   <!-- ============================================================== -->
   <!-- 7.5. MEET YOUR MENTOR / AUTHORITY SECTION -->
   <!-- ============================================================== -->
-  <section id="mentor" class="py-16 sm:py-24 px-4 sm:px-6 bg-white relative">
+  <section id="mentor" class="py-16 sm:py-24 px-4 sm:px-6 bg-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -1067,9 +1067,9 @@ if (!defined('ABSPATH')) {
   <!-- ============================================================== -->
   <!-- 8. REGISTRATION / BOOKING CARD (HIGH CONVERSION CHECKOUT) -->
   <!-- ============================================================== -->
-  <section id="register" class="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-brand-navy via-brand-slate to-brand-navy text-white relative">
+  <section id="register" class="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-b from-brand-navy via-brand-slate to-brand-navy text-white relative overflow-hidden">
     <!-- Glow elements -->
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-[600px] h-[90vw] max-h-[600px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="max-w-5xl mx-auto relative z-10">
       
@@ -1311,7 +1311,7 @@ if (!defined('ABSPATH')) {
   <!-- ============================================================== -->
   <!-- 8.5. FAQS & RISK REDUCERS (100% PEACE-OF-MIND GUARANTEE) -->
   <!-- ============================================================== -->
-  <section id="faq" class="py-16 sm:py-24 px-4 sm:px-6 bg-white relative">
+  <section id="faq" class="py-16 sm:py-24 px-4 sm:px-6 bg-white relative overflow-hidden">
     <div class="max-w-4xl mx-auto">
       
       <!-- 100% PEACE-OF-MIND GUARANTEE BOX -->

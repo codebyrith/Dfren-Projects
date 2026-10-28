@@ -9,22 +9,22 @@
   <!-- ============================================================== -->
   <!-- 10. MOBILE STICKY BOTTOM BAR (RESPONSIVE ONLY) -->
   <!-- ============================================================== -->
-  <aside aria-label="Mobile Registration Action Bar" class="fixed bottom-0 inset-x-0 bg-slate-900/95 backdrop-blur-md border-t border-amber-500/40 p-3 z-40 md:hidden shadow-2xl flex items-center justify-between gap-3">
-    <div class="flex flex-col">
-      <div class="flex items-center gap-1 text-[11px] font-bold text-amber-400">
+  <aside aria-label="Mobile Registration Action Bar" class="fixed bottom-0 inset-x-0 w-full bg-slate-950/98 backdrop-blur-lg border-t-2 border-amber-500/80 px-3 py-2.5 z-40 md:hidden shadow-2xl flex items-center justify-between gap-2 max-w-full">
+    <div class="flex flex-col min-w-0 flex-shrink-0">
+      <div class="flex items-center gap-1 text-[10px] xs:text-[11px] font-bold text-amber-400 whitespace-nowrap">
         <span>⭐⭐⭐⭐⭐</span>
         <span class="text-white">4.9/5 Rating</span>
       </div>
-      <div class="flex items-center gap-1.5 mt-0.5">
-        <span class="text-[10px] uppercase font-bold text-red-400 bg-red-950/60 px-1 rounded border border-red-500/20">80% OFF</span>
-        <span class="text-xs text-stone-400 line-through">₹999</span>
-        <span class="text-sm font-black text-amber-400 leading-none">₹199 Only</span>
+      <div class="flex items-center gap-1.5 mt-0.5 whitespace-nowrap">
+        <span class="text-[9px] uppercase font-bold text-red-400 bg-red-950/80 px-1 rounded border border-red-500/20">80% OFF</span>
+        <span class="text-[11px] text-stone-400 line-through">₹999</span>
+        <span class="text-xs xs:text-sm font-black text-amber-400 leading-none">₹199 Only</span>
       </div>
     </div>
 
-    <a href="#register" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-black text-xs px-4 py-2.5 rounded-lg shadow-lg shadow-amber-500/30 flex items-center gap-1.5 active:scale-95 transition-transform animate-pulse">
-      <span>Claim Seat Now - ₹199</span>
-      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+    <a href="<?php echo esc_url(home_url('/#register')); ?>" onclick="navigateSection('register'); return false;" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-black text-xs px-3.5 py-2.5 rounded-lg shadow-lg shadow-amber-500/30 flex items-center justify-center gap-1.5 active:scale-95 transition-transform flex-shrink-0 whitespace-nowrap animate-pulse">
+      <span>Book Now @ ₹199</span>
+      <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
     </a>
   </aside>
 
@@ -188,13 +188,13 @@
   <!-- ============================================================== -->
   <!-- FLOATING LIVE REGISTRATION TOAST (CRO SOCIAL PROOF) -->
   <!-- ============================================================== -->
-  <div id="live-toast" class="fixed bottom-20 left-4 z-40 bg-slate-900/95 border border-amber-500/40 text-white p-3 rounded-xl shadow-2xl flex items-center gap-3 max-w-xs transition-all duration-500 transform translate-y-10 opacity-0 pointer-events-none">
-    <div class="w-9 h-9 rounded-lg bg-amber-500 text-slate-950 flex items-center justify-center font-bold text-sm flex-shrink-0">
+  <div id="live-toast" class="fixed bottom-20 left-3 sm:bottom-20 sm:left-4 z-30 bg-slate-900/95 border border-amber-500/40 text-white p-2.5 sm:p-3 rounded-xl shadow-2xl flex items-center gap-2.5 sm:gap-3 max-w-[280px] sm:max-w-xs transition-all duration-500 transform translate-y-10 opacity-0 pointer-events-none">
+    <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-amber-500 text-slate-950 flex items-center justify-center font-bold text-xs sm:text-sm flex-shrink-0">
       ⚡
     </div>
-    <div class="text-[11px] leading-tight">
+    <div class="text-[10px] sm:text-[11px] leading-tight">
       <p class="font-bold text-white"><span id="toast-name">Brother David</span> just registered!</p>
-      <p class="text-stone-400 text-[10px] mt-0.5"><span id="toast-city">Chennai</span> • 4 minutes ago</p>
+      <p class="text-stone-400 text-[9px] sm:text-[10px] mt-0.5"><span id="toast-city">Chennai</span> • 4 minutes ago</p>
     </div>
   </div>
 
@@ -259,13 +259,13 @@
     target="_blank" 
     rel="noopener noreferrer" 
     aria-label="Chat on WhatsApp"
-    class="fixed bottom-6 right-6 z-40 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-full shadow-2xl flex items-center gap-2.5 transition-all transform hover:scale-105 border border-emerald-400/40 group text-xs sm:text-sm"
+    class="fixed bottom-20 sm:bottom-6 right-3 sm:right-6 z-30 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 px-3.5 sm:py-2.5 sm:px-4 rounded-full shadow-2xl flex items-center gap-2 sm:gap-2.5 transition-all transform hover:scale-105 border border-emerald-400/40 group text-xs sm:text-sm"
   >
-    <span class="relative flex h-3 w-3">
+    <span class="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3">
       <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-200 opacity-75"></span>
-      <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+      <span class="relative inline-flex rounded-full h-2.5 w-2.5 sm:h-3 sm:w-3 bg-white"></span>
     </span>
-    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.178.181-.077.355.101.173.449.742.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+    <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.178.181-.077.355.101.173.449.742.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
     <span class="hidden sm:inline">Ask Questions on WhatsApp</span>
     <span class="sm:hidden">WhatsApp</span>
   </a>
@@ -277,9 +277,9 @@
     id="back-to-top-btn" 
     onclick="scrollToTop()" 
     aria-label="Back to Top"
-    class="fixed bottom-20 right-6 z-40 bg-slate-900/90 hover:bg-slate-800 text-amber-400 p-3 rounded-full border border-amber-500/40 shadow-xl opacity-0 pointer-events-none transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+    class="fixed bottom-32 sm:bottom-20 right-3 sm:right-6 z-30 bg-slate-900/90 hover:bg-slate-800 text-amber-400 p-2.5 sm:p-3 rounded-full border border-amber-500/40 shadow-xl opacity-0 pointer-events-none transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
   >
-    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
   </button>
 
   <!-- ============================================================== -->
@@ -370,14 +370,14 @@
       if (open) {
         overlay.classList.remove('opacity-0', 'pointer-events-none');
         overlay.classList.add('opacity-100', 'pointer-events-auto');
-        sidebar.classList.remove('translate-x-full');
+        sidebar.classList.remove('-translate-x-full', 'translate-x-full');
         sidebar.classList.add('translate-x-0');
         document.body.classList.add('overflow-hidden');
       } else {
         overlay.classList.remove('opacity-100', 'pointer-events-auto');
         overlay.classList.add('opacity-0', 'pointer-events-none');
         sidebar.classList.remove('translate-x-0');
-        sidebar.classList.add('translate-x-full');
+        sidebar.classList.add('-translate-x-full');
         document.body.classList.remove('overflow-hidden');
       }
     }
