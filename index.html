@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,7 +65,13 @@
   </script>
 
   <style>
-    /* Custom utility and smooth scrollbar */
+    /* Custom utility and instant scrollbar */
+    html {
+      scroll-behavior: auto !important;
+    }
+    section[id], div[id] {
+      scroll-margin-top: 76px;
+    }
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
       background-color: #fafaf9;
@@ -135,7 +141,7 @@
       <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
         
         <!-- Logo & Brand -->
-        <a href="index.html" class="flex items-center gap-2 sm:gap-2.5 group flex-shrink-0" title="Return to Home">
+        <a href="#overview" onclick="navigateSection('overview'); return false;" class="flex items-center gap-2 sm:gap-2.5 group flex-shrink-0" title="Return to Home">
           <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-white p-1 flex items-center justify-center shadow-md shadow-amber-500/10 border border-amber-500/30 overflow-hidden group-hover:border-amber-400 transition-all flex-shrink-0">
             <img src="assets/rehoboth-logo.png" alt="Rehoboth International Ministries" class="w-full h-full object-contain" />
           </div>
@@ -145,21 +151,21 @@
           </div>
         </a>
 
-        <!-- Desktop Navigation Menu Items -->
+        <!-- Desktop Navigation Menu Items (Instant Section Switcher) -->
         <div class="hidden lg:flex items-center gap-5 xl:gap-6 text-sm">
-          <a href="overview.html" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">Overview</a>
-          <a href="testimonials.html" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">Wall of Love</a>
-          <a href="breakthroughs.html" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">Breakthroughs</a>
-          <a href="benefits.html" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">Benefits</a>
-          <a href="curriculum.html" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">Curriculum</a>
-          <a href="how-it-works.html" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">How It Works</a>
-          <a href="mentor.html" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">Mentor</a>
-          <a href="faq.html" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">FAQ</a>
+          <a href="#overview" onclick="navigateSection('overview'); return false;" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">Overview</a>
+          <a href="#testimonials" onclick="navigateSection('testimonials'); return false;" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">Wall of Love</a>
+          <a href="#breakthroughs" onclick="navigateSection('breakthroughs'); return false;" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">Breakthroughs</a>
+          <a href="#benefits" onclick="navigateSection('benefits'); return false;" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">Benefits</a>
+          <a href="#curriculum" onclick="navigateSection('curriculum'); return false;" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">Curriculum</a>
+          <a href="#how-it-works" onclick="navigateSection('how-it-works'); return false;" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">How It Works</a>
+          <a href="#mentor" onclick="navigateSection('mentor'); return false;" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">Meet Michael Rehoboth</a>
+          <a href="#faq" onclick="navigateSection('faq'); return false;" class="text-stone-300 hover:text-amber-400 transition-colors font-medium">FAQ</a>
         </div>
 
         <!-- Right Side: CTA Button + Mobile Hamburger Menu Toggle -->
         <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-          <a href="register.html" class="inline-flex items-center gap-1 sm:gap-1.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 whitespace-nowrap">
+          <a href="#register" onclick="navigateSection('register'); return false;" class="inline-flex items-center gap-1 sm:gap-1.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 whitespace-nowrap">
             <span class="hidden xs:inline sm:inline">Claim Pass @</span>
             <span>₹199</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
@@ -200,7 +206,7 @@
   >
     <!-- Drawer Header -->
     <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-950/60">
-      <a href="index.html" onclick="toggleMobileSidebar(false)" class="flex items-center gap-2.5">
+      <a href="#overview" onclick="navigateSection('overview'); return false;" class="flex items-center gap-2.5">
         <div class="w-9 h-9 rounded-xl bg-white p-1 flex items-center justify-center border border-amber-500/30 shadow-md flex-shrink-0">
           <img src="assets/rehoboth-logo.png" alt="Rehoboth Ministries" class="w-full h-full object-contain" />
         </div>
@@ -219,49 +225,49 @@
       </button>
     </div>
 
-    <!-- Drawer Navigation Links -->
+    <!-- Drawer Navigation Links (Instant Section Switcher) -->
     <div class="px-3 py-4 space-y-1 flex-grow overflow-y-auto">
       <div class="text-[10px] font-bold uppercase tracking-wider text-amber-400/80 px-3 py-1 mb-1">
         Menu Navigation
       </div>
       
-        <a href="overview.html" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
+        <a href="#overview" onclick="navigateSection('overview'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
           <span class="text-base">🏛️</span>
           <span>Overview</span>
         </a>
-        <a href="testimonials.html" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
+        <a href="#testimonials" onclick="navigateSection('testimonials'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
           <span class="text-base">⭐</span>
           <span>Wall of Love</span>
         </a>
-        <a href="breakthroughs.html" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
+        <a href="#breakthroughs" onclick="navigateSection('breakthroughs'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
           <span class="text-base">⚡</span>
           <span>Breakthroughs</span>
         </a>
-        <a href="benefits.html" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
+        <a href="#benefits" onclick="navigateSection('benefits'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
           <span class="text-base">🌟</span>
           <span>Benefits</span>
         </a>
-        <a href="curriculum.html" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
+        <a href="#curriculum" onclick="navigateSection('curriculum'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
           <span class="text-base">📖</span>
           <span>Curriculum</span>
         </a>
-        <a href="how-it-works.html" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
+        <a href="#how-it-works" onclick="navigateSection('how-it-works'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
           <span class="text-base">✨</span>
           <span>How It Works</span>
         </a>
-        <a href="mentor.html" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
+        <a href="#mentor" onclick="navigateSection('mentor'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
           <span class="text-base">🕊️</span>
-          <span>Mentor</span>
+          <span>Meet Michael Rehoboth</span>
         </a>
-        <a href="faq.html" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
+        <a href="#faq" onclick="navigateSection('faq'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm transition-all text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 font-medium">
           <span class="text-base">❓</span>
-          <span>FAQ</span>
+          <span>FAQ &amp; Guarantees</span>
         </a>
     </div>
 
     <!-- Drawer Footer Actions -->
     <div class="p-4 border-t border-slate-800 bg-slate-950/90 space-y-3">
-      <a href="register.html" onclick="toggleMobileSidebar(false)" class="w-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-sm py-3 px-4 rounded-xl shadow-lg shadow-amber-500/30 flex items-center justify-center gap-2 transition-all">
+      <a href="#register" onclick="navigateSection('register'); return false;" class="w-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-sm py-3 px-4 rounded-xl shadow-lg shadow-amber-500/30 flex items-center justify-center gap-2 transition-all">
         <span>Claim Pass @ ₹199</span>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
       </a>
@@ -281,7 +287,8 @@
 
   <!-- 2. HERO SECTION (ABOVE THE FOLD) -->
   <!-- ============================================================== -->
-  <section id="about-webinar" class="relative bg-gradient-to-b from-brand-navy via-brand-slate to-brand-navy text-white pt-10 sm:pt-16 pb-16 sm:pb-24 px-4 sm:px-6 overflow-hidden hero-glow">
+  <section id="overview" class="relative bg-gradient-to-b from-brand-navy via-brand-slate to-brand-navy text-white pt-10 sm:pt-16 pb-16 sm:pb-24 px-4 sm:px-6 overflow-hidden hero-glow">
+    <div id="about-webinar"></div>
     <!-- Ambient gold background elements -->
     <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -771,7 +778,8 @@
   <!-- ============================================================== -->
   <!-- 4. PAIN POINT SECTION (FOR COLD TRAFFIC) -->
   <!-- ============================================================== -->
-  <section id="pain-points" class="pt-16 sm:pt-20 pb-6 sm:pb-8 px-4 sm:px-6 bg-white relative">
+  <section id="breakthroughs" class="pt-16 sm:pt-20 pb-6 sm:pb-8 px-4 sm:px-6 bg-white relative">
+    <div id="pain-points"></div>
     <div class="max-w-7xl mx-auto">
       
       <!-- Section Header -->
@@ -1013,7 +1021,8 @@
   <!-- ============================================================== -->
   <!-- 6. TRAINING & MENTORSHIP BREAKDOWN SECTION (PROFILES 19–24) -->
   <!-- ============================================================== -->
-  <section id="training" class="py-16 sm:py-24 px-4 sm:px-6 bg-slate-900 text-white relative">
+  <section id="curriculum" class="py-16 sm:py-24 px-4 sm:px-6 bg-slate-900 text-white relative">
+    <div id="training"></div>
     <div class="max-w-7xl mx-auto">
       
       <!-- Section Header -->
@@ -1781,7 +1790,7 @@
       </div>
     </div>
 
-    <a href="#register" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-black text-xs px-4 py-2.5 rounded-lg shadow-lg shadow-amber-500/30 flex items-center gap-1.5 active:scale-95 transition-transform animate-pulse">
+    <a href="#register" onclick="navigateSection('register'); return false;" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-black text-xs px-4 py-2.5 rounded-lg shadow-lg shadow-amber-500/30 flex items-center gap-1.5 active:scale-95 transition-transform animate-pulse">
       <span>Claim Seat Now - ₹199</span>
       <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
     </a>
@@ -2324,9 +2333,9 @@
       }, 600);
     }
 
-    // 10. CRO Audit: Smooth Back to Top Button
+    // 10. CRO Audit: Back to Top Button (Instant Jump)
     function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'instant' });
     }
 
     window.addEventListener('scroll', () => {
@@ -2466,6 +2475,39 @@
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') {
         toggleMobileSidebar(false);
+      }
+    });
+
+    // Instant Section Switcher: 0ms delay, no smooth scrolling animation ("don't scroll and come")
+    function navigateSection(sectionId) {
+      if (typeof toggleMobileSidebar === 'function') {
+        toggleMobileSidebar(false);
+      }
+      let target = document.getElementById(sectionId);
+      if (!target) {
+        if (sectionId === 'overview') target = document.getElementById('about-webinar');
+        if (sectionId === 'breakthroughs') target = document.getElementById('pain-points');
+        if (sectionId === 'curriculum') target = document.getElementById('training');
+      }
+      if (target) {
+        const header = document.querySelector('header');
+        const headerHeight = header ? header.offsetHeight : 76;
+        const targetPos = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        window.scrollTo({
+          top: Math.max(0, targetPos),
+          behavior: 'instant'
+        });
+        if (window.history && window.history.pushState) {
+          window.history.pushState(null, '', '#' + sectionId);
+        }
+      }
+    }
+
+    // Auto-jump instantly if loaded with a hash
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash) {
+        setTimeout(() => navigateSection(hash), 50);
       }
     });
 

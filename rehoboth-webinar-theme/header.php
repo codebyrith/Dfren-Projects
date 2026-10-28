@@ -5,7 +5,7 @@
  * @package Rehoboth_Webinar
  */
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?> class="scroll-smooth">
+<html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo('charset'); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,6 +58,15 @@
     }
   </script>
 
+  <style>
+    html {
+      scroll-behavior: auto !important;
+    }
+    section[id], div[id] {
+      scroll-margin-top: 76px;
+    }
+  </style>
+
   <?php wp_head(); ?>
 </head>
 <body <?php body_class('bg-brand-cream text-slate-800 antialiased selection:bg-brand-gold selection:text-brand-navy pb-24 md:pb-0 overflow-x-hidden'); ?>>
@@ -104,7 +113,7 @@
       <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
         
         <!-- Logo & Brand -->
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center gap-2 sm:gap-2.5 group flex-shrink-0" title="Return to Home">
+        <a href="<?php echo esc_url(home_url('/#overview')); ?>" onclick="navigateSection('overview'); return false;" class="flex items-center gap-2 sm:gap-2.5 group flex-shrink-0" title="Return to Home">
           <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-white p-1 flex items-center justify-center shadow-md shadow-amber-500/10 border border-amber-500/30 overflow-hidden group-hover:border-amber-400 transition-all flex-shrink-0">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/rehoboth-logo.png'); ?>" alt="Rehoboth International Ministries" class="w-full h-full object-contain" />
           </div>
@@ -114,21 +123,21 @@
           </div>
         </a>
 
-        <!-- Desktop Navigation Menu Items -->
+        <!-- Desktop Navigation Menu Items (Instant Section Switcher) -->
         <div class="hidden lg:flex items-center gap-5 xl:gap-6 text-sm font-medium text-stone-300">
-          <a href="<?php echo esc_url(home_url('/overview')); ?>" class="hover:text-amber-400 transition-colors">Overview</a>
-          <a href="<?php echo esc_url(home_url('/testimonials')); ?>" class="hover:text-amber-400 transition-colors">Wall of Love</a>
-          <a href="<?php echo esc_url(home_url('/breakthroughs')); ?>" class="hover:text-amber-400 transition-colors">Breakthroughs</a>
-          <a href="<?php echo esc_url(home_url('/benefits')); ?>" class="hover:text-amber-400 transition-colors">Benefits</a>
-          <a href="<?php echo esc_url(home_url('/curriculum')); ?>" class="hover:text-amber-400 transition-colors">Curriculum</a>
-          <a href="<?php echo esc_url(home_url('/how-it-works')); ?>" class="hover:text-amber-400 transition-colors">How It Works</a>
-          <a href="<?php echo esc_url(home_url('/mentor')); ?>" class="hover:text-amber-400 transition-colors">Mentor</a>
-          <a href="<?php echo esc_url(home_url('/faq')); ?>" class="hover:text-amber-400 transition-colors">FAQ</a>
+          <a href="<?php echo esc_url(home_url('/#overview')); ?>" onclick="navigateSection('overview'); return false;" class="hover:text-amber-400 transition-colors">Overview</a>
+          <a href="<?php echo esc_url(home_url('/#testimonials')); ?>" onclick="navigateSection('testimonials'); return false;" class="hover:text-amber-400 transition-colors">Wall of Love</a>
+          <a href="<?php echo esc_url(home_url('/#breakthroughs')); ?>" onclick="navigateSection('breakthroughs'); return false;" class="hover:text-amber-400 transition-colors">Breakthroughs</a>
+          <a href="<?php echo esc_url(home_url('/#benefits')); ?>" onclick="navigateSection('benefits'); return false;" class="hover:text-amber-400 transition-colors">Benefits</a>
+          <a href="<?php echo esc_url(home_url('/#curriculum')); ?>" onclick="navigateSection('curriculum'); return false;" class="hover:text-amber-400 transition-colors">Curriculum</a>
+          <a href="<?php echo esc_url(home_url('/#how-it-works')); ?>" onclick="navigateSection('how-it-works'); return false;" class="hover:text-amber-400 transition-colors">How It Works</a>
+          <a href="<?php echo esc_url(home_url('/#mentor')); ?>" onclick="navigateSection('mentor'); return false;" class="hover:text-amber-400 transition-colors">Meet Michael Rehoboth</a>
+          <a href="<?php echo esc_url(home_url('/#faq')); ?>" onclick="navigateSection('faq'); return false;" class="hover:text-amber-400 transition-colors">FAQ</a>
         </div>
 
         <!-- Right Side: CTA Button + Mobile Hamburger Menu Toggle -->
         <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-          <a href="<?php echo esc_url(home_url('/register')); ?>" class="inline-flex items-center gap-1 sm:gap-1.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 whitespace-nowrap">
+          <a href="<?php echo esc_url(home_url('/#register')); ?>" onclick="navigateSection('register'); return false;" class="inline-flex items-center gap-1 sm:gap-1.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 whitespace-nowrap">
             <span class="hidden xs:inline sm:inline">Claim Pass @</span>
             <span>₹199</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
@@ -193,35 +202,35 @@
       <div class="text-[10px] font-bold uppercase tracking-wider text-amber-400/80 px-3 py-1 mb-1">
         Menu Navigation
       </div>
-      <a href="<?php echo esc_url(home_url('/overview')); ?>" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
+      <a href="<?php echo esc_url(home_url('/#overview')); ?>" onclick="navigateSection('overview'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
         <span class="text-base">🏛️</span>
         <span>Overview</span>
       </a>
-      <a href="<?php echo esc_url(home_url('/testimonials')); ?>" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
+      <a href="<?php echo esc_url(home_url('/#testimonials')); ?>" onclick="navigateSection('testimonials'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
         <span class="text-base">⭐</span>
         <span>Wall of Love (Reviews)</span>
       </a>
-      <a href="<?php echo esc_url(home_url('/breakthroughs')); ?>" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
+      <a href="<?php echo esc_url(home_url('/#breakthroughs')); ?>" onclick="navigateSection('breakthroughs'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
         <span class="text-base">⚡</span>
         <span>Breakthroughs</span>
       </a>
-      <a href="<?php echo esc_url(home_url('/benefits')); ?>" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
+      <a href="<?php echo esc_url(home_url('/#benefits')); ?>" onclick="navigateSection('benefits'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
         <span class="text-base">🌟</span>
         <span>Benefits</span>
       </a>
-      <a href="<?php echo esc_url(home_url('/curriculum')); ?>" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
+      <a href="<?php echo esc_url(home_url('/#curriculum')); ?>" onclick="navigateSection('curriculum'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
         <span class="text-base">📖</span>
         <span>Curriculum</span>
       </a>
-      <a href="<?php echo esc_url(home_url('/how-it-works')); ?>" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
+      <a href="<?php echo esc_url(home_url('/#how-it-works')); ?>" onclick="navigateSection('how-it-works'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
         <span class="text-base">✨</span>
         <span>How It Works</span>
       </a>
-      <a href="<?php echo esc_url(home_url('/mentor')); ?>" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
+      <a href="<?php echo esc_url(home_url('/#mentor')); ?>" onclick="navigateSection('mentor'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
         <span class="text-base">🕊️</span>
         <span>Meet Michael Rehoboth</span>
       </a>
-      <a href="<?php echo esc_url(home_url('/faq')); ?>" onclick="toggleMobileSidebar(false)" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
+      <a href="<?php echo esc_url(home_url('/#faq')); ?>" onclick="navigateSection('faq'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
         <span class="text-base">❓</span>
         <span>FAQ &amp; Guarantees</span>
       </a>
@@ -229,7 +238,7 @@
 
     <!-- Drawer Footer Actions -->
     <div class="p-4 border-t border-slate-800 bg-slate-950/90 space-y-3">
-      <a href="<?php echo esc_url(home_url('/register')); ?>" onclick="toggleMobileSidebar(false)" class="w-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-sm py-3 px-4 rounded-xl shadow-lg shadow-amber-500/30 flex items-center justify-center gap-2 transition-all">
+      <a href="<?php echo esc_url(home_url('/#register')); ?>" onclick="navigateSection('register'); return false;" class="w-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-sm py-3 px-4 rounded-xl shadow-lg shadow-amber-500/30 flex items-center justify-center gap-2 transition-all">
         <span>Claim Pass @ ₹199</span>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
       </a>
@@ -246,3 +255,30 @@
       </div>
     </div>
   </aside>
+
+  <script>
+    // Instant Section Switcher (0ms delay, no smooth scrolling animation)
+    function navigateSection(sectionId) {
+      if (typeof toggleMobileSidebar === 'function') {
+        toggleMobileSidebar(false);
+      }
+      let target = document.getElementById(sectionId);
+      if (!target) {
+        if (sectionId === 'overview') target = document.getElementById('about-webinar');
+        if (sectionId === 'breakthroughs') target = document.getElementById('pain-points');
+        if (sectionId === 'curriculum') target = document.getElementById('training');
+      }
+      if (target) {
+        const header = document.querySelector('header');
+        const headerHeight = header ? header.offsetHeight : 76;
+        const targetPos = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+        window.scrollTo({
+          top: Math.max(0, targetPos),
+          behavior: 'instant'
+        });
+        if (window.history && window.history.pushState) {
+          window.history.pushState(null, '', '#' + sectionId);
+        }
+      }
+    }
+  </script>

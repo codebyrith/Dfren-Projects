@@ -12,7 +12,8 @@ if (!defined('ABSPATH')) {
   <!-- ============================================================== -->
   <!-- 2. HERO SECTION (ABOVE THE FOLD) -->
   <!-- ============================================================== -->
-  <section id="about-webinar" class="relative bg-gradient-to-b from-brand-navy via-brand-slate to-brand-navy text-white pt-10 sm:pt-16 pb-16 sm:pb-24 px-4 sm:px-6 overflow-hidden hero-glow">
+  <section id="overview" class="relative bg-gradient-to-b from-brand-navy via-brand-slate to-brand-navy text-white pt-10 sm:pt-16 pb-16 sm:pb-24 px-4 sm:px-6 overflow-hidden hero-glow">
+    <div id="about-webinar"></div>
     <!-- Ambient gold background elements -->
     <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -502,7 +503,8 @@ if (!defined('ABSPATH')) {
   <!-- ============================================================== -->
   <!-- 4. PAIN POINT SECTION (FOR COLD TRAFFIC) -->
   <!-- ============================================================== -->
-  <section id="pain-points" class="pt-16 sm:pt-20 pb-6 sm:pb-8 px-4 sm:px-6 bg-white relative">
+  <section id="breakthroughs" class="pt-16 sm:pt-20 pb-6 sm:pb-8 px-4 sm:px-6 bg-white relative">
+    <div id="pain-points"></div>
     <div class="max-w-7xl mx-auto">
       
       <!-- Section Header -->
@@ -744,7 +746,8 @@ if (!defined('ABSPATH')) {
   <!-- ============================================================== -->
   <!-- 6. TRAINING & MENTORSHIP BREAKDOWN SECTION (PROFILES 19–24) -->
   <!-- ============================================================== -->
-  <section id="training" class="py-16 sm:py-24 px-4 sm:px-6 bg-slate-900 text-white relative">
+  <section id="curriculum" class="py-16 sm:py-24 px-4 sm:px-6 bg-slate-900 text-white relative">
+    <div id="training"></div>
     <div class="max-w-7xl mx-auto">
       
       <!-- Section Header -->

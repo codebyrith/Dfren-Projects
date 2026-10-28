@@ -2,6 +2,26 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/overview", "destination": "/#overview", "permanent": false },
+    { "source": "/testimonials", "destination": "/#testimonials", "permanent": false },
+    { "source": "/breakthroughs", "destination": "/#breakthroughs", "permanent": false },
+    { "source": "/benefits", "destination": "/#benefits", "permanent": false },
+    { "source": "/curriculum", "destination": "/#curriculum", "permanent": false },
+    { "source": "/how-it-works", "destination": "/#how-it-works", "permanent": false },
+    { "source": "/mentor", "destination": "/#mentor", "permanent": false },
+    { "source": "/faq", "destination": "/#faq", "permanent": false },
+    { "source": "/register", "destination": "/#register", "permanent": false },
+    { "source": "/overview.html", "destination": "/#overview", "permanent": false },
+    { "source": "/testimonials.html", "destination": "/#testimonials", "permanent": false },
+    { "source": "/breakthroughs.html", "destination": "/#breakthroughs", "permanent": false },
+    { "source": "/benefits.html", "destination": "/#benefits", "permanent": false },
+    { "source": "/curriculum.html", "destination": "/#curriculum", "permanent": false },
+    { "source": "/how-it-works.html", "destination": "/#how-it-works", "permanent": false },
+    { "source": "/mentor.html", "destination": "/#mentor", "permanent": false },
+    { "source": "/faq.html", "destination": "/#faq", "permanent": false },
+    { "source": "/register.html", "destination": "/#register", "permanent": false }
+  ],
   "headers": [
     {
       "source": "/(.*)",

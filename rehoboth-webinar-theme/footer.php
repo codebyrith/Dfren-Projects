@@ -602,9 +602,9 @@
       }, 600);
     }
 
-    // 10. CRO Audit: Smooth Back to Top Button
+    // 10. CRO Audit: Back to Top Button (Instant Jump)
     function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'instant' });
     }
 
     window.addEventListener('scroll', () => {
