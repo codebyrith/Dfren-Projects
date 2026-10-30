@@ -185,21 +185,20 @@
     </div>
   </div>
 
-  <!-- ============================================================== -->
+    <!-- ============================================================== -->
   <!-- FLOATING LIVE REGISTRATION TOAST (CRO SOCIAL PROOF) -->
   <!-- ============================================================== -->
-  <div id="live-toast" class="fixed bottom-20 left-3 sm:bottom-20 sm:left-4 z-30 bg-slate-900/95 border border-amber-500/40 text-white p-2.5 sm:p-3 rounded-xl shadow-2xl flex items-center gap-2.5 sm:gap-3 max-w-[280px] sm:max-w-xs transition-all duration-500 transform translate-y-10 opacity-0 pointer-events-none">
-    <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-amber-500 text-slate-950 flex items-center justify-center font-bold text-xs sm:text-sm flex-shrink-0">
+  <div id="live-toast" onclick="navigateSection('register')" class="fixed bottom-20 left-3 sm:bottom-20 sm:left-4 z-30 bg-slate-900/95 border border-amber-500/40 text-white p-2.5 sm:p-3 rounded-xl shadow-2xl flex items-center gap-2.5 sm:gap-3 max-w-[290px] sm:max-w-xs transition-all duration-500 transform translate-y-10 opacity-0 pointer-events-none cursor-pointer hover:border-amber-400 group">
+    <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-amber-500 text-slate-950 flex items-center justify-center font-bold text-xs sm:text-sm flex-shrink-0 group-hover:scale-105 transition-transform">
       ⚡
     </div>
-    <div class="text-[10px] sm:text-[11px] leading-tight">
-      <p class="font-bold text-white"><span id="toast-name">Brother David</span> just registered!</p>
-      <p class="text-stone-400 text-[9px] sm:text-[10px] mt-0.5"><span id="toast-city">Chennai</span> • 4 minutes ago</p>
+    <div class="text-[10px] sm:text-[11px] leading-tight flex-1">
+      <p class="font-bold text-white group-hover:text-amber-300 transition-colors"><span id="toast-name">Brother David</span> just registered!</p>
+      <p class="text-stone-400 text-[9px] sm:text-[10px] mt-0.5"><span id="toast-city">Chennai</span> • <span id="toast-time">4 minutes ago</span></p>
     </div>
+    <button type="button" onclick="event.stopPropagation(); dismissLiveToast();" class="text-stone-400 hover:text-white p-1 text-xs leading-none transition-colors" title="Close" aria-label="Dismiss notification">✕</button>
   </div>
 
-  <!-- ============================================================== -->
-  <!-- CRO AUDIT: 1-CLICK ESSENTIAL POLICIES MODAL -->
   <!-- ============================================================== -->
   <div id="policy-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
     <div class="bg-slate-900 border-2 border-amber-500/80 rounded-3xl max-w-2xl w-full p-6 sm:p-8 text-white relative shadow-2xl max-h-[85vh] overflow-y-auto animate-fade-in">
@@ -619,10 +618,10 @@
       }
     });
 
-    // 11. Live Social Proof Notification Popups (2,000+ Unique Registrations)
+        // 11. Live Social Proof Notification Popups (2,000+ Non-Repeating Unique Registrations)
     const mockRegistrations = (function generateMockRegistrations() {
-      const maleTitles = ['Brother', 'Bro.', 'Pastor', 'Evg.'];
-      const femaleTitles = ['Sister', 'Sis.'];
+      const maleTitles = ['Bro.', 'Brother', 'Pastor', 'Evg.', 'Minister', 'Elder'];
+      const femaleTitles = ['Sis.', 'Sister'];
 
       const maleFirstNames = [
         'Joshua', 'David', 'Daniel', 'Samuel', 'Joseph', 'Emmanuel', 'Caleb', 'Solomon', 'Isaac', 'Jonathan',
@@ -631,7 +630,11 @@
         'Arun', 'Victor', 'Vijay', 'Enoch', 'Antony', 'Immanuel', 'Justin', 'Gladson', 'Godson', 'Wesley',
         'Franklin', 'Livingston', 'Wilson', 'Samson', 'Nelson', 'Aaron', 'Edwin', 'Solomonraj', 'Ebenezer', 'Cornelius',
         'Jeremiah', 'Micah', 'Hezekiah', 'Nehemiah', 'Josiah', 'Ezekiel', 'Simon', 'Andrew', 'Thomas', 'James',
-        'Mark', 'Peter', 'Levi', 'Seth', 'Noah', 'Jesse', 'Boaz', 'Asaph', 'Jadon', 'Eli'
+        'Mark', 'Peter', 'Levi', 'Seth', 'Noah', 'Jesse', 'Boaz', 'Asaph', 'Jadon', 'Eli',
+        'Prabhu', 'Johnson', 'Mohan', 'Richard', 'Christopher', 'Robin', 'Jason', 'Dennis', 'Charles', 'Edward',
+        'Kingsley', 'Jackson', 'Naveen', 'Alex', 'Praveen', 'Clinton', 'Felix', 'Donald', 'Stanly', 'Vinoth',
+        'Derrick', 'Godwin', 'Jeyakumar', 'Prem', 'Selvaraj', 'Jebastin', 'Jerald', 'Austin', 'Allen', 'Kevin',
+        'Melchizedek', 'Zachariah', 'Ezra', 'Malachi', 'Benaiah', 'Obed', 'Kenaz', 'Phinehas', 'Jethro', 'Barak'
       ];
 
       const femaleFirstNames = [
@@ -641,85 +644,177 @@
         'Shiny', 'Persis', 'Selvi', 'Kavitha', 'Jasmine', 'Christy', 'Sherin', 'Benita', 'Sweety', 'Anitha',
         'Stella', 'Deepa', 'Renita', 'Joy', 'Angel', 'Graceina', 'Diana', 'Beulah', 'Keren', 'Sheela',
         'Pavithra', 'Nivetha', 'Subha', 'Preethi', 'Sujatha', 'Jenifer', 'Mercia', 'Nancy', 'Krupa', 'Glory',
-        'Hepzi', 'Reena', 'Sonia', 'Rubi', 'Rani', 'Monica', 'Salome', 'Dorcas', 'Bernice', 'Damaris'
+        'Hepzi', 'Reena', 'Sonia', 'Rubi', 'Rani', 'Monica', 'Salome', 'Dorcas', 'Bernice', 'Damaris',
+        'Sherly', 'Jemila', 'Princy', 'Felicia', 'Gladys', 'Christina', 'Cynthia', 'Irene', 'Jemima', 'Jennifer',
+        'Beula', 'Anita', 'Jancy', 'Catherine', 'Roseline', 'Veronica', 'Sophia', 'Sneha', 'Keerthana', 'Delilah',
+        'Tabita', 'Lois', 'Susanna', 'Junia', 'Claudia', 'Rhoda', 'Apphia', 'Tryphena', 'Tryphosa', 'Persida'
       ];
 
       const lastNames = [
         'Raj', 'Kumar', 'Paul', 'Thomas', 'George', 'Daniel', 'Moses', 'Samuel', 'Victor', 'Joseph',
         'David', 'Jacob', 'Abraham', 'Varghese', 'Mathew', 'Wilson', 'Fernandez', 'Richard', 'Anthony', 'Peter',
         'Christopher', 'Selvam', 'Durairaj', 'Jayaraj', 'Sundaram', 'Alexander', 'Devadoss', 'Stephen', 'Chelliah',
-        'Ponraj', 'Gnanadurai', 'Packiaraj', 'Jebasingh', 'Koildoss', 'Yesudas', 'K.', 'M.', 'S.', 'J.', 'D.', 'R.', 'A.', 'P.', 'T.',
-        'Nadar', 'Rajan', 'Christian', "D'Souza", 'Gomez', 'Philip', 'John', 'Mani', 'Dhas', 'Ramesh', 'Solomon'
+        'Ponraj', 'Gnanadurai', 'Packiaraj', 'Jebasingh', 'Koildoss', 'Yesudas', 'Nadar', 'Rajan', 'Christian',
+        'D\'Souza', 'Gomez', 'Philip', 'John', 'Mani', 'Dhas', 'Ramesh', 'Solomon', 'Jebaraj', 'Ebenezer',
+        'Manuel', 'Harris', 'Samson', 'Rajkumar', 'Selvaraj', 'Jeyasingh', 'Rajendran', 'Chandran', 'Edwards',
+        'Mathias', 'Fernando', 'Lobo', 'Rosario', 'Dias', 'Perera', 'Silva', 'Xavier', 'Lawrence', 'Mascarenhas',
+        'Pinto', 'Mendonca', 'D\'Silva', 'Gonsalves', 'Britto', 'Alvares', 'Coutinho', 'Saldanha',
+        'Vasanth', 'Karunakaran', 'Thangadurai', 'Aruldoss', 'Jayapaul', 'Vedanayagam', 'Jesudasan', 'Devasahayam'
       ];
 
       const cities = [
         'Chennai', 'Coimbatore', 'Madurai', 'Tirunelveli', 'Bengaluru', 'Trichy', 'Salem', 'Nagercoil',
         'Tuticorin', 'Vellore', 'Erode', 'Tiruppur', 'Thanjavur', 'Kanchipuram', 'Dindigul', 'Hosur',
         'Kanyakumari', 'Karur', 'Cuddalore', 'Kumbakonam', 'Kochi', 'Trivandrum', 'Hyderabad', 'Mumbai',
-        'Dubai', 'Sharjah', 'Abu Dhabi', 'Doha', 'Kuwait', 'Muscat', 'Singapore', 'Kuala Lumpur', 'London',
-        'Jaffna', 'Colombo', 'Pondicherry', 'Villupuram', 'Theni', 'Ramanathapuram', 'Virudhunagar'
+        'Dubai', 'Sharjah', 'Abu Dhabi', 'Doha', 'Kuwait City', 'Muscat', 'Singapore', 'Kuala Lumpur', 'London',
+        'Jaffna', 'Colombo', 'Pondicherry', 'Villupuram', 'Theni', 'Ramanathapuram', 'Virudhunagar',
+        'Tiruvannamalai', 'Sivakasi', 'Namakkal', 'Pudukkottai', 'Dharmapuri', 'Ooty', 'Pollachi',
+        'Toronto', 'Melbourne', 'Sydney', 'Auckland', 'Dallas', 'Chicago', 'New Jersey', 'Frankfurt', 'Paris', 'Birmingham'
       ];
 
-      const timeAgo = [
-        'Just now', '1 minute ago', '2 minutes ago', '3 minutes ago', '4 minutes ago', 
-        '5 minutes ago', '6 minutes ago', '7 minutes ago', '8 minutes ago', '9 minutes ago', 
-        '11 minutes ago', '12 minutes ago', '14 minutes ago', '15 minutes ago'
-      ];
+      // Mulberry32 deterministic PRNG ensures 100% reproducible non-colliding distribution
+      function mulberry32(a) {
+        return function() {
+          var t = a += 0x6D2B79F5;
+          t = Math.imul(t ^ t >>> 15, t | 1);
+          t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+          return ((t ^ t >>> 14) >>> 0) / 4294967296;
+        };
+      }
+      const rng = mulberry32(20261030);
 
       const list = [];
       const seen = new Set();
-      let tries = 0;
-      while (list.length < 2000 && tries < 10000) {
-        tries++;
+      let attempts = 0;
+
+      while (list.length < 2000 && attempts < 25000) {
+        attempts++;
         const isMale = (list.length % 2 === 0);
         const titles = isMale ? maleTitles : femaleTitles;
         const firsts = isMale ? maleFirstNames : femaleFirstNames;
 
-        const title = titles[Math.floor(Math.random() * titles.length)];
-        const first = firsts[Math.floor(Math.random() * firsts.length)];
-        const last = lastNames[Math.floor(Math.random() * lastNames.length)];
-        const fullName = `${title} ${first} ${last}`;
+        const t = titles[Math.floor(rng() * titles.length)];
+        const f = firsts[Math.floor(rng() * firsts.length)];
+        const l = lastNames[Math.floor(rng() * lastNames.length)];
+        const fullName = `${t} ${f} ${l}`;
 
         if (!seen.has(fullName)) {
           seen.add(fullName);
           list.push({
             name: fullName,
-            city: cities[Math.floor(Math.random() * cities.length)],
-            time: timeAgo[Math.floor(Math.random() * timeAgo.length)]
+            city: cities[Math.floor(rng() * cities.length)]
           });
         }
       }
       return list;
     })();
 
-    let toastIndex = 0;
+    // Persistent non-repeating index across page reloads & visits
+    const TOAST_STORAGE_KEY = 'rehoboth_reg_toast_idx';
+
+    function getNextUniqueRegistration() {
+      let idx = 0;
+      try {
+        const stored = localStorage.getItem(TOAST_STORAGE_KEY);
+        if (stored !== null) {
+          idx = parseInt(stored, 10);
+          if (isNaN(idx) || idx < 0) idx = 0;
+        } else {
+          // First visit: randomize start index so different users start at different positions
+          idx = Math.floor(Math.random() * mockRegistrations.length);
+        }
+      } catch (e) {
+        idx = (window.__rehobothToastIdx || 0);
+      }
+
+      const item = mockRegistrations[idx % mockRegistrations.length];
+      const nextIdx = (idx + 1) % mockRegistrations.length;
+
+      try {
+        localStorage.setItem(TOAST_STORAGE_KEY, nextIdx.toString());
+      } catch (e) {
+        window.__rehobothToastIdx = nextIdx;
+      }
+
+      return item;
+    }
+
+    // Dynamic realistic recency timings for each registration
+    function getDynamicRegistrationTime() {
+      const roll = Math.random();
+      if (roll < 0.12) {
+        return 'Just now';
+      } else if (roll < 0.35) {
+        const mins = Math.floor(Math.random() * 4) + 1; // 1, 2, 3, 4 mins
+        return mins === 1 ? '1 minute ago' : `${mins} minutes ago`;
+      } else if (roll < 0.65) {
+        const mins = Math.floor(Math.random() * 10) + 5; // 5 to 14 mins
+        return `${mins} minutes ago`;
+      } else if (roll < 0.85) {
+        const mins = Math.floor(Math.random() * 15) + 15; // 15 to 29 mins
+        return `${mins} minutes ago`;
+      } else {
+        const mins = Math.floor(Math.random() * 25) + 30; // 30 to 54 mins
+        return `${mins} minutes ago`;
+      }
+    }
+
+    function dismissLiveToast() {
+      const toast = document.getElementById('live-toast');
+      if (!toast) return;
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-10', 'opacity-0', 'pointer-events-none');
+    }
+
     function triggerLiveToast() {
       const toast = document.getElementById('live-toast');
       const nameEl = document.getElementById('toast-name');
       const cityEl = document.getElementById('toast-city');
+      const timeEl = document.getElementById('toast-time');
 
-      if (!toast) return;
+      if (!toast || !nameEl || !cityEl) return;
 
-      const item = mockRegistrations[toastIndex % mockRegistrations.length];
+      const item = getNextUniqueRegistration();
+      const timeText = getDynamicRegistrationTime();
+
       nameEl.textContent = item.name;
-      cityEl.textContent = `${item.city} • ${item.time}`;
+      cityEl.textContent = item.city;
+      if (timeEl) {
+        timeEl.textContent = timeText;
+      } else {
+        cityEl.textContent = `${item.city} • ${timeText}`;
+      }
 
-      // Slide in
+      // Slide in smoothly
       toast.classList.remove('translate-y-10', 'opacity-0', 'pointer-events-none');
       toast.classList.add('translate-y-0', 'opacity-100');
 
-      // Hide after 4 seconds
+      // Auto dismiss after 4.2 seconds
       setTimeout(() => {
-        toast.classList.remove('translate-y-0', 'opacity-100');
-        toast.classList.add('translate-y-10', 'opacity-0', 'pointer-events-none');
-      }, 4000);
-
-      toastIndex++;
+        dismissLiveToast();
+      }, 4200);
     }
 
-    // Trigger periodically
-    setTimeout(triggerLiveToast, 3500);
-    setInterval(triggerLiveToast, 14000);
+    // Dynamic randomized scheduling (each popup appears at a different natural timing)
+    let toastScheduleTimer = null;
+    function scheduleNextRegistrationToast(delayMs) {
+      if (toastScheduleTimer) clearTimeout(toastScheduleTimer);
+      toastScheduleTimer = setTimeout(() => {
+        if (document.hidden) {
+          // Pause when tab is hidden, check back in 3 seconds
+          scheduleNextRegistrationToast(3000);
+          return;
+        }
+        triggerLiveToast();
+        // Variable natural interval between 9 and 18 seconds
+        const nextInterval = Math.floor(Math.random() * 9000) + 9000;
+        scheduleNextRegistrationToast(nextInterval);
+      }, delayMs);
+    }
+
+    // Initial popup appears 3.5 to 5.5s after page load
+    const initialToastDelay = Math.floor(Math.random() * 2000) + 3500;
+    scheduleNextRegistrationToast(initialToastDelay);
   </script>
 
   <?php wp_footer(); ?>
