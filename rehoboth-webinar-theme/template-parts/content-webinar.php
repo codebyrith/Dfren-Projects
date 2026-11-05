@@ -31,7 +31,7 @@
 
           <!-- Element 1: Dream Outcome Headline -->
           <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.18] text-slate-900">
-            Finally hear God's voice clearly and break the family patterns holding you back, <span class="gold-gradient-text font-serif italic font-bold">in one 150-minute evening</span>
+            Finally hear God's voice clearly and break the family patterns holding you back
           </h1>
 
           <!-- Element 2: Sub-Headline -->
@@ -44,8 +44,6 @@
             <span class="flex items-center gap-1 text-red-600 font-bold">🔴 Live on Zoom</span>
             <span class="text-amber-300">•</span>
             <span>Spoken in Tanglish (Tamil + English)</span>
-            <span class="text-amber-300">•</span>
-            <span>Fri / Sat / Sun 7:30 PM IST</span>
           </div>
 
           <!-- Element 4: Single Clear Primary CTA + WhatsApp Button -->
@@ -141,126 +139,244 @@
   </section>
 
   <!-- ============================================================== -->
-  <!-- 3. PAIN POINT SECTION (PROBLEM, AGITATE, SOLVE - CLEAN LIGHT) -->
+  <!-- 3. PAIN POINT & VISUAL BREAKTHROUGH SECTION (ILLUSTRATED WITH IMAGES) -->
   <!-- ============================================================== -->
   <section class="py-12 sm:py-16 px-4 sm:px-6 bg-white border-b border-slate-200">
-    <div class="max-w-4xl mx-auto text-left space-y-8">
+    <div class="max-w-6xl mx-auto space-y-10">
       
-      <!-- Headline -->
-      <div class="text-center sm:text-left space-y-2">
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-3">
         <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-200">
-          The Unspoken Struggle
+          The Unspoken Struggle &amp; The Solution
         </span>
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug">
           You've fasted, prayed and served for years. So why do the same battles keep coming back?
         </h2>
-      </div>
-
-      <!-- Problem ("Does this sound like you?") -->
-      <div class="light-card rounded-2xl p-6 sm:p-7 space-y-4">
-        <h3 class="text-base sm:text-lg font-bold text-slate-900 flex items-center gap-2">
-          <span>❓ Does this sound like your spiritual walk?</span>
-        </h3>
-        <ul class="space-y-3 text-sm text-slate-700">
-          <li class="flex items-start gap-3">
-            <span class="text-red-500 text-lg leading-none mt-0.5 font-bold">✕</span>
-            <span>You start strong in prayer on Monday and feel dry, drained, and exhausted by Thursday.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-red-500 text-lg leading-none mt-0.5 font-bold">✕</span>
-            <span>You sleep through the night watches while the same attacks of fear and anxiety hit your home.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-red-500 text-lg leading-none mt-0.5 font-bold">✕</span>
-            <span>You're fighting the exact same delays and financial patterns that troubled your parents.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-red-500 text-lg leading-none mt-0.5 font-bold">✕</span>
-            <span>You serve in church or ministry, but the spiritual fire and prophetic gifts feel switched off.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-red-500 text-lg leading-none mt-0.5 font-bold">✕</span>
-            <span>You cry out to God for direction on your career, marriage and family, but hear only silence.</span>
-          </li>
-        </ul>
-        <p class="text-xs sm:text-sm text-amber-800 font-semibold pt-2 border-t border-slate-100">
-          If you nodded at even one, you are not alone. And it is not a lack of faith.
+        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+          It is not a lack of faith or effort. Discover visually why fasting harder hasn't broken the cycle, and how the Courts of Heaven protocol brings definitive spiritual freedom.
         </p>
       </div>
 
-      <!-- Agitate -->
-      <div class="bg-amber-50 border-l-4 border-amber-500 rounded-r-2xl p-5 sm:p-6 space-y-1.5 text-slate-700 text-sm leading-relaxed shadow-xs">
-        <h4 class="text-xs uppercase font-extrabold tracking-widest text-amber-800">What It Costs Every Year It Stays Unbroken:</h4>
-        <p>
-          Peace at home, joy in prayer, and confidence in your divine calling. Worst of all, your children inherit the exact same patterns. Fasting harder and praying louder has not changed it, because <strong>effort was never the missing piece</strong>.
+      <!-- 4 Visual Struggle Cards with High-Quality Images -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- Struggle Card 1: Spiritual Dryness -->
+        <div class="light-card rounded-2xl overflow-hidden light-card-hover flex flex-col justify-between border border-slate-200">
+          <div>
+            <div class="relative h-44 w-full overflow-hidden bg-slate-100">
+              <img 
+                src="<?php echo esc_url(get_template_directory_uri() . '/assets/struggle-spiritual-dryness.jpg'); ?>" 
+                alt="Believer seeking spiritual renewal amidst prayer dryness" 
+                class="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-500" 
+                loading="lazy"
+              />
+              <span class="absolute top-2.5 left-2.5 bg-red-600 text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full shadow-md">
+                Battle 1
+              </span>
+            </div>
+            <div class="p-4 space-y-1.5 text-left">
+              <h3 class="font-extrabold text-slate-900 text-sm leading-snug">
+                Dry &amp; Exhausted Prayer
+              </h3>
+              <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                Starting strong on Monday but feeling dry, drained, and out of words by Thursday. Prayer feels like a heavy routine instead of daily encounter.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 pt-0 text-left">
+            <div class="bg-amber-50 rounded-lg p-2.5 border border-amber-200 text-[10.5px] text-amber-900 font-semibold flex items-center gap-1.5">
+              <span>🔥</span>
+              <span>Rebuild your daily altar fire</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Struggle Card 2: Midnight Anxiety & Attacks -->
+        <div class="light-card rounded-2xl overflow-hidden light-card-hover flex flex-col justify-between border border-slate-200">
+          <div>
+            <div class="relative h-44 w-full overflow-hidden bg-slate-100">
+              <img 
+                src="<?php echo esc_url(get_template_directory_uri() . '/assets/struggle-night-anxiety.jpg'); ?>" 
+                alt="Bedside prayer turning midnight attacks and anxiety into shalom peace" 
+                class="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-500" 
+                loading="lazy"
+              />
+              <span class="absolute top-2.5 left-2.5 bg-red-600 text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full shadow-md">
+                Battle 2
+              </span>
+            </div>
+            <div class="p-4 space-y-1.5 text-left">
+              <h3 class="font-extrabold text-slate-900 text-sm leading-snug">
+                Midnight Attacks &amp; Fear
+              </h3>
+              <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                Sleeping through midnight watches while recurring panic, bad dreams, and worry disturb your home. Shouting blindly leaves the door cracked open.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 pt-0 text-left">
+            <div class="bg-amber-50 rounded-lg p-2.5 border border-amber-200 text-[10.5px] text-amber-900 font-semibold flex items-center gap-1.5">
+              <span>🛡️</span>
+              <span>Guard the 15-min night watch</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Struggle Card 3: Generational Delays -->
+        <div class="light-card rounded-2xl overflow-hidden light-card-hover flex flex-col justify-between border border-slate-200">
+          <div>
+            <div class="relative h-44 w-full overflow-hidden bg-slate-100">
+              <img 
+                src="<?php echo esc_url(get_template_directory_uri() . '/assets/struggle-generational-chains.jpg'); ?>" 
+                alt="Generational chains breaking and shattering into divine light" 
+                class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-500" 
+                loading="lazy"
+              />
+              <span class="absolute top-2.5 left-2.5 bg-red-600 text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full shadow-md">
+                Battle 3
+              </span>
+            </div>
+            <div class="p-4 space-y-1.5 text-left">
+              <h3 class="font-extrabold text-slate-900 text-sm leading-snug">
+                Generational Cycles &amp; Delays
+              </h3>
+              <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                Fighting the same financial patterns, marriage delays, and stagnation that troubled your parents. Emotional prayer alone cannot overturn legal ancestral claims.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 pt-0 text-left">
+            <div class="bg-emerald-50 rounded-lg p-2.5 border border-emerald-200 text-[10.5px] text-emerald-900 font-semibold flex items-center gap-1.5">
+              <span>⛓️</span>
+              <span>Revoke legal ancestral doors</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Struggle Card 4: Silence in Career & Family Decisions -->
+        <div class="light-card rounded-2xl overflow-hidden light-card-hover flex flex-col justify-between border border-slate-200">
+          <div>
+            <div class="relative h-44 w-full overflow-hidden bg-slate-100">
+              <img 
+                src="<?php echo esc_url(get_template_directory_uri() . '/assets/struggle-divine-direction.jpg'); ?>" 
+                alt="Seeking divine direction in career and family with open Bible" 
+                class="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-500" 
+                loading="lazy"
+              />
+              <span class="absolute top-2.5 left-2.5 bg-red-600 text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full shadow-md">
+                Battle 4
+              </span>
+            </div>
+            <div class="p-4 space-y-1.5 text-left">
+              <h3 class="font-extrabold text-slate-900 text-sm leading-snug">
+                Silence in Key Decisions
+              </h3>
+              <p class="text-[11.5px] text-slate-600 leading-relaxed">
+                Crying out for clarity on career, marriage, and family, but hearing only silence. Second-guessing if impressions are God's voice or your own thoughts.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 pt-0 text-left">
+            <div class="bg-blue-50 rounded-lg p-2.5 border border-blue-200 text-[10.5px] text-blue-900 font-semibold flex items-center gap-1.5">
+              <span>🕊️</span>
+              <span>3 biblical discernment checks</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Agitate Callout Bar -->
+      <div class="bg-amber-50 border-l-4 border-amber-500 rounded-2xl p-5 sm:p-6 text-slate-800 text-sm leading-relaxed shadow-xs text-left">
+        <h4 class="text-xs uppercase font-extrabold tracking-widest text-amber-800 mb-1">What It Costs Every Year It Stays Unbroken:</h4>
+        <p class="text-xs sm:text-sm text-slate-700">
+          Peace at home, joy in prayer, and confidence in your divine calling. Worst of all, your children inherit the exact same patterns. Fasting harder has not changed it, because <strong>effort was never the missing piece—spiritual legal jurisdiction was</strong>.
         </p>
       </div>
 
-      <!-- Solve: The Better Way -->
-      <div class="light-card rounded-2xl p-6 sm:p-7 space-y-4">
-        <h3 class="text-base sm:text-lg font-bold text-emerald-700 flex items-center gap-2">
-          <span>✨ The Solution: The Courts of Heaven Protocol</span>
-        </h3>
-        <p class="text-sm text-slate-600 leading-relaxed">
-          The Bible reveals that God is not just our loving Father—He is also the <strong>Righteous Judge</strong> (Hebrews 12:23). When the enemy accuses your family line based on unresolved generational doors, emotional prayers alone cannot overturn legal accusations. 
-        </p>
-        <p class="text-sm text-slate-600 leading-relaxed">
-          In this 150-minute live masterclass, Prophet Michael Rehoboth walks you through the step-by-step biblical protocol in clear Tanglish to present your case, revoke demonic claims by the Blood of Jesus, and establish lasting breakthrough.
-        </p>
+      <!-- Main Showcase: The Courts of Heaven Solution with Image & Side-by-Side Comparison -->
+      <div class="light-card rounded-3xl p-6 sm:p-8 shadow-md border-2 border-amber-300 bg-gradient-to-b from-white via-amber-50/20 to-white space-y-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          
+          <div class="lg:col-span-5 rounded-2xl overflow-hidden border border-slate-200 shadow-md">
+            <img 
+              src="<?php echo esc_url(get_template_directory_uri() . '/assets/solution-courts-of-heaven.jpg'); ?>" 
+              alt="Courts of Heaven Celestial Protocol" 
+              class="w-full h-auto object-cover max-h-80" 
+              loading="lazy"
+            />
+          </div>
 
-        <!-- Visual Comparison: The Old Way vs The Blueprint Way -->
-        <div class="mt-6 pt-4 border-t border-slate-100">
-          <h4 class="text-xs uppercase font-bold tracking-wider text-slate-500 mb-3 text-center sm:text-left">
-            How Your Prayer Approach Changes:
-          </h4>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs sm:text-sm">
+          <div class="lg:col-span-7 space-y-3 text-left">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-300">
+              The Spiritual Technology
+            </span>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900">
+              The Courts of Heaven Protocol: Moving From Battlefield to Courtroom
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              The Bible reveals that God is not only our loving Heavenly Father—He is also the <strong>Righteous Judge of the Universe</strong> (Hebrews 12:23). When Satan stands as the accuser of the brethren (Revelation 12:10) bringing legal claims against your family lineage, emotional shouting into the air cannot overturn legal accusations.
+            </p>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              In this live Tanglish masterclass, Prophet Michael Rehoboth guides you step by step to present your case before the Judge, apply the Blood of the Lamb, silence every accusation, and secure lasting decrees of freedom.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Visual Comparison: Old Way vs Blueprint Way -->
+        <div class="pt-4 border-t border-slate-200">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
             
             <!-- Old Way -->
-            <div class="bg-red-50 border border-red-200 rounded-xl p-4 space-y-2.5">
-              <div class="font-bold text-red-700 flex items-center gap-1.5 pb-1 border-b border-red-200">
-                <span>✕ The Exhausting Old Way</span>
+            <div class="bg-red-50 border border-red-200 rounded-2xl p-5 space-y-2.5 text-left">
+              <div class="font-bold text-red-800 text-sm flex items-center gap-2 pb-2 border-b border-red-200">
+                <span class="w-6 h-6 rounded-full bg-red-200 text-red-800 flex items-center justify-center font-bold text-xs">✕</span>
+                <span>The Exhausting Old Way</span>
               </div>
               <ul class="space-y-2 text-slate-600">
                 <li class="flex items-start gap-2">
                   <span class="text-red-500 font-bold">✕</span>
-                  <span>Fasting longer and hoping for relief without legal grounds</span>
+                  <span>Fasting endlessly hoping God will feel pity without establishing legal grounds</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-red-500 font-bold">✕</span>
-                  <span>Praying irregularly whenever an emergency hits</span>
+                  <span>Praying irregularly only when an emergency or bad dream strikes</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-red-500 font-bold">✕</span>
-                  <span>Guessing whether an impression is God's voice or your own thoughts</span>
+                  <span>Guessing whether God is speaking or whether you're hearing your own desires</span>
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-red-500 font-bold">✕</span>
-                  <span>Fighting each attack blindly as it comes</span>
+                  <span>Fighting symptoms repeatedly while the demonic legal door stays open</span>
                 </li>
               </ul>
             </div>
 
             <!-- Blueprint Way -->
-            <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 space-y-2.5">
-              <div class="font-bold text-emerald-800 flex items-center gap-1.5 pb-1 border-b border-emerald-200">
-                <span>✓ The Courts of Heaven Blueprint</span>
+            <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5 space-y-2.5 text-left">
+              <div class="font-bold text-emerald-900 text-sm flex items-center gap-2 pb-2 border-b border-emerald-200">
+                <span class="w-6 h-6 rounded-full bg-emerald-200 text-emerald-800 flex items-center justify-center font-bold text-xs">✓</span>
+                <span>The Courts of Heaven Protocol</span>
               </div>
               <ul class="space-y-2 text-slate-700">
                 <li class="flex items-start gap-2">
-                  <span class="text-emerald-600 font-bold">✓</span>
-                  <span>Knowing the exact biblical grounds to present before the Judge</span>
+                  <span class="text-emerald-700 font-bold">✓</span>
+                  <span>Entering the Court of Heaven with exact biblical decrees and scriptures</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-emerald-600 font-bold">✓</span>
-                  <span>A structured 15-min Midnight &amp; 5 AM watch discipline</span>
+                  <span class="text-emerald-700 font-bold">✓</span>
+                  <span>Structured 15-minute Midnight &amp; 5 AM watch discipline to guard your home</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-emerald-600 font-bold">✓</span>
-                  <span>Clear scriptural steps to discern God's definitive yes and no</span>
+                  <span class="text-emerald-700 font-bold">✓</span>
+                  <span>Definitive scriptural discernment tests for marriage, finances, and life calling</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-emerald-600 font-bold">✓</span>
-                  <span>Permanently closing the legal doors the attacks enter through</span>
+                  <span class="text-emerald-700 font-bold">✓</span>
+                  <span>Permanently cancelling generational curses by the Blood of Jesus</span>
                 </li>
               </ul>
             </div>
@@ -273,12 +389,12 @@
           <button 
             type="button"
             onclick="openRegistrationModal()" 
-            class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black px-6 py-3 rounded-xl text-sm sm:text-base shadow-md transition-all cursor-pointer"
+            class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black px-7 py-3.5 rounded-xl text-sm sm:text-base shadow-md transition-all cursor-pointer transform hover:-translate-y-0.5 active:scale-95"
           >
             <span>Claim My ₹199 Fellowship Pass</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </button>
-          <p class="text-xs text-slate-500 mt-2">Attend 45 minutes or get your ₹199 back on WhatsApp</p>
+          <p class="text-xs text-slate-500 mt-2">Attend 45 minutes or get your ₹199 refunded same day</p>
         </div>
 
       </div>
