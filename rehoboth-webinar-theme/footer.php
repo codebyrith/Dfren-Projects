@@ -6,106 +6,208 @@
  */
 ?>
   <!-- ============================================================== -->
-  <!-- 11. FOOTER (CLEAN, PROFESSIONAL, WORKING POLICY LINKS) -->
+  <!-- 10. FOOTER (CLEAN, MINIMAL, WHITE/LIGHT GRAY THEME - NO DARK DISCLAIMER) -->
   <!-- ============================================================== -->
-  <footer class="bg-slate-950 border-t border-slate-800 text-stone-400 py-10 px-4 sm:px-6">
-    <div class="max-w-6xl mx-auto space-y-6">
+  <footer class="bg-white border-t border-slate-200 text-slate-600 py-8 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto space-y-4">
       
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-white p-1 flex items-center justify-center border border-amber-500/40 shadow-sm flex-shrink-0">
+          <div class="w-8 h-8 rounded-xl bg-white p-1 flex items-center justify-center border border-slate-200 shadow-xs flex-shrink-0">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/rehoboth-logo.png'); ?>" alt="Rehoboth Ministries" class="w-full h-full object-contain" />
           </div>
           <div>
-            <span class="font-serif text-lg font-bold text-white block leading-tight">REHOBOTH MINISTRIES</span>
-            <span class="text-[10px] text-amber-400 uppercase tracking-wider font-semibold block">Courts of Heaven Masterclass</span>
+            <span class="font-serif text-base font-bold text-slate-900 block leading-tight">REHOBOTH MINISTRIES</span>
+            <span class="text-[9.5px] text-amber-600 uppercase tracking-wider font-bold block">Courts of Heaven Masterclass</span>
           </div>
         </div>
 
-        <div class="text-xs space-y-1">
-          <div>Email: <a href="mailto:info@rehobothministries.com" class="text-amber-400 hover:underline">info@rehobothministries.com</a></div>
-          <div>WhatsApp Helpline: <a href="https://wa.me/919886914599" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline font-semibold">+91 98869 14599</a></div>
+        <div class="text-xs space-y-0.5">
+          <div>Email: <a href="mailto:info@rehobothministries.com" class="text-amber-700 hover:underline">info@rehobothministries.com</a></div>
+          <div>WhatsApp Helpline: <a href="https://wa.me/919886914599" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:underline font-bold">+91 98869 14599</a></div>
         </div>
       </div>
 
-      <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs">
-        <button type="button" onclick="openPolicyModal('privacy')" class="hover:text-amber-400 transition cursor-pointer">Privacy Policy</button>
-        <span class="text-slate-700">•</span>
-        <button type="button" onclick="openPolicyModal('terms')" class="hover:text-amber-400 transition cursor-pointer">Terms &amp; Conditions</button>
-        <span class="text-slate-700">•</span>
-        <button type="button" onclick="openPolicyModal('refund')" class="hover:text-amber-400 transition cursor-pointer">Refund Policy (45-Min Guarantee)</button>
+      <div class="pt-3 border-t border-slate-100 flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 text-xs">
+        <button type="button" onclick="openPolicyModal('privacy')" class="hover:text-amber-700 transition cursor-pointer">Privacy Policy</button>
+        <span class="text-slate-300">•</span>
+        <button type="button" onclick="openPolicyModal('terms')" class="hover:text-amber-700 transition cursor-pointer">Terms &amp; Conditions</button>
+        <span class="text-slate-300">•</span>
+        <button type="button" onclick="openPolicyModal('refund')" class="hover:text-amber-700 transition cursor-pointer">Refund Policy (45-Min Guarantee)</button>
       </div>
 
-      <div class="text-[11px] text-stone-400 text-center max-w-3xl mx-auto leading-relaxed space-y-2">
-        <p>
-          Disclaimer: This masterclass is a spiritual faith-enrichment and biblical education fellowship. Spiritual outcomes depend on individual faith, scripture application, and prayer discipline. We do not provide clinical psychiatric or financial investment advice.
-        </p>
-        <p class="text-stone-400">
-          © 2026 Rehoboth International Ministries. All rights reserved.
-        </p>
+      <div class="text-[11px] text-slate-400 text-center pt-2">
+        © 2026 Rehoboth International Ministries. All rights reserved.
       </div>
 
     </div>
   </footer>
 
   <!-- ============================================================== -->
-  <!-- 12. MOBILE STICKY BOTTOM BAR (CONVERTS ON MOBILE) -->
+  <!-- 11. MOBILE STICKY BOTTOM BAR (CLEAN WHITE) -->
   <!-- ============================================================== -->
-  <aside class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-slate-950/95 border-t border-amber-500/40 p-2.5 px-4 backdrop-blur-md shadow-2xl flex items-center justify-between gap-3">
+  <aside class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 border-t border-slate-200 p-2.5 px-4 backdrop-blur-md shadow-2xl flex items-center justify-between gap-3">
     <div>
       <div class="flex items-baseline gap-1.5 leading-none">
-        <span class="text-stone-400 line-through text-xs">₹999</span>
-        <span class="text-xl font-black text-amber-400">₹199</span>
+        <span class="text-slate-400 line-through text-xs">₹999</span>
+        <span class="text-xl font-black text-amber-600">₹199</span>
       </div>
-      <div class="text-[9.5px] text-emerald-400 font-bold mt-0.5">45-Min Money-Back Guarantee</div>
+      <div class="text-[9.5px] text-emerald-700 font-bold mt-0.5">45-Min Money-Back Guarantee</div>
     </div>
-    <a 
-      href="#register" 
-      onclick="scrollToForm(); return false;" 
-      class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs px-4 py-2.5 rounded-xl shadow-lg shadow-amber-500/30 flex items-center gap-1.5 active:scale-95 transition-transform whitespace-nowrap"
+    <button 
+      type="button" 
+      onclick="openRegistrationModal()"
+      class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs px-4 py-2.5 rounded-xl shadow-md shadow-amber-500/20 flex items-center gap-1.5 active:scale-95 transition-transform whitespace-nowrap cursor-pointer"
     >
       <span>Book Pass Now →</span>
-    </a>
+    </button>
   </aside>
 
   <!-- ============================================================== -->
-  <!-- ESSENTIAL POLICY MODAL -->
+  <!-- FLOATING LIVE REGISTRATION TOAST (2,000 UNIQUE ENTRIES, LIGHT THEME) -->
   <!-- ============================================================== -->
-  <div id="policy-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-    <div class="bg-slate-900 border-2 border-amber-500/80 rounded-2xl max-w-2xl w-full p-6 text-white relative shadow-2xl max-h-[85vh] overflow-y-auto">
-      <button onclick="closePolicyModal()" class="absolute top-4 right-4 text-stone-400 hover:text-white text-xl font-bold p-1 cursor-pointer">✕</button>
-      <div id="policy-content" class="text-stone-300 text-xs sm:text-sm space-y-3"></div>
-      <div class="mt-6 pt-4 border-t border-slate-800 text-right">
-        <button onclick="closePolicyModal()" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs transition cursor-pointer">
-          Close Window
-        </button>
+  <div id="live-toast" onclick="openRegistrationModal()" class="fixed bottom-20 left-3 sm:bottom-6 sm:left-6 z-30 bg-white/95 border border-slate-200 text-slate-900 p-2.5 sm:p-3 rounded-2xl shadow-xl flex items-center gap-2.5 sm:gap-3 max-w-[300px] sm:max-w-xs transition-all duration-500 transform translate-y-10 opacity-0 pointer-events-none cursor-pointer hover:border-amber-400 group">
+    <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center font-bold text-xs sm:text-sm flex-shrink-0 group-hover:scale-105 transition-transform shadow-xs">
+      ⚡
+    </div>
+    <div class="text-[11px] leading-tight flex-1">
+      <p class="font-bold text-slate-900 group-hover:text-amber-600 transition-colors"><span id="toast-name">Bro. Jeremiah Raj</span> just registered!</p>
+      <p class="text-slate-500 text-[10px] mt-0.5"><span id="toast-city">Tirunelveli</span> • <span id="toast-time">4 minutes ago</span></p>
+    </div>
+    <button type="button" onclick="event.stopPropagation(); dismissLiveToast();" class="text-slate-400 hover:text-slate-700 p-1 text-xs leading-none transition-colors" title="Close" aria-label="Dismiss notification">✕</button>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- LIGHT REGISTRATION MODAL POPUP (OPENS ON CTA CLICK) -->
+  <!-- ============================================================== -->
+  <div id="registration-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white border border-slate-200 rounded-3xl max-w-md w-full p-6 sm:p-7 shadow-2xl relative text-left animate-fade-in max-h-[90vh] overflow-y-auto">
+      
+      <button 
+        type="button" 
+        onclick="closeRegistrationModal()" 
+        class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl font-bold p-1 cursor-pointer transition-colors"
+        aria-label="Close"
+      >
+        ✕
+      </button>
+
+      <div class="space-y-1 mb-5">
+        <span class="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-2 py-0.5 rounded">
+          Step 1 of 1 · Instant Booking
+        </span>
+        <h3 class="text-xl font-extrabold text-slate-900">Claim Your ₹199 Fellowship Pass</h3>
+        <p class="text-xs text-slate-600">Enter your details to receive your private Zoom link on WhatsApp.</p>
       </div>
+
+      <form id="registration-form" class="space-y-3.5" onsubmit="handleRegistrationSubmit(event)">
+        
+        <div>
+          <label for="fullName" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+            Your Full Name <span class="text-amber-600">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="fullName" 
+            name="fullName" 
+            required 
+            placeholder="e.g. Bro. David Raj" 
+            class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 focus:bg-white transition"
+          />
+        </div>
+
+        <div>
+          <label for="whatsapp" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+            WhatsApp Phone Number <span class="text-amber-600">*</span>
+            <span class="text-[10px] font-normal text-slate-500 normal-case">(For Zoom link delivery)</span>
+          </label>
+          <div class="flex">
+            <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-slate-300 bg-slate-100 text-slate-700 text-xs font-bold">
+              +91
+            </span>
+            <input 
+              type="tel" 
+              id="whatsapp" 
+              name="whatsapp" 
+              required 
+              maxlength="10" 
+              pattern="[0-9]{10}"
+              placeholder="10-digit number" 
+              class="w-full bg-slate-50 border border-slate-300 rounded-r-xl px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 focus:bg-white transition"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+            Email Address <span class="text-amber-600">*</span>
+          </label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required 
+            placeholder="yourname@gmail.com" 
+            class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 focus:bg-white transition"
+          />
+        </div>
+
+        <div>
+          <label for="batchSlot" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+            Select Preferred Live Batch <span class="text-amber-600">*</span>
+          </label>
+          <select 
+            id="batchSlot" 
+            name="batchSlot" 
+            required 
+            class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition cursor-pointer"
+          >
+            <option value="Friday Batch (7:30 PM IST)">🗓️ Friday Batch — 7:30 PM IST (Recommended)</option>
+            <option value="Saturday Batch (7:30 PM IST)">🗓️ Saturday Batch — 7:30 PM IST</option>
+            <option value="Sunday Batch (7:30 PM IST)">🗓️ Sunday Batch — 7:30 PM IST</option>
+          </select>
+        </div>
+
+        <button 
+          type="submit" 
+          id="submit-btn" 
+          class="w-full mt-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-base py-3.5 px-4 rounded-xl shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5 active:scale-95 cursor-pointer"
+        >
+          <span>Confirm &amp; Proceed (@ ₹199) →</span>
+        </button>
+
+      </form>
+
+      <div class="mt-4 pt-3 border-t border-slate-100 text-center text-[10.5px] text-slate-500">
+        🔒 100% Secure Checkout · 45-Minute Peace-Of-Mind Guarantee
+      </div>
+
     </div>
   </div>
 
   <!-- ============================================================== -->
   <!-- REGISTRATION CONFIRMATION MODAL -->
   <!-- ============================================================== -->
-  <div id="success-modal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-    <div class="bg-slate-900 border-2 border-emerald-500/80 rounded-3xl max-w-md w-full p-6 text-white text-center shadow-2xl space-y-4">
-      <div class="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 flex items-center justify-center text-3xl mx-auto">
+  <div id="success-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white border border-slate-200 rounded-3xl max-w-md w-full p-6 text-slate-900 text-center shadow-2xl space-y-4">
+      <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 border border-emerald-200 flex items-center justify-center text-3xl mx-auto">
         ✓
       </div>
       <div>
-        <h3 class="text-xl font-extrabold text-white">Registration Confirmed!</h3>
-        <p class="text-xs text-stone-300 mt-1">
+        <h3 class="text-xl font-extrabold text-slate-900">Registration Confirmed!</h3>
+        <p class="text-xs text-slate-600 mt-1">
           Your seat has been reserved. Complete details have been prepared for your batch:
         </p>
       </div>
 
-      <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 text-xs space-y-1.5 text-left">
-        <div class="flex justify-between text-stone-300">
+      <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 text-xs space-y-1.5 text-left">
+        <div class="flex justify-between text-slate-600">
           <span>Batch Selected:</span>
-          <span id="confirmed-batch" class="font-bold text-amber-400">Friday 7:30 PM IST</span>
+          <span id="confirmed-batch" class="font-bold text-amber-700">Friday 7:30 PM IST</span>
         </div>
-        <div class="flex justify-between text-stone-300">
+        <div class="flex justify-between text-slate-600">
           <span>Registered Under:</span>
-          <span id="confirmed-contact" class="font-bold text-white">Attendee</span>
+          <span id="confirmed-contact" class="font-bold text-slate-900">Attendee</span>
         </div>
       </div>
 
@@ -115,31 +217,53 @@
           href="https://wa.me/919886914599" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow-lg transition"
+          class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md transition"
         >
           <span>💬 Join Official WhatsApp Community</span>
         </a>
         <button 
           onclick="closeSuccessModal()" 
-          class="text-xs text-stone-400 hover:text-white pt-1 cursor-pointer block mx-auto"
+          class="text-xs text-slate-500 hover:text-slate-800 pt-1 cursor-pointer block mx-auto"
         >
-          Close
+          Close Window
         </button>
       </div>
     </div>
   </div>
 
-  <!-- SCRIPTS & INTERACTION LOGIC -->
+  <!-- ============================================================== -->
+  <!-- POLICY MODAL -->
+  <!-- ============================================================== -->
+  <div id="policy-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white border border-slate-200 rounded-2xl max-w-2xl w-full p-6 text-slate-900 relative shadow-2xl max-h-[85vh] overflow-y-auto">
+      <button onclick="closePolicyModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl font-bold p-1 cursor-pointer">✕</button>
+      <div id="policy-content" class="text-slate-600 text-xs sm:text-sm space-y-3"></div>
+      <div class="mt-6 pt-4 border-t border-slate-100 text-right">
+        <button onclick="closePolicyModal()" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2 rounded-xl text-xs transition cursor-pointer">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================== -->
+  <!-- SCRIPTS & INTERACTION LOGIC (INCLUDING 2,000 POPUPS GENERATOR) -->
+  <!-- ============================================================== -->
   <script>
-    function scrollToForm() {
-      const target = document.getElementById('register');
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    function openRegistrationModal() {
+      const modal = document.getElementById('registration-modal');
+      if (modal) {
+        modal.classList.remove('hidden');
         setTimeout(() => {
           const input = document.getElementById('fullName');
           if (input) input.focus();
-        }, 500);
+        }, 100);
       }
+    }
+
+    function closeRegistrationModal() {
+      const modal = document.getElementById('registration-modal');
+      if (modal) modal.classList.add('hidden');
     }
 
     function handleRegistrationSubmit(event) {
@@ -175,6 +299,7 @@
       setTimeout(() => {
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
+        closeRegistrationModal();
 
         document.getElementById('confirmed-batch').textContent = batch;
         document.getElementById('confirmed-contact').textContent = `${name} (+91 ${phone})`;
@@ -194,35 +319,35 @@
       privacy: {
         title: "Privacy Policy",
         body: `
-          <h4 class="text-base font-bold text-amber-400 mb-2">Rehoboth Ministries International — Privacy Policy</h4>
+          <h4 class="text-base font-bold text-slate-900 mb-2">Rehoboth Ministries International — Privacy Policy</h4>
           <p>We respect your privacy and are committed to protecting the personal information you share with us. This policy details how we treat your data when registering for our spiritual webinars and fellowships.</p>
-          <h5 class="font-bold text-white mt-3">1. Information We Collect</h5>
+          <h5 class="font-bold text-slate-900 mt-3">1. Information We Collect</h5>
           <p>We collect your Name, WhatsApp Phone Number, and Email Address solely to send your webinar Zoom link, reminder alerts, and downloadable PDF worksheets.</p>
-          <h5 class="font-bold text-white mt-3">2. Data Security &amp; Sharing</h5>
+          <h5 class="font-bold text-slate-900 mt-3">2. Data Security &amp; Sharing</h5>
           <p>We never sell, rent, or trade your personal information to third parties. All communications are sent strictly on behalf of Rehoboth Ministries International.</p>
-          <h5 class="font-bold text-white mt-3">3. Contact</h5>
+          <h5 class="font-bold text-slate-900 mt-3">3. Contact</h5>
           <p>For questions or data deletion requests, contact us at info@rehobothministries.com or WhatsApp +91 98869 14599.</p>
         `
       },
       terms: {
         title: "Terms & Conditions",
         body: `
-          <h4 class="text-base font-bold text-amber-400 mb-2">Terms and Conditions of Participation</h4>
+          <h4 class="text-base font-bold text-slate-900 mb-2">Terms and Conditions of Participation</h4>
           <p>By registering for the Courts of Heaven live masterclass, you agree to the following terms:</p>
-          <h5 class="font-bold text-white mt-3">1. Webinar Access</h5>
+          <h5 class="font-bold text-slate-900 mt-3">1. Webinar Access</h5>
           <p>Each ₹199 pass grants full live Zoom access to your chosen evening batch. Household members are permitted to watch together on one screen.</p>
-          <h5 class="font-bold text-white mt-3">2. Spiritual Education Fellowship</h5>
+          <h5 class="font-bold text-slate-900 mt-3">2. Spiritual Education Fellowship</h5>
           <p>This masterclass is a spiritual faith-enrichment and biblical teaching session. It does not replace medical, psychiatric, or professional financial advice.</p>
-          <h5 class="font-bold text-white mt-3">3. Code of Conduct</h5>
+          <h5 class="font-bold text-slate-900 mt-3">3. Code of Conduct</h5>
           <p>Attendees must maintain Christian decorum, mutual respect, and reverence during live prayer and Zoom chat interactions.</p>
         `
       },
       refund: {
         title: "Refund Policy (45-Minute Guarantee)",
         body: `
-          <h4 class="text-base font-bold text-emerald-400 mb-2">45-Minute Peace-Of-Mind Refund Policy</h4>
+          <h4 class="text-base font-bold text-emerald-800 mb-2">45-Minute Peace-Of-Mind Refund Policy</h4>
           <p>We want you to join with complete confidence and peace of mind.</p>
-          <h5 class="font-bold text-white mt-3">How the Guarantee Works:</h5>
+          <h5 class="font-bold text-slate-900 mt-3">How the Guarantee Works:</h5>
           <p>Attend the live session for the first 45 minutes. If you honestly feel the teaching is not delivering biblical clarity and value for your spiritual walk, simply message our official WhatsApp helpline at <strong>+91 98869 14599</strong> before the 45-minute mark of your batch.</p>
           <p class="mt-2">Our team will verify your live attendance and process a full 100% refund of your ₹199 back to your original payment method on the very same day. No hassle, no friction.</p>
         `
@@ -242,10 +367,201 @@
 
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
-        closePolicyModal();
+        closeRegistrationModal();
         closeSuccessModal();
+        closePolicyModal();
       }
     });
+
+    // ==============================================================
+    // 2,000 UNIQUE REGISTRATIONS DETERMINISTIC GENERATOR
+    // ==============================================================
+    const mockRegistrations = (() => {
+      const maleTitles = ['Bro.', 'Brother', 'Pastor', 'Evg.', 'Minister', 'Elder'];
+      const femaleTitles = ['Sis.', 'Sister'];
+
+      const maleFirstNames = [
+        'Joshua', 'David', 'Daniel', 'Samuel', 'Joseph', 'Emmanuel', 'Caleb', 'Solomon', 'Isaac', 'Jonathan',
+        'Timothy', 'Benjamin', 'Paul', 'Stephen', 'Matthew', 'Luke', 'John', 'Silas', 'Titus', 'Barnabas',
+        'Gideon', 'Philip', 'Nathan', 'Abraham', 'Joel', 'Sam', 'Ruben', 'Jebaraj', 'Dass', 'Kishore',
+        'Arun', 'Victor', 'Vijay', 'Enoch', 'Antony', 'Immanuel', 'Justin', 'Gladson', 'Godson', 'Wesley',
+        'Franklin', 'Livingston', 'Wilson', 'Samson', 'Nelson', 'Aaron', 'Edwin', 'Solomonraj', 'Ebenezer', 'Cornelius',
+        'Jeremiah', 'Micah', 'Hezekiah', 'Nehemiah', 'Josiah', 'Ezekiel', 'Simon', 'Andrew', 'Thomas', 'James',
+        'Mark', 'Peter', 'Levi', 'Seth', 'Noah', 'Jesse', 'Boaz', 'Asaph', 'Jadon', 'Eli',
+        'Prabhu', 'Johnson', 'Mohan', 'Richard', 'Christopher', 'Robin', 'Jason', 'Dennis', 'Charles', 'Edward',
+        'Kingsley', 'Jackson', 'Naveen', 'Alex', 'Praveen', 'Clinton', 'Felix', 'Donald', 'Stanly', 'Vinoth',
+        'Derrick', 'Godwin', 'Jeyakumar', 'Prem', 'Selvaraj', 'Jebastin', 'Jerald', 'Austin', 'Allen', 'Kevin',
+        'Melchizedek', 'Zachariah', 'Ezra', 'Malachi', 'Benaiah', 'Obed', 'Kenaz', 'Phinehas', 'Jethro', 'Barak'
+      ];
+
+      const femaleFirstNames = [
+        'Priya', 'Sharon', 'Rachel', 'Rebecca', 'Hannah', 'Grace', 'Ruth', 'Esther', 'Mary', 'Deborah',
+        'Sarah', 'Lydia', 'Tabitha', 'Priscilla', 'Keziah', 'Abigail', 'Naomi', 'Phoebe', 'Leah', 'Martha',
+        'Miriam', 'Elizabeth', 'Anna', 'Joanna', 'Jemimah', 'Blessy', 'Mercy', 'Evangeline', 'Shanthi', 'Hepzibah',
+        'Shiny', 'Persis', 'Selvi', 'Kavitha', 'Jasmine', 'Christy', 'Sherin', 'Benita', 'Sweety', 'Anitha',
+        'Stella', 'Deepa', 'Renita', 'Joy', 'Angel', 'Graceina', 'Diana', 'Beulah', 'Keren', 'Sheela',
+        'Pavithra', 'Nivetha', 'Subha', 'Preethi', 'Sujatha', 'Jenifer', 'Mercia', 'Nancy', 'Krupa', 'Glory',
+        'Hepzi', 'Reena', 'Sonia', 'Rubi', 'Rani', 'Monica', 'Salome', 'Dorcas', 'Bernice', 'Damaris',
+        'Sherly', 'Jemila', 'Princy', 'Felicia', 'Gladys', 'Christina', 'Cynthia', 'Irene', 'Jemima', 'Jennifer',
+        'Beula', 'Anita', 'Jancy', 'Catherine', 'Roseline', 'Veronica', 'Sophia', 'Sneha', 'Keerthana', 'Delilah',
+        'Tabita', 'Lois', 'Susanna', 'Junia', 'Claudia', 'Rhoda', 'Apphia', 'Tryphena', 'Tryphosa', 'Persida'
+      ];
+
+      const lastNames = [
+        'Raj', 'Kumar', 'Paul', 'Thomas', 'George', 'Daniel', 'Moses', 'Samuel', 'Victor', 'Joseph',
+        'David', 'Jacob', 'Abraham', 'Varghese', 'Mathew', 'Wilson', 'Fernandez', 'Richard', 'Anthony', 'Peter',
+        'Christopher', 'Selvam', 'Durairaj', 'Jayaraj', 'Sundaram', 'Alexander', 'Devadoss', 'Stephen', 'Chelliah',
+        'Ponraj', 'Gnanadurai', 'Packiaraj', 'Jebasingh', 'Koildoss', 'Yesudas', 'Nadar', 'Rajan', 'Christian',
+        'D\'Souza', 'Gomez', 'Philip', 'John', 'Mani', 'Dhas', 'Ramesh', 'Solomon', 'Jebaraj', 'Ebenezer',
+        'Manuel', 'Harris', 'Samson', 'Rajkumar', 'Selvaraj', 'Jeyasingh', 'Rajendran', 'Chandran', 'Edwards',
+        'Mathias', 'Fernando', 'Lobo', 'Rosario', 'Dias', 'Perera', 'Silva', 'Xavier', 'Lawrence', 'Mascarenhas',
+        'Pinto', 'Mendonca', 'D\'Silva', 'Gonsalves', 'Britto', 'Alvares', 'Coutinho', 'Saldanha',
+        'Vasanth', 'Karunakaran', 'Thangadurai', 'Aruldoss', 'Jayapaul', 'Vedanayagam', 'Jesudasan', 'Devasahayam'
+      ];
+
+      const cities = [
+        'Chennai', 'Coimbatore', 'Madurai', 'Tirunelveli', 'Bengaluru', 'Trichy', 'Salem', 'Nagercoil',
+        'Tuticorin', 'Vellore', 'Erode', 'Tiruppur', 'Thanjavur', 'Kanchipuram', 'Dindigul', 'Hosur',
+        'Kanyakumari', 'Karur', 'Cuddalore', 'Kumbakonam', 'Kochi', 'Trivandrum', 'Hyderabad', 'Mumbai',
+        'Dubai', 'Sharjah', 'Abu Dhabi', 'Doha', 'Kuwait City', 'Muscat', 'Singapore', 'Kuala Lumpur', 'London',
+        'Jaffna', 'Colombo', 'Pondicherry', 'Villupuram', 'Theni', 'Ramanathapuram', 'Virudhunagar',
+        'Tiruvannamalai', 'Sivakasi', 'Namakkal', 'Pudukkottai', 'Dharmapuri', 'Ooty', 'Pollachi',
+        'Toronto', 'Melbourne', 'Sydney', 'Auckland', 'Dallas', 'Chicago', 'New Jersey', 'Frankfurt', 'Paris', 'Birmingham'
+      ];
+
+      function mulberry32(a) {
+        return function() {
+          var t = a += 0x6D2B79F5;
+          t = Math.imul(t ^ t >>> 15, t | 1);
+          t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+          return ((t ^ t >>> 14) >>> 0) / 4294967296;
+        };
+      }
+      const rng = mulberry32(20261030);
+
+      const list = [];
+      const seen = new Set();
+      let attempts = 0;
+
+      while (list.length < 2000 && attempts < 25000) {
+        attempts++;
+        const isMale = (list.length % 2 === 0);
+        const titles = isMale ? maleTitles : femaleTitles;
+        const firsts = isMale ? maleFirstNames : femaleFirstNames;
+
+        const t = titles[Math.floor(rng() * titles.length)];
+        const f = firsts[Math.floor(rng() * firsts.length)];
+        const l = lastNames[Math.floor(rng() * lastNames.length)];
+        const fullName = `${t} ${f} ${l}`;
+
+        if (!seen.has(fullName)) {
+          seen.add(fullName);
+          list.push({
+            name: fullName,
+            city: cities[Math.floor(rng() * cities.length)]
+          });
+        }
+      }
+      return list;
+    })();
+
+    const TOAST_STORAGE_KEY = 'rehoboth_reg_toast_idx';
+
+    function getNextUniqueRegistration() {
+      let idx = 0;
+      try {
+        const stored = localStorage.getItem(TOAST_STORAGE_KEY);
+        if (stored !== null) {
+          idx = parseInt(stored, 10);
+          if (isNaN(idx) || idx < 0) idx = 0;
+        } else {
+          idx = Math.floor(Math.random() * mockRegistrations.length);
+        }
+      } catch (e) {
+        idx = (window.__rehobothToastIdx || 0);
+      }
+
+      const item = mockRegistrations[idx % mockRegistrations.length];
+      const nextIdx = (idx + 1) % mockRegistrations.length;
+
+      try {
+        localStorage.setItem(TOAST_STORAGE_KEY, nextIdx.toString());
+      } catch (e) {
+        window.__rehobothToastIdx = nextIdx;
+      }
+
+      return item;
+    }
+
+    function getDynamicRegistrationTime() {
+      const roll = Math.random();
+      if (roll < 0.12) {
+        return 'Just now';
+      } else if (roll < 0.35) {
+        const mins = Math.floor(Math.random() * 4) + 1;
+        return mins === 1 ? '1 minute ago' : `${mins} minutes ago`;
+      } else if (roll < 0.65) {
+        const mins = Math.floor(Math.random() * 10) + 5;
+        return `${mins} minutes ago`;
+      } else if (roll < 0.85) {
+        const mins = Math.floor(Math.random() * 15) + 15;
+        return `${mins} minutes ago`;
+      } else {
+        const mins = Math.floor(Math.random() * 25) + 30;
+        return `${mins} minutes ago`;
+      }
+    }
+
+    function dismissLiveToast() {
+      const toast = document.getElementById('live-toast');
+      if (!toast) return;
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-10', 'opacity-0', 'pointer-events-none');
+    }
+
+    function triggerLiveToast() {
+      const toast = document.getElementById('live-toast');
+      const nameEl = document.getElementById('toast-name');
+      const cityEl = document.getElementById('toast-city');
+      const timeEl = document.getElementById('toast-time');
+
+      if (!toast || !nameEl || !cityEl) return;
+
+      const item = getNextUniqueRegistration();
+      const timeText = getDynamicRegistrationTime();
+
+      nameEl.textContent = item.name;
+      cityEl.textContent = item.city;
+      if (timeEl) {
+        timeEl.textContent = timeText;
+      } else {
+        cityEl.textContent = `${item.city} • ${timeText}`;
+      }
+
+      toast.classList.remove('translate-y-10', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        dismissLiveToast();
+      }, 4200);
+    }
+
+    let toastScheduleTimer = null;
+    function scheduleNextRegistrationToast(delayMs) {
+      if (toastScheduleTimer) clearTimeout(toastScheduleTimer);
+      toastScheduleTimer = setTimeout(() => {
+        if (document.hidden) {
+          scheduleNextRegistrationToast(3000);
+          return;
+        }
+        triggerLiveToast();
+        const nextInterval = Math.floor(Math.random() * 9000) + 9000;
+        scheduleNextRegistrationToast(nextInterval);
+      }, delayMs);
+    }
+
+    const initialToastDelay = Math.floor(Math.random() * 2000) + 3500;
+    scheduleNextRegistrationToast(initialToastDelay);
   </script>
 
   <?php wp_footer(); ?>

@@ -26,16 +26,13 @@
         extend: {
           colors: {
             brand: {
-              navy: '#0b1120',
-              slate: '#0f172a',
-              deep: '#1e293b',
-              card: '#162032',
-              cream: '#fafaf9',
               gold: '#f59e0b',
               goldDark: '#d97706',
               goldLight: '#fef3c7',
-              goldMuted: '#fbbf24',
-              accent: '#f59e0b',
+              navy: '#0f172a',
+              slate: '#1e293b',
+              grayBg: '#f8fafc',
+              warmBg: '#fbfbfb',
             }
           },
           fontFamily: {
@@ -59,24 +56,22 @@
     }
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #0b1120;
+      background-color: #ffffff;
       color: #0f172a;
     }
     .gold-gradient-text {
-      background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #d97706 100%);
+      background: linear-gradient(135deg, #d97706 0%, #b45309 50%, #92400e 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .hero-glow {
-      background: radial-gradient(circle at 50% 20%, rgba(245, 158, 11, 0.12) 0%, rgba(11, 17, 32, 0) 75%);
+    .light-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
     }
-    .card-glass {
-      background: rgba(22, 32, 50, 0.75);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(245, 158, 11, 0.2);
-    }
-    .card-glass-hover:hover {
-      border-color: rgba(245, 158, 11, 0.5);
+    .light-card-hover:hover {
+      border-color: #cbd5e1;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
       transform: translateY(-2px);
       transition: all 0.25s ease;
     }
@@ -84,57 +79,46 @@
 
   <?php wp_head(); ?>
 </head>
-<body <?php body_class('bg-brand-navy text-slate-100 antialiased selection:bg-brand-gold selection:text-brand-navy pb-20 md:pb-0'); ?>>
+<body <?php body_class('bg-white text-slate-900 antialiased selection:bg-amber-200 selection:text-slate-900 pb-20 md:pb-0'); ?>>
 <?php if (function_exists('wp_body_open')) { wp_body_open(); } ?>
 
-  <!-- 1. TOP HEADER / NAV BAR (CLEAN, NO DISTRACTING MENU LINKS) -->
-  <header class="sticky top-0 z-40 bg-brand-navy/95 backdrop-blur-md border-b border-slate-800">
-    <!-- Top Announcement Strip (Real Batch Information) -->
-    <div class="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 py-1.5 px-3 text-center text-xs font-bold tracking-tight">
-      <div class="max-w-6xl mx-auto flex items-center justify-center gap-2">
-        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-black bg-slate-950 text-amber-400 uppercase tracking-wider">
-          LIVE ZOOMLINK
-        </span>
-        <span>Next Batch: Friday, Saturday &amp; Sunday · 7:30 PM IST · Live in Tanglish</span>
-      </div>
-    </div>
-
-    <!-- Main Navigation Bar -->
+  <!-- 1. TOP HEADER / NAV BAR (CLEAN LIGHT THEME, NO ORANGE BANNER, NO MENU BAR) -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
     <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
       <!-- Left: Logo & Ministry Brand -->
-      <a href="#" class="flex items-center gap-2.5 group flex-shrink-0">
-        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white p-1 flex items-center justify-center border border-amber-500/40 shadow-md overflow-hidden flex-shrink-0">
+      <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center gap-2.5 group flex-shrink-0">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white p-1 flex items-center justify-center border border-slate-200 shadow-xs overflow-hidden flex-shrink-0">
           <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/rehoboth-logo.png'); ?>" alt="Rehoboth Ministries" class="w-full h-full object-contain" />
         </div>
         <div>
-          <span class="font-serif text-base sm:text-xl font-bold tracking-wide text-white block leading-tight group-hover:text-amber-400 transition-colors">
+          <span class="font-serif text-base sm:text-xl font-bold tracking-wide text-slate-900 block leading-tight group-hover:text-amber-600 transition-colors">
             REHOBOTH
           </span>
-          <span class="text-[8.5px] sm:text-[10px] tracking-widest text-amber-400 font-semibold uppercase block leading-none">
+          <span class="text-[8.5px] sm:text-[10px] tracking-widest text-amber-600 font-bold uppercase block leading-none">
             International Ministries
           </span>
         </div>
       </a>
 
-      <!-- Right: WhatsApp Helpline + Direct CTA Button (No distracting anchor menus) -->
+      <!-- Right: WhatsApp Helpline + Direct CTA Button -->
       <div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
         <a 
           href="https://wa.me/919886914599?text=Hi%20Rehoboth%20Ministries,%20I%20have%20a%20question%20about%20the%20Courts%20of%20Heaven%20webinar." 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="hidden sm:inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors px-2.5 py-1.5 rounded-lg hover:bg-slate-800"
+          class="hidden sm:inline-flex items-center gap-1.5 text-xs text-emerald-700 hover:text-emerald-800 font-bold transition-colors px-3 py-1.5 rounded-lg hover:bg-slate-50 border border-slate-200"
         >
           <span>💬 +91 98869 14599</span>
         </a>
 
-        <a 
-          href="#register" 
-          onclick="scrollToForm(); return false;" 
-          class="inline-flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black px-3.5 sm:px-5 py-2 rounded-xl text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:scale-95 whitespace-nowrap"
+        <button 
+          type="button"
+          onclick="openRegistrationModal()" 
+          class="inline-flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black px-4 sm:px-5 py-2 rounded-xl text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:scale-95 whitespace-nowrap cursor-pointer"
         >
           <span>Claim Pass @ ₹199</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-        </a>
+        </button>
       </div>
     </nav>
   </header>
