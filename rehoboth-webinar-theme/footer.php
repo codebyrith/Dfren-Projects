@@ -5,30 +5,27 @@
  * @package Rehoboth_Webinar
  */
 ?>
-  <!-- ============================================================== -->
-  <!-- 10. FOOTER (CLEAN, MINIMAL, WHITE/LIGHT GRAY THEME - NO DARK DISCLAIMER) -->
-  <!-- ============================================================== -->
-  <footer class="bg-white border-t border-slate-200 text-slate-600 py-8 px-4 sm:px-6">
-    <div class="max-w-6xl mx-auto space-y-4">
+<footer class="bg-white border-t border-slate-200 text-slate-600 py-6 px-4">
+    <div class="max-w-6xl mx-auto space-y-3">
       
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-        <div class="flex items-center gap-3">
-          <div class="w-8 h-8 rounded-xl bg-white p-1 flex items-center justify-center border border-slate-200 shadow-xs flex-shrink-0">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-xl bg-white p-1 flex items-center justify-center border border-[#1F355D]/15 shadow-2xs flex-shrink-0">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/rehoboth-logo.png'); ?>" alt="Rehoboth Ministries" class="w-full h-full object-contain" />
           </div>
           <div>
-            <span class="font-serif text-base font-bold text-slate-900 block leading-tight">REHOBOTH MINISTRIES</span>
-            <span class="text-[9.5px] text-amber-600 uppercase tracking-wider font-bold block">Courts of Heaven Masterclass</span>
+            <span class="font-serif text-sm font-bold text-[#1F355D] block leading-tight">REHOBOTH MINISTRIES</span>
+            <span class="text-[9px] text-amber-600 uppercase tracking-wider font-bold block">Courts of Heaven Masterclass</span>
           </div>
         </div>
 
         <div class="text-xs space-y-0.5">
           <div>Email: <a href="mailto:info@rehobothministries.com" class="text-amber-700 hover:underline">info@rehobothministries.com</a></div>
-          <div>WhatsApp Helpline: <a href="https://wa.me/919886914599" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:underline font-bold">+91 98869 14599</a></div>
+          <div>WhatsApp: <a href="https://wa.me/919886914599" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:underline font-bold">+91 98869 14599</a></div>
         </div>
       </div>
 
-      <div class="pt-3 border-t border-slate-100 flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 text-xs">
+      <div class="pt-2 border-t border-slate-100 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs">
         <button type="button" onclick="openPolicyModal('privacy')" class="hover:text-amber-700 transition cursor-pointer">Privacy Policy</button>
         <span class="text-slate-300">•</span>
         <button type="button" onclick="openPolicyModal('terms')" class="hover:text-amber-700 transition cursor-pointer">Terms &amp; Conditions</button>
@@ -36,7 +33,7 @@
         <button type="button" onclick="openPolicyModal('refund')" class="hover:text-amber-700 transition cursor-pointer">Refund Policy (45-Min Guarantee)</button>
       </div>
 
-      <div class="text-[11px] text-slate-400 text-center pt-2">
+      <div class="text-[10px] text-slate-400 text-center pt-1">
         © 2026 Rehoboth International Ministries. All rights reserved.
       </div>
 
@@ -44,20 +41,20 @@
   </footer>
 
   <!-- ============================================================== -->
-  <!-- 11. MOBILE STICKY BOTTOM BAR (CLEAN WHITE) -->
+  <!-- MOBILE STICKY BOTTOM BAR -->
   <!-- ============================================================== -->
   <aside class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 border-t border-slate-200 p-2.5 px-4 backdrop-blur-md shadow-2xl flex items-center justify-between gap-3">
     <div>
       <div class="flex items-baseline gap-1.5 leading-none">
         <span class="text-slate-400 line-through text-xs">₹999</span>
-        <span class="text-xl font-black text-amber-600">₹199</span>
+        <span class="text-xl font-black text-[#1F355D]">₹199</span>
       </div>
-      <div class="text-[9.5px] text-emerald-700 font-bold mt-0.5">45-Min Money-Back Guarantee</div>
+      <div class="text-[9px] text-emerald-700 font-bold mt-0.5">45-Min Money-Back Guarantee</div>
     </div>
     <button 
       type="button" 
       onclick="openRegistrationModal()"
-      class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs px-4 py-2.5 rounded-xl shadow-md shadow-amber-500/20 flex items-center gap-1.5 active:scale-95 transition-transform whitespace-nowrap cursor-pointer"
+      class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 font-black text-xs px-4 py-2.5 rounded-xl shadow-md shadow-amber-500/20 flex items-center gap-1.5 active:scale-95 transition-transform whitespace-nowrap cursor-pointer"
     >
       <span>Book Pass Now →</span>
     </button>
@@ -78,15 +75,15 @@
         ✕
       </button>
 
-      <div class="space-y-1 mb-5">
-        <span class="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-2 py-0.5 rounded">
+      <div class="space-y-1 mb-4">
+        <span class="text-[9.5px] font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-2 py-0.5 rounded">
           Step 1 of 1 · Instant Booking
         </span>
-        <h3 class="text-xl font-extrabold text-slate-900">Claim Your ₹199 Fellowship Pass</h3>
-        <p class="text-xs text-slate-600">Enter your details to receive your private Zoom link on WhatsApp.</p>
+        <h3 class="text-lg font-extrabold text-[#1F355D]">Claim Your ₹199 Fellowship Pass</h3>
+        <p class="text-xs text-slate-500">Enter your details to receive your private Zoom link on WhatsApp.</p>
       </div>
 
-      <form id="registration-form" class="space-y-3.5" onsubmit="handleRegistrationSubmit(event)">
+      <form id="registration-form" class="space-y-3" onsubmit="handleRegistrationSubmit(event)">
         
         <div>
           <label for="fullName" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
@@ -98,14 +95,13 @@
             name="fullName" 
             required 
             placeholder="e.g. Bro. David Raj" 
-            class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 focus:bg-white transition"
+            class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 focus:bg-white transition"
           />
         </div>
 
         <div>
           <label for="whatsapp" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
             WhatsApp Phone Number <span class="text-amber-600">*</span>
-            <span class="text-[10px] font-normal text-slate-500 normal-case">(For Zoom link delivery)</span>
           </label>
           <div class="flex">
             <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-slate-300 bg-slate-100 text-slate-700 text-xs font-bold">
@@ -119,7 +115,7 @@
               maxlength="10" 
               pattern="[0-9]{10}"
               placeholder="10-digit number" 
-              class="w-full bg-slate-50 border border-slate-300 rounded-r-xl px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 focus:bg-white transition"
+              class="w-full bg-slate-50 border border-slate-300 rounded-r-xl px-3.5 py-2 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 focus:bg-white transition"
             />
           </div>
         </div>
@@ -134,7 +130,7 @@
             name="email" 
             required 
             placeholder="yourname@gmail.com" 
-            class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 focus:bg-white transition"
+            class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:border-amber-500 focus:bg-white transition"
           />
         </div>
 
@@ -146,7 +142,7 @@
             id="batchSlot" 
             name="batchSlot" 
             required 
-            class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition cursor-pointer"
+            class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-sm text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition cursor-pointer"
           >
             <option value="Friday Batch (7:30 PM IST)">🗓️ Friday Batch — 7:30 PM IST (Recommended)</option>
             <option value="Saturday Batch (7:30 PM IST)">🗓️ Saturday Batch — 7:30 PM IST</option>
@@ -157,14 +153,14 @@
         <button 
           type="submit" 
           id="submit-btn" 
-          class="w-full mt-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-base py-3.5 px-4 rounded-xl shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5 active:scale-95 cursor-pointer"
+          class="w-full mt-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-sm py-3.5 px-4 rounded-xl shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5 active:scale-95 cursor-pointer"
         >
           <span>Confirm &amp; Proceed (@ ₹199) →</span>
         </button>
 
       </form>
 
-      <div class="mt-4 pt-3 border-t border-slate-100 text-center text-[10.5px] text-slate-500">
+      <div class="mt-3 pt-2.5 border-t border-slate-100 text-center text-[10px] text-slate-500">
         🔒 100% Secure Checkout · 45-Minute Peace-Of-Mind Guarantee
       </div>
 
@@ -176,24 +172,24 @@
   <!-- ============================================================== -->
   <div id="success-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
     <div class="bg-white border border-slate-200 rounded-3xl max-w-md w-full p-6 text-slate-900 text-center shadow-2xl space-y-4">
-      <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 border border-emerald-200 flex items-center justify-center text-3xl mx-auto">
+      <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 border border-emerald-200 flex items-center justify-center text-2xl mx-auto">
         ✓
       </div>
       <div>
-        <h3 class="text-xl font-extrabold text-slate-900">Registration Confirmed!</h3>
+        <h3 class="text-lg font-extrabold text-[#1F355D]">Registration Confirmed!</h3>
         <p class="text-xs text-slate-600 mt-1">
           Your seat has been reserved. Complete details have been prepared for your batch:
         </p>
       </div>
 
-      <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 text-xs space-y-1.5 text-left">
+      <div class="bg-slate-50 p-3 rounded-xl border border-slate-200 text-xs space-y-1 text-left">
         <div class="flex justify-between text-slate-600">
           <span>Batch Selected:</span>
           <span id="confirmed-batch" class="font-bold text-amber-700">Friday 7:30 PM IST</span>
         </div>
         <div class="flex justify-between text-slate-600">
           <span>Registered Under:</span>
-          <span id="confirmed-contact" class="font-bold text-slate-900">Attendee</span>
+          <span id="confirmed-contact" class="font-bold text-[#1F355D]">Attendee</span>
         </div>
       </div>
 
@@ -225,16 +221,14 @@
       <button onclick="closePolicyModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl font-bold p-1 cursor-pointer">✕</button>
       <div id="policy-content" class="text-slate-600 text-xs sm:text-sm space-y-3"></div>
       <div class="mt-6 pt-4 border-t border-slate-100 text-right">
-        <button onclick="closePolicyModal()" class="bg-slate-900 hover:bg-slate-800 text-white font-bold px-4 py-2 rounded-xl text-xs transition cursor-pointer">
+        <button onclick="closePolicyModal()" class="bg-[#1F355D] hover:bg-[#142340] text-white font-bold px-4 py-2 rounded-xl text-xs transition cursor-pointer">
           Close Window
         </button>
       </div>
     </div>
   </div>
 
-  <!-- ============================================================== -->
-  <!-- SCRIPTS & INTERACTION LOGIC (INCLUDING 2,000 POPUPS GENERATOR) -->
-  <!-- ============================================================== -->
+  <!-- SCRIPTS -->
   <script>
     function openRegistrationModal() {
       const modal = document.getElementById('registration-modal');
@@ -305,37 +299,24 @@
       privacy: {
         title: "Privacy Policy",
         body: `
-          <h4 class="text-base font-bold text-slate-900 mb-2">Rehoboth Ministries International — Privacy Policy</h4>
-          <p>We respect your privacy and are committed to protecting the personal information you share with us. This policy details how we treat your data when registering for our spiritual webinars and fellowships.</p>
-          <h5 class="font-bold text-slate-900 mt-3">1. Information We Collect</h5>
-          <p>We collect your Name, WhatsApp Phone Number, and Email Address solely to send your webinar Zoom link, reminder alerts, and downloadable PDF worksheets.</p>
-          <h5 class="font-bold text-slate-900 mt-3">2. Data Security &amp; Sharing</h5>
-          <p>We never sell, rent, or trade your personal information to third parties. All communications are sent strictly on behalf of Rehoboth Ministries International.</p>
-          <h5 class="font-bold text-slate-900 mt-3">3. Contact</h5>
-          <p>For questions or data deletion requests, contact us at info@rehobothministries.com or WhatsApp +91 98869 14599.</p>
+          <h4 class="text-base font-bold text-[#1F355D] mb-2">Rehoboth Ministries International — Privacy Policy</h4>
+          <p>We respect your privacy. We collect your Name, WhatsApp Phone Number, and Email Address solely to deliver your webinar Zoom link, reminder alerts, and downloadable PDF action blueprints.</p>
+          <p class="mt-2">We never sell, rent, or trade your personal information. For questions, contact info@rehobothministries.com or WhatsApp +91 98869 14599.</p>
         `
       },
       terms: {
         title: "Terms & Conditions",
         body: `
-          <h4 class="text-base font-bold text-slate-900 mb-2">Terms and Conditions of Participation</h4>
-          <p>By registering for the Courts of Heaven live masterclass, you agree to the following terms:</p>
-          <h5 class="font-bold text-slate-900 mt-3">1. Webinar Access</h5>
-          <p>Each ₹199 pass grants full live Zoom access to your chosen evening batch. Household members are permitted to watch together on one screen.</p>
-          <h5 class="font-bold text-slate-900 mt-3">2. Spiritual Education Fellowship</h5>
-          <p>This masterclass is a spiritual faith-enrichment and biblical teaching session. It does not replace medical, psychiatric, or professional financial advice.</p>
-          <h5 class="font-bold text-slate-900 mt-3">3. Code of Conduct</h5>
-          <p>Attendees must maintain Christian decorum, mutual respect, and reverence during live prayer and Zoom chat interactions.</p>
+          <h4 class="text-base font-bold text-[#1F355D] mb-2">Terms and Conditions</h4>
+          <p>Each ₹199 pass grants full live Zoom access to your chosen evening batch. Household family members are permitted to participate together on one screen.</p>
+          <p class="mt-2">This masterclass is a spiritual faith-enrichment and biblical teaching session.</p>
         `
       },
       refund: {
         title: "Refund Policy (45-Minute Guarantee)",
         body: `
-          <h4 class="text-base font-bold text-emerald-800 mb-2">45-Minute Peace-Of-Mind Refund Policy</h4>
-          <p>We want you to join with complete confidence and peace of mind.</p>
-          <h5 class="font-bold text-slate-900 mt-3">How the Guarantee Works:</h5>
-          <p>Attend the live session for the first 45 minutes. If you honestly feel the teaching is not delivering biblical clarity and value for your spiritual walk, simply message our official WhatsApp helpline at <strong>+91 98869 14599</strong> before the 45-minute mark of your batch.</p>
-          <p class="mt-2">Our team will verify your live attendance and process a full 100% refund of your ₹199 back to your original payment method on the very same day. No hassle, no friction.</p>
+          <h4 class="text-base font-bold text-emerald-800 mb-2">45-Minute Peace-Of-Mind Guarantee</h4>
+          <p>Attend the live session for the first 45 minutes. If you honestly feel the teaching is not delivering biblical clarity and value for your spiritual walk, message our official WhatsApp helpline at <strong>+91 98869 14599</strong> before the 45-minute mark of your batch for a full 100% same-day refund.</p>
         `
       }
     };
@@ -358,8 +339,6 @@
         closePolicyModal();
       }
     });
-
-    
   </script>
 
   <?php wp_footer(); ?>
