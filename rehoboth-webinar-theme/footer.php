@@ -5,36 +5,73 @@
  * @package Rehoboth_Webinar
  */
 ?>
-<footer class="bg-white border-t border-slate-200 text-slate-600 py-6 px-4">
-    <div class="max-w-6xl mx-auto space-y-3">
+<footer class="bg-[#F8FAFD] border-t border-slate-200 text-slate-600 py-10 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto space-y-8">
       
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
-        <div class="flex items-center gap-2.5">
-          <div class="w-8 h-8 rounded-xl bg-white p-1 flex items-center justify-center border border-[#1F355D]/15 shadow-2xs flex-shrink-0">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/rehoboth-logo.png'); ?>" alt="Rehoboth Ministries" class="w-full h-full object-contain" />
+      <!-- Top Grid: Brand & Direct Contact -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="md:col-span-6 space-y-3 text-left">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-white p-1.5 flex items-center justify-center border border-[#1F355D]/15 shadow-xs flex-shrink-0">
+              <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/rehoboth-logo.png'); ?>" alt="Rehoboth Ministries" class="w-full h-full object-contain" />
+            </div>
+            <div>
+              <span class="font-serif text-lg font-bold text-[#1F355D] block leading-tight">REHOBOTH MINISTRIES</span>
+              <span class="text-[9.5px] text-amber-600 uppercase tracking-widest font-bold block">International Ministries</span>
+            </div>
           </div>
-          <div>
-            <span class="font-serif text-sm font-bold text-[#1F355D] block leading-tight">REHOBOTH MINISTRIES</span>
-            <span class="text-[9px] text-amber-600 uppercase tracking-wider font-bold block">Courts of Heaven Masterclass</span>
+          <p class="text-xs text-slate-500 max-w-md leading-relaxed">
+            Equipping believers with biblical spiritual authority to overturn legal accusations, break generational bondages, and hear God's voice clearly.
+          </p>
+        </div>
+
+        <!-- Col 2: Legal & Policies -->
+        <div class="md:col-span-3 space-y-2 text-left">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[#1F355D]">Important Links</h4>
+          <ul class="space-y-1.5 text-xs text-slate-600">
+            <li>
+              <button type="button" onclick="openPolicyModal('privacy')" class="hover:text-amber-600 transition-colors cursor-pointer">Privacy Policy</button>
+            </li>
+            <li>
+              <button type="button" onclick="openPolicyModal('terms')" class="hover:text-amber-600 transition-colors cursor-pointer">Terms &amp; Conditions</button>
+            </li>
+            <li>
+              <button type="button" onclick="openPolicyModal('refund')" class="hover:text-amber-600 transition-colors cursor-pointer">Refund Policy</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Direct Helpline -->
+        <div class="md:col-span-3 space-y-2 text-left">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[#1F355D]">Support &amp; Helpline</h4>
+          <div class="space-y-2 text-xs">
+            <a 
+              href="https://wa.me/919886914599" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 font-bold hover:bg-emerald-100 transition shadow-2xs"
+            >
+              <span>💬 +91 98869 14599</span>
+            </a>
+            <div class="text-[11px] text-slate-500 flex items-center gap-1.5 pt-0.5">
+              <span>✉️</span>
+              <a href="mailto:info@rehobothministries.com" class="hover:text-amber-600 transition">info@rehobothministries.com</a>
+            </div>
           </div>
         </div>
 
-        <div class="text-xs space-y-0.5">
-          <div>Email: <a href="mailto:info@rehobothministries.com" class="text-amber-700 hover:underline">info@rehobothministries.com</a></div>
-          <div>WhatsApp: <a href="https://wa.me/919886914599" target="_blank" rel="noopener noreferrer" class="text-emerald-700 hover:underline font-bold">+91 98869 14599</a></div>
+      </div>
+
+      <!-- Bottom Bar: Neatly Aligned Divider & Copyright -->
+      <div class="pt-6 border-t border-slate-200/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <div>
+          © 2026 Rehoboth International Ministries. All rights reserved.
         </div>
-      </div>
-
-      <div class="pt-2 border-t border-slate-100 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs">
-        <button type="button" onclick="openPolicyModal('privacy')" class="hover:text-amber-700 transition cursor-pointer">Privacy Policy</button>
-        <span class="text-slate-300">•</span>
-        <button type="button" onclick="openPolicyModal('terms')" class="hover:text-amber-700 transition cursor-pointer">Terms &amp; Conditions</button>
-        <span class="text-slate-300">•</span>
-        <button type="button" onclick="openPolicyModal('refund')" class="hover:text-amber-700 transition cursor-pointer">Refund Policy (45-Min Guarantee)</button>
-      </div>
-
-      <div class="text-[10px] text-slate-400 text-center pt-1">
-        © 2026 Rehoboth International Ministries. All rights reserved.
+        <div class="text-[11px] text-slate-400">
+          Live Masterclass on Zoom · Spoken in Tanglish (Tamil &amp; English)
+        </div>
       </div>
 
     </div>
@@ -49,7 +86,7 @@
         <span class="text-slate-400 line-through text-xs">₹999</span>
         <span class="text-xl font-black text-[#1F355D]">₹199</span>
       </div>
-      <div class="text-[9px] text-emerald-700 font-bold mt-0.5">45-Min Money-Back Guarantee</div>
+      <div class="text-[9px] text-emerald-700 font-bold mt-0.5">Instant WhatsApp Zoom Link</div>
     </div>
     <button 
       type="button" 
@@ -161,7 +198,7 @@
       </form>
 
       <div class="mt-3 pt-2.5 border-t border-slate-100 text-center text-[10px] text-slate-500">
-        🔒 100% Secure Checkout · 45-Minute Peace-Of-Mind Guarantee
+        🔒 100% Secure Checkout · 100% Peace-Of-Mind Guarantee
       </div>
 
     </div>
@@ -315,7 +352,7 @@
       refund: {
         title: "Refund Policy (45-Minute Guarantee)",
         body: `
-          <h4 class="text-base font-bold text-emerald-800 mb-2">45-Minute Peace-Of-Mind Guarantee</h4>
+          <h4 class="text-base font-bold text-emerald-800 mb-2">100% Peace-Of-Mind Guarantee</h4>
           <p>Attend the live session for the first 45 minutes. If you honestly feel the teaching is not delivering biblical clarity and value for your spiritual walk, message our official WhatsApp helpline at <strong>+91 98869 14599</strong> before the 45-minute mark of your batch for a full 100% same-day refund.</p>
         `
       }

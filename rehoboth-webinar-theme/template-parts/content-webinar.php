@@ -89,9 +89,6 @@
                 <p class="text-[11px] text-amber-700 font-semibold">
                   8+ Years Ministry · Mentored under Global Apostolic Prophets
                 </p>
-                <p class="text-[10.5px] text-slate-500 mt-0.5">
-                  Ministers live personal prayer &amp; prophetic direction over registered participants.
-                </p>
               </div>
             </div>
           </div>
@@ -134,9 +131,6 @@
       
       <!-- Section Header -->
       <div class="text-center max-w-2xl mx-auto space-y-2">
-        <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-200">
-          Recognize the Symptoms
-        </span>
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1F355D] tracking-tight">
           Do you struggle with these recurring spiritual roadblocks?
         </h2>
@@ -408,12 +402,8 @@
                 <span>⭐⭐⭐⭐⭐</span>
                 <span class="text-[9.5px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Verified Attendee</span>
               </div>
-              <h4 class="font-extrabold text-[#1F355D] text-sm leading-snug">
-                "Reconciled after 4 years of family silence"
-              </h4>
-              <p class="text-xs text-slate-600 leading-relaxed mt-1">
-                "For four years there was constant tension at home. During the live Courts session, Prophet Michael taught us how to cancel unspoken legal accusations. That very week, peace returned to our home."
-              </p>
+              <h4 class="font-bold text-[#1F355D] text-sm leading-snug">"Peace returned to our home"</h4>
+              <p class="text-xs text-slate-600 mt-1">Four years of family silence broke after learning how to cancel unspoken accusations.</p>
             </div>
             <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
               <span class="font-bold text-[#1F355D]">Bro. Stephen J.</span>
@@ -438,12 +428,8 @@
                 <span>⭐⭐⭐⭐⭐</span>
                 <span class="text-[9.5px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Verified Attendee</span>
               </div>
-              <h4 class="font-extrabold text-[#1F355D] text-sm leading-snug">
-                "Sleeping peacefully without panic or fear"
-              </h4>
-              <p class="text-xs text-slate-600 leading-relaxed mt-1">
-                "For months I woke up between 2 AM and 3 AM in deep panic. Prophet Michael's live personal prayer broke that recurring attack. I now sleep through the night with complete Shalom peace."
-              </p>
+              <h4 class="font-bold text-[#1F355D] text-sm leading-snug">"Sleeping peacefully without panic"</h4>
+              <p class="text-xs text-slate-600 mt-1">Midnight panic attacks broke completely during live prayer. Now sleeping peacefully every night.</p>
             </div>
             <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
               <span class="font-bold text-[#1F355D]">Sis. Hannah M.</span>
@@ -468,12 +454,8 @@
                 <span>⭐⭐⭐⭐⭐</span>
                 <span class="text-[9.5px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Verified Pastor</span>
               </div>
-              <h4 class="font-extrabold text-[#1F355D] text-sm leading-snug">
-                "Understood the Courts protocol in simple Tanglish"
-              </h4>
-              <p class="text-xs text-slate-600 leading-relaxed mt-1">
-                "I had read theological books in English about spiritual warfare, but hearing it explained in clear, practical Tanglish opened my spiritual eyes. Our church prayer altar shifted completely."
-              </p>
+              <h4 class="font-bold text-[#1F355D] text-sm leading-snug">"Clear, practical Tanglish teaching"</h4>
+              <p class="text-xs text-slate-600 mt-1">Spiritual warfare explained so practically in Tanglish. It shifted our family and church prayer altar.</p>
             </div>
             <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
               <span class="font-bold text-[#1F355D]">Pastor Ruben P.</span>
@@ -498,12 +480,8 @@
                 <span>⭐⭐⭐⭐⭐</span>
                 <span class="text-[9.5px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Verified Attendee</span>
               </div>
-              <h4 class="font-extrabold text-[#1F355D] text-sm leading-snug">
-                "Our whole family now prays during the night watch"
-              </h4>
-              <p class="text-xs text-slate-600 leading-relaxed mt-1">
-                "One ₹199 pass allowed our whole family to watch on our living room TV in Dubai. My teenage son was deeply touched during the prophetic prayer. It united our family altar like never before."
-              </p>
+              <h4 class="font-bold text-[#1F355D] text-sm leading-snug">"United our entire family in prayer"</h4>
+              <p class="text-xs text-slate-600 mt-1">Watched together on our TV in Dubai. My son was deeply touched, uniting our family altar.</p>
             </div>
             <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
               <span class="font-bold text-[#1F355D]">Sis. Rachel G.</span>
@@ -525,9 +503,6 @@
       
       <!-- Section Header -->
       <div class="text-center max-w-2xl mx-auto space-y-2">
-        <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-200">
-          Core Masterclass Curriculum
-        </span>
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1F355D] tracking-tight">
           What You Will Master in 150 Minutes
         </h2>
@@ -651,9 +626,6 @@
     <div class="max-w-5xl mx-auto space-y-8">
       
       <div class="text-center max-w-2xl mx-auto space-y-2">
-        <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-200">
-          Simple 30-Second Booking
-        </span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1F355D] tracking-tight">
           Your breakthrough evening in 3 simple steps
         </h2>
@@ -704,25 +676,9 @@
       
       <!-- Section Header -->
       <div class="text-center max-w-2xl mx-auto space-y-2">
-        <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-200">
-          Clear Answers · Zero Risk
-        </span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1F355D] tracking-tight">
           Frequently Asked Questions
         </h2>
-      </div>
-
-      <!-- Guarantee Badge Box -->
-      <div class="bg-emerald-50/70 border-2 border-emerald-400 rounded-2xl p-5 flex flex-col sm:flex-row items-center gap-4 text-left">
-        <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 font-black text-2xl flex items-center justify-center flex-shrink-0">
-          🛡️
-        </div>
-        <div class="space-y-0.5">
-          <h3 class="font-extrabold text-[#1F355D] text-sm sm:text-base">The 45-Minute Same-Day Refund Guarantee</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Attend the first 45 minutes of the live masterclass. If you honestly feel it is not bringing clarity and biblical value to your spiritual walk, message our WhatsApp helpline at +91 98869 14599 before the 45-minute mark and get your ₹199 refunded same day.
-          </p>
-        </div>
       </div>
 
       <!-- FAQ Accordions -->
@@ -778,10 +734,6 @@
   <!-- ============================================================== -->
   <section class="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-b from-[#F8FAFD] via-white to-white text-slate-900 border-b border-slate-200">
     <div class="max-w-xl mx-auto text-center space-y-5">
-      
-      <span class="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-200">
-        Final Step To Freedom
-      </span>
 
       <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1F355D] tracking-tight">
         Don't spend another year struggling with the same battles
@@ -826,7 +778,7 @@
         </button>
 
         <div class="text-center pt-1 text-[10.5px] text-slate-500 space-y-0.5">
-          <div class="text-emerald-700 font-bold">🛡️ 45-Minute Same-Day Money-Back Guarantee</div>
+          <div class="text-emerald-700 font-bold">🛡️ 100% Peace-of-Mind Guarantee</div>
           <div>UPI · GPay · PhonePe · Paytm · RuPay · Cards Accepted</div>
         </div>
       </div>
@@ -835,6 +787,6 @@
   </section>
 
   <!-- ============================================================== -->
-  <!-- FOOTER (CLEAN, LOGO NAVY ACCENTS) -->
+  <!-- FOOTER (CLEAN, NEATLY ALIGNED, MODERN MINIMAL) -->
   <!-- ============================================================== -->
   
