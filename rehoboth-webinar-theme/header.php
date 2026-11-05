@@ -12,6 +12,11 @@
   
   <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/rehoboth-logo.png'); ?>" type="image/png" />
 
+  <!-- Google Fonts: Plus Jakarta Sans & Cormorant Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -31,27 +36,11 @@
               goldLight: '#fef3c7',
               goldMuted: '#fbbf24',
               accent: '#f59e0b',
-              crimson: '#dc2626',
             }
           },
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
             serif: ['"Cormorant Garamond"', 'serif'],
-          },
-          animation: {
-            'pulse-subtle': 'pulseSubtle 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-            'shimmer': 'shimmer 2s linear infinite',
-            'float': 'float 4s ease-in-out infinite',
-          },
-          keyframes: {
-            pulseSubtle: {
-              '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(245, 158, 11, 0.6)' },
-              '50%': { transform: 'scale(1.02)', boxShadow: '0 0 0 14px rgba(245, 158, 11, 0)' },
-            },
-            float: {
-              '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-6px)' },
-            }
           }
         }
       }
@@ -59,229 +48,93 @@
   </script>
 
   <style>
-    html {
-      scroll-behavior: auto !important;
+    html, body {
+      max-width: 100vw !important;
+      overflow-x: clip !important;
+      width: 100%;
+      position: relative;
     }
-    section[id], div[id] {
-      scroll-margin-top: 76px;
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b1120;
+      color: #0f172a;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 20%, rgba(245, 158, 11, 0.12) 0%, rgba(11, 17, 32, 0) 75%);
+    }
+    .card-glass {
+      background: rgba(22, 32, 50, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(245, 158, 11, 0.2);
+    }
+    .card-glass-hover:hover {
+      border-color: rgba(245, 158, 11, 0.5);
+      transform: translateY(-2px);
+      transition: all 0.25s ease;
     }
   </style>
 
   <?php wp_head(); ?>
 </head>
-<body <?php body_class('bg-brand-cream text-slate-800 antialiased selection:bg-brand-gold selection:text-brand-navy pb-24 md:pb-0 overflow-x-hidden'); ?>>
+<body <?php body_class('bg-brand-navy text-slate-100 antialiased selection:bg-brand-gold selection:text-brand-navy pb-20 md:pb-0'); ?>>
 <?php if (function_exists('wp_body_open')) { wp_body_open(); } ?>
 
-  <!-- ============================================================== -->
-  <!-- 1. UNIFIED STICKY HEADER (ANNOUNCEMENT + NAVIGATION) -->
-  <!-- ============================================================== -->
-  <header class="sticky top-0 z-40 shadow-xl bg-brand-navy">
-    
-    <!-- Top Announcement Bar -->
-    <div class="bg-gradient-to-r from-red-700 via-rose-600 to-amber-600 text-white text-[11px] sm:text-xs md:text-sm font-bold py-2 px-3 border-b border-amber-300/30 backdrop-blur-md overflow-hidden">
-      <div class="max-w-7xl mx-auto flex items-center justify-between gap-2 min-w-0">
-        <!-- Left side message -->
-        <div class="flex items-center gap-2 mx-auto md:mx-0 text-center sm:text-left min-w-0 overflow-hidden">
-          <span class="inline-flex items-center px-1.5 sm:px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-black bg-white text-red-700 uppercase tracking-wider animate-pulse shadow-sm flex-shrink-0">
-            <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-red-600 mr-1 sm:mr-1.5 animate-ping"></span>
-            LIVE
-          </span>
-          <span class="text-white font-black tracking-tight drop-shadow truncate min-w-0">
-            🔴 LIVE WEBINAR: Break Family Bondages &amp; Hear God's Voice in 150 Mins
-          </span>
-        </div>
-
-        <!-- Right side review badge & timer -->
-        <div class="hidden sm:flex items-center gap-2.5 mx-auto md:mx-0 text-xs flex-shrink-0">
-          <div class="hidden lg:flex items-center gap-1.5 bg-black/40 px-2.5 py-1 rounded-md border border-white/20 text-white font-medium">
-            <span class="text-amber-300 text-[11px]">⭐⭐⭐⭐⭐</span>
-            <span class="font-bold text-amber-200">4.9/5</span>
-            <span class="text-stone-300 text-[10px]">(5,000+ Reviews)</span>
-          </div>
-
-          <div class="flex items-center gap-1.5 bg-black/40 px-2.5 py-1 rounded-md border border-white/20 text-white font-medium">
-            <svg class="w-3.5 h-3.5 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            <span class="hidden md:inline">Batch Closes in:</span>
-            <span id="banner-timer" class="font-mono font-bold text-amber-300">02h 47m 18s</span>
-          </div>
-        </div>
+  <!-- 1. TOP HEADER / NAV BAR (CLEAN, NO DISTRACTING MENU LINKS) -->
+  <header class="sticky top-0 z-40 bg-brand-navy/95 backdrop-blur-md border-b border-slate-800">
+    <!-- Top Announcement Strip (Real Batch Information) -->
+    <div class="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-slate-950 py-1.5 px-3 text-center text-xs font-bold tracking-tight">
+      <div class="max-w-6xl mx-auto flex items-center justify-center gap-2">
+        <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-black bg-slate-950 text-amber-400 uppercase tracking-wider">
+          LIVE ZOOMLINK
+        </span>
+        <span>Next Batch: Friday, Saturday &amp; Sunday · 7:30 PM IST · Live in Tanglish</span>
       </div>
     </div>
 
-    <!-- Navigation Bar -->
-    <nav class="bg-brand-navy border-b border-slate-800 text-white py-2.5 sm:py-3.5 px-3 sm:px-6">
-      <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
-        
-        <!-- Left Side: Mobile Hamburger Menu Button (lg:hidden) + Logo & Brand -->
-        <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0 min-w-0">
-          <!-- Mobile Hamburger Menu Button on LEFT -->
-          <button 
-            type="button" 
-            id="mobile-menu-btn" 
-            onclick="toggleMobileSidebar(true)" 
-            aria-label="Open Navigation Menu"
-            class="lg:hidden p-2 rounded-xl bg-slate-800 text-stone-200 hover:text-amber-400 hover:bg-slate-700 border border-slate-700 transition-all flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-amber-400 cursor-pointer shadow-md flex-shrink-0"
-          >
-            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
-
-          <!-- Logo & Brand -->
-          <a href="<?php echo esc_url(home_url('/#overview')); ?>" onclick="navigateSection('overview'); return false;" class="flex items-center gap-2 sm:gap-2.5 group flex-shrink-0" title="Return to Home">
-            <div class="w-8 h-8 sm:w-11 sm:h-11 rounded-xl bg-white p-1 flex items-center justify-center shadow-md shadow-amber-500/10 border border-amber-500/30 overflow-hidden group-hover:border-amber-400 transition-all flex-shrink-0">
-              <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/rehoboth-logo.png'); ?>" alt="Rehoboth International Ministries" class="w-full h-full object-contain" />
-            </div>
-            <div>
-              <span class="font-serif text-sm sm:text-xl font-bold tracking-wide text-white block leading-none group-hover:text-amber-400 transition-colors">REHOBOTH</span>
-              <span class="text-[7.5px] sm:text-[10px] tracking-widest text-amber-400 font-semibold uppercase block mt-0.5">International Ministries</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Desktop Navigation Menu Items (Instant Section Switcher) -->
-        <div class="hidden lg:flex items-center gap-5 xl:gap-6 text-sm font-medium text-stone-300">
-          <a href="<?php echo esc_url(home_url('/#overview')); ?>" onclick="navigateSection('overview'); return false;" class="hover:text-amber-400 transition-colors">Overview</a>
-          <a href="<?php echo esc_url(home_url('/#testimonials')); ?>" onclick="navigateSection('testimonials'); return false;" class="hover:text-amber-400 transition-colors">Wall of Love</a>
-          <a href="<?php echo esc_url(home_url('/#breakthroughs')); ?>" onclick="navigateSection('breakthroughs'); return false;" class="hover:text-amber-400 transition-colors">Breakthroughs</a>
-          <a href="<?php echo esc_url(home_url('/#benefits')); ?>" onclick="navigateSection('benefits'); return false;" class="hover:text-amber-400 transition-colors">Benefits</a>
-          <a href="<?php echo esc_url(home_url('/#curriculum')); ?>" onclick="navigateSection('curriculum'); return false;" class="hover:text-amber-400 transition-colors">Curriculum</a>
-          <a href="<?php echo esc_url(home_url('/#how-it-works')); ?>" onclick="navigateSection('how-it-works'); return false;" class="hover:text-amber-400 transition-colors">How It Works</a>
-          <a href="<?php echo esc_url(home_url('/#mentor')); ?>" onclick="navigateSection('mentor'); return false;" class="hover:text-amber-400 transition-colors">Meet Michael Rehoboth</a>
-          <a href="<?php echo esc_url(home_url('/#faq')); ?>" onclick="navigateSection('faq'); return false;" class="hover:text-amber-400 transition-colors">FAQ</a>
-        </div>
-
-        <!-- Right Side: CTA Button Only -->
-        <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-          <a href="<?php echo esc_url(home_url('/#register')); ?>" onclick="navigateSection('register'); return false;" class="inline-flex items-center gap-1 sm:gap-1.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-extrabold px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 whitespace-nowrap">
-            <span class="hidden xs:inline sm:inline">Claim Pass @</span>
-            <span>₹199</span>
-            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-          </a>
-        </div>
-
-      </div>
-    </nav>
-  </header>
-
-  <!-- ============================================================== -->
-  <!-- MOBILE SIDEBAR / SIDE PANEL DRAWER (SLIDES FROM LEFT) -->
-  <!-- ============================================================== -->
-  <div 
-    id="mobile-sidebar-overlay" 
-    onclick="toggleMobileSidebar(false)" 
-    class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 transition-opacity duration-300 opacity-0 pointer-events-none lg:hidden"
-    aria-hidden="true"
-  ></div>
-
-  <aside 
-    id="mobile-sidebar" 
-    class="fixed inset-y-0 left-0 w-[85%] max-w-xs sm:max-w-sm bg-gradient-to-b from-slate-900 via-brand-navy to-slate-950 border-r border-amber-500/30 z-50 shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between lg:hidden overflow-y-auto"
-    aria-label="Mobile Navigation Sidebar"
-  >
-    <!-- Drawer Header -->
-    <div class="p-4 border-b border-slate-800 flex items-center justify-between bg-slate-950/60">
-      <a href="<?php echo esc_url(home_url('/')); ?>" onclick="toggleMobileSidebar(false)" class="flex items-center gap-2.5">
-        <div class="w-9 h-9 rounded-xl bg-white p-1 flex items-center justify-center border border-amber-500/30 shadow-md flex-shrink-0">
+    <!-- Main Navigation Bar -->
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+      <!-- Left: Logo & Ministry Brand -->
+      <a href="#" class="flex items-center gap-2.5 group flex-shrink-0">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white p-1 flex items-center justify-center border border-amber-500/40 shadow-md overflow-hidden flex-shrink-0">
           <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/rehoboth-logo.png'); ?>" alt="Rehoboth Ministries" class="w-full h-full object-contain" />
         </div>
         <div>
-          <span class="font-serif text-base font-bold text-white block leading-none">REHOBOTH</span>
-          <span class="text-[8px] tracking-widest text-amber-400 font-semibold uppercase block mt-0.5">Ministries</span>
+          <span class="font-serif text-base sm:text-xl font-bold tracking-wide text-white block leading-tight group-hover:text-amber-400 transition-colors">
+            REHOBOTH
+          </span>
+          <span class="text-[8.5px] sm:text-[10px] tracking-widest text-amber-400 font-semibold uppercase block leading-none">
+            International Ministries
+          </span>
         </div>
       </a>
-      <button 
-        type="button" 
-        onclick="toggleMobileSidebar(false)" 
-        aria-label="Close Navigation Menu"
-        class="w-9 h-9 rounded-xl bg-slate-800 text-stone-400 hover:text-white hover:bg-slate-700 flex items-center justify-center border border-slate-700 transition cursor-pointer text-lg font-bold"
-      >
-        ✕
-      </button>
-    </div>
 
-    <!-- Drawer Navigation Links -->
-    <div class="px-3 py-4 space-y-1 flex-grow overflow-y-auto">
-      <div class="text-[10px] font-bold uppercase tracking-wider text-amber-400/80 px-3 py-1 mb-1">
-        Menu Navigation
-      </div>
-      <a href="<?php echo esc_url(home_url('/#overview')); ?>" onclick="navigateSection('overview'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
-        <span class="text-base">🏛️</span>
-        <span>Overview</span>
-      </a>
-      <a href="<?php echo esc_url(home_url('/#testimonials')); ?>" onclick="navigateSection('testimonials'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
-        <span class="text-base">⭐</span>
-        <span>Wall of Love (Reviews)</span>
-      </a>
-      <a href="<?php echo esc_url(home_url('/#breakthroughs')); ?>" onclick="navigateSection('breakthroughs'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
-        <span class="text-base">⚡</span>
-        <span>Breakthroughs</span>
-      </a>
-      <a href="<?php echo esc_url(home_url('/#benefits')); ?>" onclick="navigateSection('benefits'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
-        <span class="text-base">🌟</span>
-        <span>Benefits</span>
-      </a>
-      <a href="<?php echo esc_url(home_url('/#curriculum')); ?>" onclick="navigateSection('curriculum'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
-        <span class="text-base">📖</span>
-        <span>Curriculum</span>
-      </a>
-      <a href="<?php echo esc_url(home_url('/#how-it-works')); ?>" onclick="navigateSection('how-it-works'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
-        <span class="text-base">✨</span>
-        <span>How It Works</span>
-      </a>
-      <a href="<?php echo esc_url(home_url('/#mentor')); ?>" onclick="navigateSection('mentor'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
-        <span class="text-base">🕊️</span>
-        <span>Meet Michael Rehoboth</span>
-      </a>
-      <a href="<?php echo esc_url(home_url('/#faq')); ?>" onclick="navigateSection('faq'); return false;" class="flex items-center gap-3.5 px-3.5 py-3 rounded-xl text-sm font-medium text-stone-200 hover:bg-slate-800/80 hover:text-amber-300 transition-all">
-        <span class="text-base">❓</span>
-        <span>FAQ &amp; Guarantees</span>
-      </a>
-    </div>
+      <!-- Right: WhatsApp Helpline + Direct CTA Button (No distracting anchor menus) -->
+      <div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+        <a 
+          href="https://wa.me/919886914599?text=Hi%20Rehoboth%20Ministries,%20I%20have%20a%20question%20about%20the%20Courts%20of%20Heaven%20webinar." 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="hidden sm:inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold transition-colors px-2.5 py-1.5 rounded-lg hover:bg-slate-800"
+        >
+          <span>💬 +91 98869 14599</span>
+        </a>
 
-    <!-- Drawer Footer Actions -->
-    <div class="p-4 border-t border-slate-800 bg-slate-950/90 space-y-3">
-      <a href="<?php echo esc_url(home_url('/#register')); ?>" onclick="navigateSection('register'); return false;" class="w-full bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-sm py-3 px-4 rounded-xl shadow-lg shadow-amber-500/30 flex items-center justify-center gap-2 transition-all">
-        <span>Claim Pass @ ₹199</span>
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-      </a>
-
-      <div class="flex items-center justify-center gap-1.5 text-[11px] text-stone-300 font-medium">
-        <span class="text-amber-400">⭐⭐⭐⭐⭐</span>
-        <span>4.9/5 • 5,000+ Believers</span>
-      </div>
-
-      <div class="pt-2 border-t border-slate-800 text-center">
-        <a href="https://wa.me/919886914599" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold">
-          <span>💬 WhatsApp: +91 98869 14599</span>
+        <a 
+          href="#register" 
+          onclick="scrollToForm(); return false;" 
+          class="inline-flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black px-3.5 sm:px-5 py-2 rounded-xl text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:scale-95 whitespace-nowrap"
+        >
+          <span>Claim Pass @ ₹199</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </a>
       </div>
-    </div>
-  </aside>
-
-  <script>
-    // Instant Section Switcher (0ms delay, no smooth scrolling animation)
-    function navigateSection(sectionId) {
-      if (typeof toggleMobileSidebar === 'function') {
-        toggleMobileSidebar(false);
-      }
-      let target = document.getElementById(sectionId);
-      if (!target) {
-        if (sectionId === 'overview') target = document.getElementById('about-webinar');
-        if (sectionId === 'breakthroughs') target = document.getElementById('pain-points');
-        if (sectionId === 'curriculum') target = document.getElementById('training');
-      }
-      if (target) {
-        const header = document.querySelector('header');
-        const headerHeight = header ? header.offsetHeight : 76;
-        const targetPos = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-        window.scrollTo({
-          top: Math.max(0, targetPos),
-          behavior: 'instant'
-        });
-        if (window.history && window.history.pushState) {
-          window.history.pushState(null, '', '#' + sectionId);
-        }
-      }
-    }
-  </script>
+    </nav>
+  </header>
