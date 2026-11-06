@@ -57,19 +57,7 @@
             </a>
           </div>
 
-          <!-- Element 5: Reduce Friction & FUDs Line -->
-          <div class="text-[11px] sm:text-xs text-slate-500 flex flex-wrap items-center gap-x-2 gap-y-1">
-            <span class="text-emerald-700 font-bold flex items-center gap-1">
-              <svg class="w-3.5 h-3.5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              45-Min Money-Back Guarantee
-            </span>
-            <span class="text-slate-300">•</span>
-            <span>Nominal ₹199 seat reservation</span>
-            <span class="text-slate-300">•</span>
-            <span>Covers whole household</span>
-            <span class="text-slate-300">•</span>
-            <span>Recording included</span>
-          </div>
+
 
         </div>
 
