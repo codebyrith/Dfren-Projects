@@ -120,7 +120,7 @@
           onclick="openRegistrationModal()" 
           class="inline-flex items-center gap-1.5 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black px-4 sm:px-5 py-2 rounded-xl text-xs sm:text-sm shadow-md shadow-amber-500/25 transition-all transform hover:-translate-y-0.5 active:scale-95 whitespace-nowrap cursor-pointer"
         >
-          <span>Claim Pass @ ₹199</span>
+          <span>Reserve Your Seat</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
         </button>
       </div>

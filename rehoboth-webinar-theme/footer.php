@@ -5,7 +5,7 @@
  * @package Rehoboth_Webinar
  */
 ?>
-<footer class="bg-[#F8FAFD] border-t border-slate-200 text-slate-600 py-10 px-4 sm:px-6">
+<footer class="bg-[#F1F5F9] border-t border-slate-200 text-slate-600 py-10 px-4 sm:px-6">
     <div class="max-w-6xl mx-auto space-y-8">
       
       <!-- Top Grid: Brand & Direct Contact -->
@@ -86,14 +86,14 @@
         <span class="text-slate-400 line-through text-xs">₹999</span>
         <span class="text-xl font-black text-[#1F355D]">₹199</span>
       </div>
-      <div class="text-[9px] text-emerald-700 font-bold mt-0.5">Instant WhatsApp Zoom Link</div>
+      <div class="text-[9px] text-[#1F355D] font-bold mt-0.5">Live Masterclass Seat</div>
     </div>
     <button 
       type="button" 
       onclick="openRegistrationModal()"
       class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 font-black text-xs px-4 py-2.5 rounded-xl shadow-md shadow-amber-500/20 flex items-center gap-1.5 active:scale-95 transition-transform whitespace-nowrap cursor-pointer"
     >
-      <span>Book Pass Now →</span>
+      <span>Reserve Seat Now →</span>
     </button>
   </aside>
 
@@ -116,7 +116,7 @@
         <span class="text-[9.5px] font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-2 py-0.5 rounded">
           Step 1 of 1 · Instant Booking
         </span>
-        <h3 class="text-lg font-extrabold text-[#1F355D]">Claim Your ₹199 Fellowship Pass</h3>
+        <h3 class="text-lg font-extrabold text-[#1F355D]">Reserve Your Masterclass Seat</h3>
         <p class="text-xs text-slate-500">Enter your details to receive your private Zoom link on WhatsApp.</p>
       </div>
 
@@ -192,7 +192,7 @@
           id="submit-btn" 
           class="w-full mt-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-sm py-3.5 px-4 rounded-xl shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5 active:scale-95 cursor-pointer"
         >
-          <span>Confirm &amp; Proceed (@ ₹199) →</span>
+          <span>Confirm My Registration (₹199) →</span>
         </button>
 
       </form>
