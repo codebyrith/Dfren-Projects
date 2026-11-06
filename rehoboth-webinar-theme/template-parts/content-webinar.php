@@ -270,97 +270,128 @@
 
       </div>
 
-      <!-- Root Cause Solution Showcase: The Courts of Heaven Protocol (Visual Hero Card) -->
-      <div class="brand-card rounded-3xl p-5 sm:p-8 border-2 border-amber-300 bg-gradient-to-b from-white via-[#F8FAFD] to-white space-y-6">
+          </div>
+  </section>
+
+  <!-- ============================================================== -->
+  <!-- BLOCK 3: VALUE PROPOSITIONS (WHAT YOU WILL MASTER IN 150 MINUTES) -->
+  <!-- ============================================================== -->
+  <section class="py-10 sm:py-16 px-4 sm:px-6 bg-[#162746] border-b border-[#1F355D]/20 text-white">
+    <div class="max-w-6xl mx-auto space-y-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+          What You Will Master in 150 Minutes
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-300">
+          Four practical spiritual pillars designed for immediate application and lasting breakthrough.
+        </p>
+      </div>
+
+      <!-- 4 Visual Value Prop Cards (Crisp White Cards on Slightly Dark Navy) -->
+      <div class="space-y-6 sm:space-y-8">
         
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-          
-          <div class="lg:col-span-5 rounded-2xl overflow-hidden border border-[#1F355D]/15 shadow-md">
-            <img 
-              src="<?php echo esc_url(get_template_directory_uri() . '/assets/solution-courts-of-heaven.jpg'); ?>" 
-              alt="The Courts of Heaven Protocol and Celestial Courtroom" 
-              class="w-full h-auto object-cover max-h-72" 
-              loading="lazy"
-            />
+        <!-- Pillar 1 -->
+        <div class="brand-card bg-white rounded-2xl p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-5 items-center shadow-xl">
+          <div class="md:col-span-5 rounded-xl overflow-hidden shadow-sm h-48 sm:h-52">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/courts-of-heaven-protocol.jpg'); ?>" alt="Courts of Heaven Protocol" class="w-full h-full object-cover" loading="lazy" />
           </div>
+          <div class="md:col-span-7 space-y-2 text-left">
+            <span class="text-[9.5px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Pillar 1</span>
+            <h3 class="text-base sm:text-lg font-extrabold text-[#1F355D]">The Courts of Heaven Legal Blueprint</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Understand the legal dimension of spiritual warfare. Learn the exact biblical scriptures and protocol to enter God's court, revoke generational accusations, and enforce the verdict of the Blood of Jesus over your home.
+            </p>
+            <div class="text-[11px] font-semibold text-emerald-700 flex items-center gap-1.5 pt-1">
+              <span>✓ Scripture-backed prayer declarations for every family member</span>
+            </div>
+          </div>
+        </div>
 
-          <div class="lg:col-span-7 space-y-3 text-left">
-            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-full border border-emerald-300">
-              The Root Cause Solution
+        <!-- Pillar 2 -->
+        <div class="brand-card bg-white rounded-2xl p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-5 items-center shadow-xl">
+          <div class="md:col-span-5 md:order-2 rounded-xl overflow-hidden shadow-sm h-48 sm:h-52">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/spiritual-dryness-to-fire.jpg'); ?>" alt="Midnight and 5 AM watch prayer altar" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div class="md:col-span-7 md:order-1 space-y-2 text-left">
+            <span class="text-[9.5px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Pillar 2</span>
+            <h3 class="text-base sm:text-lg font-extrabold text-[#1F355D]">The 15-Minute Midnight &amp; 5 AM Watch Routine</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Discover how to guard your spiritual atmosphere with an effortless 15-minute daily prayer watch. Transform dry prayer routines into an altar burning with fresh Holy Spirit fire that shields your children and career.
+            </p>
+            <div class="text-[11px] font-semibold text-emerald-700 flex items-center gap-1.5 pt-1">
+              <span>✓ Printable prayer watch guide with declaration cards</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="brand-card bg-white rounded-2xl p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-5 items-center shadow-xl">
+          <div class="md:col-span-5 rounded-xl overflow-hidden shadow-sm h-48 sm:h-52">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/hearing-gods-voice.jpg'); ?>" alt="Discerning God's voice through scripture" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div class="md:col-span-7 space-y-2 text-left">
+            <span class="text-[9.5px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Pillar 3</span>
+            <h3 class="text-base sm:text-lg font-extrabold text-[#1F355D]">Recognizing God's Voice in Daily Decisions</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Master 3 biblical discernment checks to distinguish between God's clear voice, enemy distraction, and human emotion. Never remain in paralyzing confusion about career, marriage, or financial choices.
+            </p>
+            <div class="text-[11px] font-semibold text-emerald-700 flex items-center gap-1.5 pt-1">
+              <span>✓ Step-by-step decision discernment framework</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="brand-card bg-white rounded-2xl p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-5 items-center shadow-xl">
+          <div class="md:col-span-5 md:order-2 rounded-xl overflow-hidden shadow-sm h-48 sm:h-52">
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/generational-breakthrough.jpg'); ?>" alt="Generational breakthrough" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+          <div class="md:col-span-7 md:order-1 space-y-2 text-left">
+            <span class="text-[9.5px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Pillar 4</span>
+            <h3 class="text-base sm:text-lg font-extrabold text-[#1F355D]">Live Personal Impartation &amp; 7-Day Consecration Plan</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Prophet Michael Rehoboth ministers live over registered participants with prophetic direction. Receive a 7-day consecration roadmap to maintain and expand your spiritual victory after the webinar.
+            </p>
+            <div class="text-[11px] font-semibold text-emerald-700 flex items-center gap-1.5 pt-1">
+              <span>✓ Live Zoom Q&amp;A and personal prayer ministry</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bonus Stack Mockup Card -->
+      <div class="bg-white border-2 border-amber-300 rounded-2xl p-5 sm:p-7 shadow-xl space-y-4 text-slate-800">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200 pb-3 text-left">
+          <div>
+            <span class="text-[9px] font-black uppercase tracking-widest text-amber-800 bg-amber-100 px-2 py-0.5 rounded">
+              Included 100% Free With Masterclass Registration
             </span>
-            <h3 class="text-xl sm:text-2xl font-extrabold text-[#1F355D]">
-              The Courts of Heaven: Move from Battlefield to Courtroom
-            </h3>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              The Bible reveals that God is not only our loving Father—He is also the <strong>Righteous Judge of the Universe</strong> (Hebrews 12:23). When accusations stand against your family line, emotional shouting into the air cannot overturn legal claims.
-            </p>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              In this live masterclass, Prophet Michael Rehoboth guides you step by step to present your case before the Judge, apply the Blood of the Lamb, silence demonic claims, and secure lasting decrees of freedom.
-            </p>
+            <h3 class="text-base sm:text-lg font-extrabold text-[#1F355D] mt-1">2 Downloadable PDF Action Blueprints (Value ₹1,499)</h3>
           </div>
-
+          <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-300 self-start sm:self-auto">
+            Free With Registration
+          </span>
         </div>
 
-        <!-- Side-by-Side Visual Comparison -->
-        <div class="pt-3 border-t border-slate-200 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-          
-          <!-- Old Way -->
-          <div class="bg-red-50 border border-red-200 rounded-xl p-4 space-y-2 text-left">
-            <div class="font-bold text-red-800 text-xs flex items-center gap-1.5 pb-1 border-b border-red-200">
-              <span class="w-5 h-5 rounded-full bg-red-200 text-red-800 flex items-center justify-center font-bold">✕</span>
-              <span>The Exhausting Old Way</span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-left">
+          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 shadow-2xs flex items-start gap-3">
+            <span class="text-2xl">📘</span>
+            <div>
+              <div class="font-bold text-[#1F355D]">Courts of Heaven Prayer Blueprint (PDF)</div>
+              <div class="text-[11px] text-slate-500 mt-0.5">Written decrees, scriptures &amp; step-by-step templates to pray over your family.</div>
             </div>
-            <ul class="space-y-1.5 text-slate-600">
-              <li class="flex items-start gap-1.5">
-                <span class="text-red-500 font-bold">✕</span>
-                <span>Fasting endlessly hoping for relief without legal grounds</span>
-              </li>
-              <li class="flex items-start gap-1.5">
-                <span class="text-red-500 font-bold">✕</span>
-                <span>Praying irregularly only when emergencies hit</span>
-              </li>
-              <li class="flex items-start gap-1.5">
-                <span class="text-red-500 font-bold">✕</span>
-                <span>Fighting symptoms while legal doors stay cracked open</span>
-              </li>
-            </ul>
           </div>
-
-          <!-- Blueprint Way -->
-          <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 space-y-2 text-left">
-            <div class="font-bold text-emerald-900 text-xs flex items-center gap-1.5 pb-1 border-b border-emerald-200">
-              <span class="w-5 h-5 rounded-full bg-emerald-200 text-emerald-800 flex items-center justify-center font-bold">✓</span>
-              <span>The Courts of Heaven Protocol</span>
+          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 shadow-2xs flex items-start gap-3">
+            <span class="text-2xl">📙</span>
+            <div>
+              <div class="font-bold text-[#1F355D]">7-Day Consecration Guide (PDF)</div>
+              <div class="text-[11px] text-slate-500 mt-0.5">Day-by-day scripture readings, midnight declarations, and fasting guide.</div>
             </div>
-            <ul class="space-y-1.5 text-slate-700">
-              <li class="flex items-start gap-1.5">
-                <span class="text-emerald-700 font-bold">✓</span>
-                <span>Presenting exact scriptures &amp; decrees before the Righteous Judge</span>
-              </li>
-              <li class="flex items-start gap-1.5">
-                <span class="text-emerald-700 font-bold">✓</span>
-                <span>A disciplined 15-minute Midnight &amp; 5 AM watch routine</span>
-              </li>
-              <li class="flex items-start gap-1.5">
-                <span class="text-emerald-700 font-bold">✓</span>
-                <span>Permanently revoking generational accusations by the Blood of Jesus</span>
-              </li>
-            </ul>
           </div>
-
         </div>
-
-        <!-- Section CTA -->
-        <div class="pt-2 text-center">
-          <button 
-            type="button"
-            onclick="openRegistrationModal()" 
-            class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 font-black px-6 py-3 rounded-xl text-sm shadow-md transition-all transform hover:-translate-y-0.5 active:scale-95 cursor-pointer"
-          >
-            <span>Break the Cycle — Join the Live Masterclass →</span>
-          </button>
-        </div>
-
       </div>
 
     </div>
@@ -498,124 +529,104 @@
   </section>
 
   <!-- ============================================================== -->
-  <!-- BLOCK 4: VALUE PROPOSITIONS (VISUAL INGREDIENTS/PILLARS FLOW) -->
+  
   <!-- ============================================================== -->
-  <section class="py-10 sm:py-16 px-4 sm:px-6 bg-[#EBF2FA] border-b border-slate-200">
-    <div class="max-w-6xl mx-auto space-y-10">
+  <!-- BLOCK 5: THE ROOT CAUSE SOLUTION (COURTS OF HEAVEN PROTOCOL) -->
+  <!-- ============================================================== -->
+  <section class="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-b from-[#142340] via-[#1A2D50] to-[#142340] border-b border-[#1F355D]/20 text-white">
+    <div class="max-w-6xl mx-auto space-y-8">
       
-      <!-- Section Header -->
-      <div class="text-center max-w-2xl mx-auto space-y-2">
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#1F355D] tracking-tight">
-          What You Will Master in 150 Minutes
-        </h2>
-        <p class="text-xs sm:text-sm text-slate-600">
-          Four practical spiritual pillars designed for immediate application and lasting breakthrough.
-        </p>
-      </div>
-
-      <!-- 4 Visual Value Prop Cards (Alternating Image & Content Flow) -->
-      <div class="space-y-6 sm:space-y-8">
+      <!-- Card Container with Amber Border & Dark Translucent Surface -->
+      <div class="rounded-3xl p-6 sm:p-10 border-2 border-amber-400/40 bg-slate-900/60 shadow-2xl backdrop-blur-xs space-y-8">
         
-        <!-- Pillar 1 -->
-        <div class="brand-card rounded-2xl p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
-          <div class="md:col-span-5 rounded-xl overflow-hidden shadow-sm h-48 sm:h-52">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/courts-of-heaven-protocol.jpg'); ?>" alt="Courts of Heaven Protocol" class="w-full h-full object-cover" loading="lazy" />
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-5 rounded-2xl overflow-hidden border border-amber-400/30 shadow-2xl">
+            <img 
+              src="<?php echo esc_url(get_template_directory_uri() . '/assets/solution-courts-of-heaven.jpg'); ?>" 
+              alt="The Courts of Heaven Protocol and Celestial Courtroom" 
+              class="w-full h-auto object-cover max-h-80" 
+              loading="lazy"
+            />
           </div>
-          <div class="md:col-span-7 space-y-2 text-left">
-            <span class="text-[9.5px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Pillar 1</span>
-            <h3 class="text-base sm:text-lg font-extrabold text-[#1F355D]">The Courts of Heaven Legal Blueprint</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Understand the legal dimension of spiritual warfare. Learn the exact biblical scriptures and protocol to enter God's court, revoke generational accusations, and enforce the verdict of the Blood of Jesus over your home.
-            </p>
-            <div class="text-[11px] font-semibold text-emerald-700 flex items-center gap-1.5 pt-1">
-              <span>✓ Scripture-backed prayer declarations for every family member</span>
-            </div>
-          </div>
-        </div>
 
-        <!-- Pillar 2 -->
-        <div class="brand-card rounded-2xl p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
-          <div class="md:col-span-5 md:order-2 rounded-xl overflow-hidden shadow-sm h-48 sm:h-52">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/spiritual-dryness-to-fire.jpg'); ?>" alt="Midnight and 5 AM watch prayer altar" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-          <div class="md:col-span-7 md:order-1 space-y-2 text-left">
-            <span class="text-[9.5px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Pillar 2</span>
-            <h3 class="text-base sm:text-lg font-extrabold text-[#1F355D]">The 15-Minute Midnight &amp; 5 AM Watch Routine</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Discover how to guard your spiritual atmosphere with an effortless 15-minute daily prayer watch. Transform dry prayer routines into an altar burning with fresh Holy Spirit fire that shields your children and career.
-            </p>
-            <div class="text-[11px] font-semibold text-emerald-700 flex items-center gap-1.5 pt-1">
-              <span>✓ Printable prayer watch guide with declaration cards</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pillar 3 -->
-        <div class="brand-card rounded-2xl p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
-          <div class="md:col-span-5 rounded-xl overflow-hidden shadow-sm h-48 sm:h-52">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/hearing-gods-voice.jpg'); ?>" alt="Discerning God's voice through scripture" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-          <div class="md:col-span-7 space-y-2 text-left">
-            <span class="text-[9.5px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Pillar 3</span>
-            <h3 class="text-base sm:text-lg font-extrabold text-[#1F355D]">Recognizing God's Voice in Daily Decisions</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Master 3 biblical discernment checks to distinguish between God's clear voice, enemy distraction, and human emotion. Never remain in paralyzing confusion about career, marriage, or financial choices.
-            </p>
-            <div class="text-[11px] font-semibold text-emerald-700 flex items-center gap-1.5 pt-1">
-              <span>✓ Step-by-step decision discernment framework</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pillar 4 -->
-        <div class="brand-card rounded-2xl p-5 sm:p-6 grid grid-cols-1 md:grid-cols-12 gap-5 items-center">
-          <div class="md:col-span-5 md:order-2 rounded-xl overflow-hidden shadow-sm h-48 sm:h-52">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/generational-breakthrough.jpg'); ?>" alt="Generational breakthrough" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-          <div class="md:col-span-7 md:order-1 space-y-2 text-left">
-            <span class="text-[9.5px] font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Pillar 4</span>
-            <h3 class="text-base sm:text-lg font-extrabold text-[#1F355D]">Live Personal Impartation &amp; 7-Day Consecration Plan</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Prophet Michael Rehoboth ministers live over registered participants with prophetic direction. Receive a 7-day consecration roadmap to maintain and expand your spiritual victory after the webinar.
-            </p>
-            <div class="text-[11px] font-semibold text-emerald-700 flex items-center gap-1.5 pt-1">
-              <span>✓ Live Zoom Q&amp;A and personal prayer ministry</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Bonus Stack Mockup Card (Like Course Bonuses in Guide) -->
-      <div class="bg-gradient-to-r from-amber-50 via-white to-amber-50 border-2 border-amber-300 rounded-2xl p-5 sm:p-7 shadow-xs space-y-4">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200 pb-3 text-left">
-          <div>
-            <span class="text-[9px] font-black uppercase tracking-widest text-amber-800 bg-amber-200 px-2 py-0.5 rounded">
-              Included 100% Free With Masterclass Registration
+          <div class="lg:col-span-7 space-y-3.5 text-left">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-300 bg-amber-950/70 px-3 py-1 rounded-full border border-amber-400/40">
+              The Root Cause Solution
             </span>
-            <h3 class="text-base sm:text-lg font-extrabold text-[#1F355D] mt-1">2 Downloadable PDF Action Blueprints (Value ₹1,499)</h3>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+              The Courts of Heaven: Move from Battlefield to Courtroom
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+              The Bible reveals that God is not only our loving Father—He is also the <strong class="text-amber-300">Righteous Judge of the Universe</strong> (Hebrews 12:23). When accusations stand against your family line, emotional shouting into the air cannot overturn legal spiritual claims.
+            </p>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              In this live masterclass, Prophet Michael Rehoboth guides you step by step to present your case before the Judge, apply the Blood of the Lamb, silence demonic claims, and secure lasting decrees of freedom.
+            </p>
           </div>
-          <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-300 self-start sm:self-auto">
-            Free With Registration
-          </span>
+
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-left">
-          <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs flex items-start gap-3">
-            <span class="text-2xl">📘</span>
-            <div>
-              <div class="font-bold text-[#1F355D]">Courts of Heaven Prayer Blueprint (PDF)</div>
-              <div class="text-[11px] text-slate-500 mt-0.5">Written decrees, scriptures &amp; step-by-step templates to pray over your family.</div>
+        <!-- Side-by-Side Visual Comparison -->
+        <div class="pt-4 border-t border-slate-700/80 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          
+          <!-- Old Way -->
+          <div class="bg-slate-950/70 border border-red-500/30 rounded-2xl p-4 sm:p-5 space-y-2 text-left">
+            <div class="font-bold text-red-300 text-xs flex items-center gap-1.5 pb-2 border-b border-red-500/20">
+              <span class="w-5 h-5 rounded-full bg-red-950 text-red-400 border border-red-500/40 flex items-center justify-center font-bold">✕</span>
+              <span>The Exhausting Old Way</span>
             </div>
+            <ul class="space-y-2 text-slate-300">
+              <li class="flex items-start gap-2">
+                <span class="text-red-400 font-bold">✕</span>
+                <span>Fasting endlessly hoping for relief without legal grounds</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-400 font-bold">✕</span>
+                <span>Praying irregularly only when emergencies hit</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-400 font-bold">✕</span>
+                <span>Fighting symptoms while legal doors stay cracked open</span>
+              </li>
+            </ul>
           </div>
-          <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs flex items-start gap-3">
-            <span class="text-2xl">📙</span>
-            <div>
-              <div class="font-bold text-[#1F355D]">7-Day Consecration Guide (PDF)</div>
-              <div class="text-[11px] text-slate-500 mt-0.5">Day-by-day scripture readings, midnight declarations, and fasting guide.</div>
+
+          <!-- Blueprint Way -->
+          <div class="bg-slate-950/70 border border-emerald-400/40 rounded-2xl p-4 sm:p-5 space-y-2 text-left">
+            <div class="font-bold text-emerald-300 text-xs flex items-center gap-1.5 pb-2 border-b border-emerald-500/20">
+              <span class="w-5 h-5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-500/40 flex items-center justify-center font-bold">✓</span>
+              <span>The Courts of Heaven Protocol</span>
             </div>
+            <ul class="space-y-2 text-slate-200">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Presenting exact scriptures &amp; decrees before the Righteous Judge</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>A disciplined 15-minute Midnight &amp; 5 AM watch routine</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-400 font-bold">✓</span>
+                <span>Permanently revoking generational accusations by the Blood of Jesus</span>
+              </li>
+            </ul>
           </div>
+
         </div>
+
+        <!-- Section CTA -->
+        <div class="pt-3 text-center">
+          <button 
+            type="button"
+            onclick="openRegistrationModal()" 
+            class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-sm sm:text-base px-8 py-3.5 rounded-xl shadow-lg shadow-amber-500/25 transition-all transform hover:-translate-y-0.5 active:scale-95 cursor-pointer"
+          >
+            <span>Break the Cycle — Join the Live Masterclass →</span>
+          </button>
+        </div>
+
       </div>
 
     </div>
