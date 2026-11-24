@@ -48,7 +48,7 @@
             </button>
 
             <a 
-              href="https://wa.me/919886914599?text=Hi%20Rehoboth%20Ministries,%20I%20want%20to%20register%20for%20the%20Courts%20of%20Heaven%20webinar." 
+              href="https://wa.me/919071119295?text=Hi%20Rehoboth%20Ministries,%20I%20want%20to%20register%20for%20the%20Courts%20of%20Heaven%20webinar." 
               target="_blank" 
               rel="noopener noreferrer" 
               class="inline-flex items-center justify-center gap-1.5 bg-white hover:bg-slate-50 border border-emerald-600 text-emerald-700 font-bold px-4 py-3 rounded-xl text-xs sm:text-sm shadow-xs transition"

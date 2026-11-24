@@ -107,12 +107,12 @@
       <!-- Right: WhatsApp Helpline + CTA Button -->
       <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
         <a 
-          href="https://wa.me/919886914599?text=Hi%20Rehoboth%20Ministries,%20I%20have%20a%20question%20about%20the%20Courts%20of%20Heaven%20webinar." 
+          href="https://wa.me/919071119295?text=Hi%20Rehoboth%20Ministries,%20I%20have%20a%20question%20about%20the%20Courts%20of%20Heaven%20webinar." 
           target="_blank" 
           rel="noopener noreferrer" 
           class="hidden sm:inline-flex items-center gap-1.5 text-xs text-emerald-700 hover:text-emerald-800 font-bold px-3 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-50 transition"
         >
-          <span>💬 +91 98869 14599</span>
+          <span>💬 +91 90711 19295</span>
         </a>
 
         <button 

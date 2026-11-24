@@ -48,12 +48,12 @@
           <h4 class="text-xs font-bold uppercase tracking-wider text-[#1F355D]">Support &amp; Helpline</h4>
           <div class="space-y-2 text-xs">
             <a 
-              href="https://wa.me/919886914599" 
+              href="https://wa.me/919071119295" 
               target="_blank" 
               rel="noopener noreferrer" 
               class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 font-bold hover:bg-emerald-100 transition shadow-2xs"
             >
-              <span>💬 +91 98869 14599</span>
+              <span>💬 +91 90711 19295</span>
             </a>
             <div class="text-[11px] text-slate-500 flex items-center gap-1.5 pt-0.5">
               <span>✉️</span>
@@ -233,7 +233,7 @@
       <div class="space-y-2">
         <a 
           id="whatsapp-join-btn" 
-          href="https://wa.me/919886914599" 
+          href="https://wa.me/919071119295" 
           target="_blank" 
           rel="noopener noreferrer" 
           class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md transition"
@@ -321,7 +321,7 @@
         document.getElementById('confirmed-batch').textContent = batch;
         document.getElementById('confirmed-contact').textContent = `${name} (+91 ${phone})`;
         
-        const waLink = `https://wa.me/919886914599?text=Hi%20Rehoboth%20Ministries,%20I%20have%20registered%20for%20the%20${encodeURIComponent(batch)}%20under%20${encodeURIComponent(name)}%20(+91${encodeURIComponent(phone)}).`;
+        const waLink = `https://wa.me/919071119295?text=Hi%20Rehoboth%20Ministries,%20I%20have%20registered%20for%20the%20${encodeURIComponent(batch)}%20under%20${encodeURIComponent(name)}%20(+91${encodeURIComponent(phone)}).`;
         document.getElementById('whatsapp-join-btn').href = waLink;
 
         document.getElementById('success-modal').classList.remove('hidden');
@@ -338,7 +338,7 @@
         body: `
           <h4 class="text-base font-bold text-[#1F355D] mb-2">Rehoboth Ministries International — Privacy Policy</h4>
           <p>We respect your privacy. We collect your Name, WhatsApp Phone Number, and Email Address solely to deliver your webinar Zoom link, reminder alerts, and downloadable PDF action blueprints.</p>
-          <p class="mt-2">We never sell, rent, or trade your personal information. For questions, contact info@rehobothministries.com or WhatsApp +91 98869 14599.</p>
+          <p class="mt-2">We never sell, rent, or trade your personal information. For questions, contact info@rehobothministries.com or WhatsApp +91 90711 19295.</p>
         `
       },
       terms: {
@@ -353,7 +353,7 @@
         title: "Refund Policy (45-Minute Guarantee)",
         body: `
           <h4 class="text-base font-bold text-emerald-800 mb-2">100% Peace-Of-Mind Guarantee</h4>
-          <p>Attend the live session for the first 45 minutes. If you honestly feel the teaching is not delivering biblical clarity and value for your spiritual walk, message our official WhatsApp helpline at <strong>+91 98869 14599</strong> before the 45-minute mark of your batch for a full 100% same-day refund.</p>
+          <p>Attend the live session for the first 45 minutes. If you honestly feel the teaching is not delivering biblical clarity and value for your spiritual walk, message our official WhatsApp helpline at <strong>+91 90711 19295</strong> before the 45-minute mark of your batch for a full 100% same-day refund.</p>
         `
       }
     };

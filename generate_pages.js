@@ -254,8 +254,8 @@ function getUnifiedHeader(title, description, activeKey) {
       </div>
 
       <div class="pt-2 border-t border-slate-800 text-center">
-        <a href="https://wa.me/919886914599" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold">
-          <span>💬 WhatsApp: +91 98869 14599</span>
+        <a href="https://wa.me/919071119295" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-300 font-semibold">
+          <span>💬 WhatsApp: +91 90711 19295</span>
         </a>
       </div>
     </div>
