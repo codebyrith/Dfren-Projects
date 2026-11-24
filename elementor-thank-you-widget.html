@@ -1,0 +1,355 @@
+<!-- =======================================================================
+  REHOBOTH MINISTRIES - WEBINAR BOOKING THANK YOU PAGE (ELEMENTOR HTML WIDGET)
+  Instructions for Elementor:
+  1. In WordPress, create a new page named "Thank You" (slug: thank-you).
+  2. Set "Page Layout" to "Elementor Canvas" (hides theme header & footer).
+  3. Drag an "HTML" widget into the section.
+  4. Copy and paste the entire code below into the HTML widget.
+  5. Click "Update" or "Publish".
+======================================================================== -->
+
+<div class="rm-ty-wrapper">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+    .rm-ty-wrapper {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #FDF8F2;
+      color: #2C1810;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 70px 16px;
+      box-sizing: border-box;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .rm-ty-wrapper * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .rm-ty-container {
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+    }
+
+    /* 1. Top Confirmation Icon (72px x 72px) */
+    .rm-ty-icon-badge {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background-color: #DCFCE7;
+      border: 2px solid #BBF7D0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    }
+
+    .rm-ty-icon-badge svg {
+      width: 36px;
+      height: 36px;
+      color: #15803D;
+    }
+
+    /* 2. Hero Headings */
+    .rm-ty-heading-block {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .rm-ty-h1 {
+      font-size: clamp(28px, 4.5vw, 40px);
+      font-weight: 800;
+      line-height: 1.2;
+      color: #2C1810;
+      letter-spacing: -0.02em;
+    }
+
+    .rm-ty-h1 .rm-ty-italic-green {
+      color: #15803D;
+      font-style: italic;
+    }
+
+    .rm-ty-subheadline {
+      font-size: 19px;
+      font-weight: 700;
+      color: #2C1810;
+    }
+
+    .rm-ty-desc {
+      font-size: 15px;
+      color: #5A4238;
+      max-width: 540px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* 3. Primary WhatsApp CTA Button (Pulsing Glow Animation) */
+    @keyframes rmPulseGlow {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.65), 0 8px 24px -4px rgba(37, 211, 102, 0.4);
+      }
+      70% {
+        box-shadow: 0 0 0 16px rgba(37, 211, 102, 0), 0 8px 24px -4px rgba(37, 211, 102, 0.4);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 8px 24px -4px rgba(37, 211, 102, 0.4);
+      }
+    }
+
+    .rm-ty-btn-wrap {
+      width: 100%;
+      padding-top: 4px;
+    }
+
+    .rm-ty-whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      max-width: 680px;
+      background-color: #25D366;
+      color: #FFFFFF !important;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none !important;
+      padding: 18px 32px;
+      border-radius: 50px;
+      cursor: pointer;
+      animation: rmPulseGlow 2.2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      box-sizing: border-box;
+    }
+
+    .rm-ty-whatsapp-btn:hover {
+      background-color: #20BD5A;
+      transform: translateY(-1px);
+      color: #FFFFFF !important;
+    }
+
+    .rm-ty-whatsapp-btn svg {
+      width: 24px;
+      height: 24px;
+      fill: #FFFFFF;
+      flex-shrink: 0;
+    }
+
+    /* 4. Verification Callout Box */
+    .rm-ty-callout-box {
+      width: 100%;
+      background-color: #FEF3E2;
+      border: 1px solid #F5CBA7;
+      border-radius: 16px;
+      padding: 20px 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .rm-ty-callout-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #2C1810;
+      line-height: 1.4;
+    }
+
+    .rm-ty-callout-text {
+      font-size: 13.5px;
+      color: #5A4238;
+      line-height: 1.5;
+    }
+
+    /* 5. What Happens Next Card */
+    .rm-ty-next-card {
+      width: 100%;
+      background-color: #FFFBF5;
+      border: 1px solid #F3D9B1;
+      border-radius: 16px;
+      padding: 28px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+
+    .rm-ty-card-header {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #2C1810;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #F3D9B1;
+    }
+
+    .rm-ty-step-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      list-style: none;
+    }
+
+    .rm-ty-step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .rm-ty-step-num {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #15803D;
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .rm-ty-step-desc {
+      font-size: 14px;
+      color: #2C1810;
+      line-height: 1.55;
+    }
+
+    /* 6. Return Link */
+    .rm-ty-back-link {
+      font-size: 14px;
+      color: #785A48;
+      text-decoration: underline;
+      font-weight: 500;
+      transition: color 0.2s ease;
+      display: inline-block;
+      padding-top: 4px;
+    }
+
+    .rm-ty-back-link:hover {
+      color: #2C1810;
+    }
+
+    @media (max-width: 640px) {
+      .rm-ty-wrapper {
+        padding: 50px 16px;
+      }
+      .rm-ty-container {
+        gap: 20px;
+      }
+      .rm-ty-whatsapp-btn {
+        font-size: 16px;
+        padding: 16px 24px;
+      }
+      .rm-ty-next-card {
+        padding: 22px 18px;
+      }
+      .rm-ty-callout-box {
+        padding: 18px 16px;
+      }
+    }
+  </style>
+
+  <main class="rm-ty-container">
+
+    <!-- Top Confirmation Badge -->
+    <div class="rm-ty-icon-badge" aria-label="Confirmed Checkmark">
+      <svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+      </svg>
+    </div>
+
+    <!-- Hero Headline & Subtext -->
+    <div class="rm-ty-heading-block">
+      <h1 class="rm-ty-h1">
+        Your <span class="rm-ty-italic-green">Webinar Seat</span> is Confirmed!
+      </h1>
+      <p class="rm-ty-subheadline">
+        Thank You for Your Booking ✨
+      </p>
+      <p class="rm-ty-desc">
+        Your registration for the live webinar has been successfully confirmed. You will receive a confirmation email shortly with your session details.
+      </p>
+    </div>
+
+    <!-- Primary WhatsApp CTA Button -->
+    <div class="rm-ty-btn-wrap">
+      <a 
+        href="https://wa.me/918667515295?text=Hi!%20I%20just%20booked%20my%20seat%20for%20the%20webinar.%20Please%20confirm%20my%20slot%20and%20share%20further%20updates." 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="rm-ty-whatsapp-btn"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.004.573 1.832.879 2.806.879 3.181 0 5.767-2.586 5.768-5.766.001-3.18-2.585-5.767-5.768-5.767zm7.42 5.767c0 4.092-3.328 7.42-7.42 7.42-1.258 0-2.433-.314-3.468-.865l-4.563 1.196 1.218-4.444c-.655-1.096-1.027-2.378-1.027-3.747 0-4.092 3.328-7.42 7.42-7.42 4.092 0 7.42 3.328 7.42 7.42zm-3.649 2.282c-.2-.1-.58-.29-.67-.32-.09-.03-.16-.05-.23.05-.07.1-.27.34-.33.41-.06.07-.12.08-.22.03-.1-.05-.42-.15-.8-.49-.3-.27-.5-.6-.56-.7-.06-.1 0-.15.05-.2.04-.04.1-.11.15-.17.05-.06.07-.1.1-.17.03-.07.02-.13-.01-.18-.03-.05-.23-.55-.31-.76-.08-.2-.16-.17-.23-.17h-.2c-.07 0-.18.03-.27.13-.09.1-.35.34-.35.83 0 .49.36.96.41 1.03.05.07.71 1.08 1.72 1.52.24.1.43.16.58.21.24.08.46.07.63.04.19-.03.58-.24.66-.47.08-.23.08-.43.06-.47-.02-.04-.08-.07-.18-.12z"/>
+        </svg>
+        <span>WhatsApp us to confirm your slot</span>
+      </a>
+    </div>
+
+    <!-- Verification Callout Box -->
+    <div class="rm-ty-callout-box">
+      <p class="rm-ty-callout-title">
+        Please click the WhatsApp button above and text our WhatsApp number to get updated with the webinar details.
+      </p>
+      <p class="rm-ty-callout-text">
+        This will help us verify your booking and send you direct session links and reminders.
+      </p>
+    </div>
+
+    <!-- What Happens Next Card -->
+    <div class="rm-ty-next-card">
+      <div class="rm-ty-card-header">
+        🙏 WHAT HAPPENS NEXT
+      </div>
+
+      <ul class="rm-ty-step-list">
+        <li class="rm-ty-step-item">
+          <span class="rm-ty-step-num">1</span>
+          <p class="rm-ty-step-desc">
+            You will receive a confirmation email shortly with your webinar registration details.
+          </p>
+        </li>
+        <li class="rm-ty-step-item">
+          <span class="rm-ty-step-num">2</span>
+          <p class="rm-ty-step-desc">
+            Message our WhatsApp number using the button above to get timely reminders, session links, and webinar updates.
+          </p>
+        </li>
+        <li class="rm-ty-step-item">
+          <span class="rm-ty-step-num">3</span>
+          <p class="rm-ty-step-desc">
+            Join the live session 5 minutes early so you don't miss anything.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Return to Homepage Link -->
+    <div>
+      <a href="/" class="rm-ty-back-link">
+        ← Return to Homepage
+      </a>
+    </div>
+
+  </main>
+</div>
